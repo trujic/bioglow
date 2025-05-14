@@ -1,19 +1,25 @@
 <script setup>
 import faceCloseup from "~/assets/images/face-closeup.png";
 import backImg from "~/assets/images/back.jpg";
+import flower from "~/assets/images/flower-2.png";
 </script>
 <template>
   <div class="bg-[#ECE9E1] py-10 md:py-40 relative border-b border-black">
-    <div class="container">
+    <div class="container px-12">
       <div class="flex flex-col gap-4 md:flex-row md:gap-0 justify-between">
         <div class="mt-0 mr-0 md:mt-20 md:mr-20">
           <h2
-            class="text-[24px] md:text-[86px] font-serifDisplay font-extralight tracking-[-1px] md:tracking-[-8px] text-center"
+            class="text-[52px] md:text-[86px] font-sloop font-extralight tracking-[-1px] text-center md:text-left capitalize"
           >
-            About <i>us</i>
+            Our <i>story</i>
           </h2>
+          <h3
+            class="font-helveticaDisplay text-[14px] md:text-[24px] text-center md:text-left mb-[-4px] uppercase font-light tracking-[1px]"
+          >
+            ( Behind the brand )
+          </h3>
           <div
-            class="max-w-[500px] mt-6 md:mt-12 font-helveticaDisplay font-light leading-[18px] text-xs md:text-base"
+            class="max-w-[500px] mt-12 font-helveticaDisplay font-light leading-[18px] text-xs md:text-base"
           >
             <p>
               At Bioglow we are passionate about blending science with
@@ -34,10 +40,15 @@ import backImg from "~/assets/images/back.jpg";
           <img
             :src="backImg"
             alt="human body back"
-            class="max-w-full md:max-w-[500px] contrast-[.80]"
+            class="hidden md:block max-w-full h-[250px] md:h-fit m-auto md:max-w-[500px] contrast-[.80]"
+          />
+          <img
+            :src="flower"
+            alt="human body back"
+            class="md:hidden max-w-full h-[250px] md:h-fit m-auto md:max-w-[500px] contrast-[.80]"
           />
           <h3
-            class="welcome font-signature text-[70px] font-regular absolute bottom-[50px] right-[0] md:right-[-120px] leading-[70px]"
+            class="welcome font-signature text-[40px] md:text-[70px] font-regular absolute bottom-[25px] md:bottom-[50px] right-[0] md:right-[-120px] leading-[30px] md:leading-[70px]"
             style="
               text-shadow: -0.5px -0.5px 0 #2a2b30, 0.5px -0.5px 0 #2a2b30,
                 -0.5px 0.5px 0 #2a2b30, 0.5px 0.5px 0 #2a2b30;

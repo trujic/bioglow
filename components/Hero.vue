@@ -41,13 +41,13 @@ defineProps({
 </script>
 <template>
   <div
-    class="w-full bg-no-repeat bg-cover flex items-center justify-center bg-[#838776] brightness-80 contrast-[.80]"
+    class="w-full bg-no-repeat bg-cover flex items-center justify-center bg-[#838776] brightness-80 contrast-[.80] border-b border-black"
     :style="`background-image: url(${bgImage}); height: ${height}; background-position: ${bgPosition};`"
   >
     <div class="flex flex-col text-center">
       <h1
         v-if="title"
-        class="text-[36px] md:text-[84px] text-white text-center font-light pb-[12px] md:pb-[24px] font-helveticaDisplay leading-[60px] md:leading-[100px] tracking-[-3px] md:tracking-[-8px] uppercase"
+        class="text-[46px] md:text-[84px] text-white text-center font-light pb-[12px] md:pb-[24px] font-serifDisplay leading-[60px] md:leading-[100px] tracking-[-5px] md:tracking-[-8px]"
       >
         {{ title }}
         <span

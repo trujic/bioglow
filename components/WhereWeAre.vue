@@ -20,21 +20,30 @@ const handleButtonClick = () => {
 </script>
 
 <template>
-  <div
-    class="pt-20 pb-20 md:pt-40 md:pb-40 bg-cover bg-center border-b border-black"
-    :style="{
-      backgroundImage: `url(${footerBg})`,
-      backgroundColor: 'rgba(236, 233, 225, 0.7)',
-    }"
-  >
+  <div class="pb-20 md:pb-32 bg-cover bg-center border-b border-black">
+    <video
+      src="/videos/horses.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      class="absolute w-full h-[60vh] md:h-[100vh] object-cover z-[-1]"
+    ></video>
     <div
-      class="flex flex-col gap-10 md:gap-40 justify-between align-center container"
+      class="pt-20 md:pt-32 flex flex-col gap-10 md:gap-24 justify-between align-center container"
     >
-      <h2
-        class="text-[24px] md:text-[64px] md:text-[86px] font-serifDisplay font-extralight max-w-[620px] leading-[90px] tracking-[-1px] md:tracking-[-8px]"
-      >
-        Experience your <i>glow</i> here.
-      </h2>
+      <div>
+        <h2
+          class="text-[28px] md:text-[64px] md:text-[86px] font-serifDisplay font-extralight max-w-[620px] tracking-[-1px] md:tracking-[-8px]"
+        >
+          Experience your
+        </h2>
+        <h2
+          class="font-serifDisplay font-extralight text-[28px] md:text-[86px] leading-[20px] md:leading-[60px] tracking-[-1px] md:tracking-[-8px]"
+        >
+          <i>glow</i> here
+        </h2>
+      </div>
       <div class="flex gap-20 md:gap-32">
         <div class="flex flex-col">
           <span
@@ -42,7 +51,7 @@ const handleButtonClick = () => {
             >visit us</span
           >
           <span class="text-[12px] md:text-base"
-            >Stojana Novakovica 17a, Nis</span
+            >Stojana Novakovića 17a, Niš</span
           >
         </div>
         <div class="flex flex-col">

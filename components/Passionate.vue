@@ -32,17 +32,21 @@ const content = [
   <div class="bg-[#ECE9E1] py-10 md:py-20 border-b border-black">
     <div class="container px-4 md:px-60">
       <h3
-        class="text-center font-serifDisplay text-[24px] md:text-[46px] font-extralight tracking-[-1px] md:tracking-[-3px]"
+        class="text-center font-sloop text-[42px] md:text-[70px] font-extralight tracking-[-1px] md:tracking-[1px]"
       >
-        At Bioglow we are <i>passionate</i> about:
+        At Bioglow
       </h3>
+      <h4
+        class="font-helveticaDisplay uppercase text-center font-light tracking-[1px] text-[12px] md:text-base"
+      >
+        ( we are passionate about )
+      </h4>
       <div
-        class="flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center mt-6 md:mt-14"
+        class="grid grid-cols-3 md:flex md:flex-row gap-4 md:gap-0 justify-between items-center mt-10 md:mt-14"
       >
         <div v-for="item in content" :key="item.index">
           <div class="flex flex-col gap-2 md:gap-4 items-center">
             <img :src="item.icon" class="w-[30px] md:w-[60px]" />
-            <!-- <Icon :name="item.icon" style="color: black" class="text-[4em]" /> -->
             <span
               class="font-helveticaDisplay uppercase text-[10px] md:text-[14px] tracking-[1px]"
               >{{ item.text }}</span

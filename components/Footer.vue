@@ -2,7 +2,7 @@
 import logo from "~/assets/images/logo-with-border.png";
 </script>
 <template>
-  <div class="relative py-10 md:py-40 bg-[#ECE9E1]">
+  <div class="relative py-10 md:py-20 bg-[#ECE9E1]">
     <h4
       class="mt-10 md:mt-0 text-center font-helveticaDisplay text-base md:text-xl uppercase font-light"
     >
@@ -23,7 +23,7 @@ import logo from "~/assets/images/logo-with-border.png";
           <a
             href="https://instagram.com"
             target="_blank"
-            class="uppercase text-[10px] font-light font-helveticaDisplay border-b border-black"
+            class="uppercase text-[10px] md:text-base font-light font-helveticaDisplay border-b border-black"
             >follow along</a
           >
         </div>
@@ -34,7 +34,7 @@ import logo from "~/assets/images/logo-with-border.png";
           >
           <a
             href="tel:+381692111524"
-            class="uppercase text-[10px] font-light font-helveticaDisplay border-b border-black"
+            class="uppercase text-[10px] md:text-base font-light font-helveticaDisplay border-b border-black"
             >call us</a
           >
         </div>
@@ -45,7 +45,7 @@ import logo from "~/assets/images/logo-with-border.png";
           >
           <a
             href="mailto:info.bioglow@gmail.com"
-            class="uppercase text-[10px] font-light font-helveticaDisplay border-b border-black"
+            class="uppercase text-[10px] md:text-base font-light font-helveticaDisplay border-b border-black"
             >get in touch</a
           >
         </div>

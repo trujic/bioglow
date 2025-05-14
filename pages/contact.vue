@@ -30,7 +30,8 @@ watch(
   <div>
     <Hero
       :bgImage="heroImg"
-      title="Get in touch"
+      title="Get in"
+      titleMark="touch"
       height="60vh"
       bgPosition="50% 70%"
     />

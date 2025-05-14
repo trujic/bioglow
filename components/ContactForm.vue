@@ -31,7 +31,7 @@ const schema = yup.object({
 
 <template>
   <div
-    class="py-10 md:py-40 bg-cover"
+    class="py-20 md:py-40 bg-cover"
     :style="`background-image: url(${contactFormBg})`"
   >
     <div class="container">
@@ -53,7 +53,7 @@ const schema = yup.object({
         <img
           :src="envelope"
           alt="envelope"
-          class="absolute bottom-[-140px] md:bottom-[-360px] left-1/2 transform -translate-x-1/2 max-w-[850px] w-full z-0"
+          class="absolute bottom-[-120px] md:bottom-[-250px] left-1/2 transform -translate-x-1/2 max-w-[850px] w-full z-0"
         />
         <Form
           :validation-schema="schema"
