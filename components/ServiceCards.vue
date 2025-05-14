@@ -1,24 +1,35 @@
 <script setup>
 import backImage from "~/assets/images/back.jpg";
+import screeningImg from "~/assets/images/screening.jpg";
+import facialsImg from "~/assets/images/facials.jpg";
+import massageImg from "~/assets/images/massage.jpg";
+import painImg from "~/assets/images/pain.jpg";
 const cardItems = [
   {
     id: 0,
-    img: backImage,
-    title: "body treatments",
-    text: "Experience our rejuvanating body treatments, tailored to detoxify, nourish, and restore balance for total body wellness",
-    button: "see treatments",
-  },
-  {
-    id: 1,
-    img: backImage,
+    img: facialsImg,
     title: "Facials",
     text: "Experience our rejuvanating body treatments, tailored to detoxify, nourish, and restore balance for total body wellness",
     button: "see treatments",
   },
   {
+    id: 1,
+    img: screeningImg,
+    title: "SKINCARE SCREENING",
+    text: "Experience our rejuvanating body treatments, tailored to detoxify, nourish, and restore balance for total body wellness",
+    button: "see treatments",
+  },
+  {
     id: 2,
-    img: backImage,
-    title: "Massage",
+    img: massageImg,
+    title: "BODY TREATMENTS & MASSAGES",
+    text: "Experience our rejuvanating body treatments, tailored to detoxify, nourish, and restore balance for total body wellness",
+    button: "see treatments",
+  },
+  {
+    id: 3,
+    img: painImg,
+    title: "PAIN MANAGEMENT",
     text: "Experience our rejuvanating body treatments, tailored to detoxify, nourish, and restore balance for total body wellness",
     button: "see treatments",
   },

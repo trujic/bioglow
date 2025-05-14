@@ -21,7 +21,7 @@ const handleButtonClick = () => {
 
 <template>
   <div
-    class="pt-10 pb-20 md:pt-40 md:pb-40 bg-cover bg-center border-b border-black"
+    class="pt-20 pb-20 md:pt-40 md:pb-40 bg-cover bg-center border-b border-black"
     :style="{
       backgroundImage: `url(${footerBg})`,
       backgroundColor: 'rgba(236, 233, 225, 0.7)',
@@ -37,7 +37,8 @@ const handleButtonClick = () => {
       </h2>
       <div class="flex gap-20 md:gap-32">
         <div class="flex flex-col">
-          <span class="uppercase font-bold mb-4 md:mb-8 text-xs md:text-base"
+          <span
+            class="uppercase font-bold mb-4 md:mb-8 text-[10px] md:text-base"
             >visit us</span
           >
           <span class="text-[12px] md:text-base"
@@ -45,7 +46,8 @@ const handleButtonClick = () => {
           >
         </div>
         <div class="flex flex-col">
-          <span class="uppercase font-bold mb-4 md:mb-8 text-xs md:text-base"
+          <span
+            class="uppercase font-bold mb-4 md:mb-8 text-[10px] md:text-base"
             >get in touch</span
           >
           <span class="text-[12px] md:text-base">+381692111524</span>
@@ -54,9 +56,9 @@ const handleButtonClick = () => {
       </div>
       <NuxtLink @click.prevent="handleButtonClick" to="/contact">
         <button
-          class="max-w-full w-full md:max-w-fit p-2 px-4 border border-black text-sm md:text-base"
+          class="max-w-full w-full md:max-w-fit p-2 px-4 border border-black text-xs md:text-base uppercase"
         >
-          book appointment ->
+          book an appointment
         </button>
       </NuxtLink>
     </div>
