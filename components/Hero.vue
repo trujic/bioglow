@@ -1,16 +1,16 @@
 <script setup>
-import heroImg from "~/assets/images/hero.jpg";
+/* import heroImg from "~/assets/images/hero.jpg"; */
 
 defineProps({
   bgImage: {
     type: String,
     required: true,
-    default: heroImg,
+    default: "",
   },
   title: {
     type: String,
     required: true,
-    default: "Let us help you",
+    default: "",
   },
   titleMark: {
     type: String,
@@ -22,16 +22,6 @@ defineProps({
     required: false,
     default: "",
   },
-  cta: {
-    type: String,
-    required: false,
-    default: "",
-  },
-  height: {
-    type: String,
-    required: false,
-    default: "93vh",
-  },
   bgPosition: {
     type: String,
     required: false,
@@ -41,9 +31,12 @@ defineProps({
 </script>
 <template>
   <div
-    class="w-full bg-no-repeat bg-cover flex items-center justify-center bg-[#838776] brightness-80 contrast-[.80] border-b border-black"
-    :style="`background-image: url(${bgImage}); height: ${height}; background-position: ${bgPosition};`"
+    class="w-full bg-no-repeat bg-cover flex items-center justify-center bg-[#838776] brightness-80 contrast-[.80] border-b border-black h-[400px] md:h-[600px]"
+    :style="`background-image: url(${bgImage}); background-position: ${bgPosition};`"
   >
+    <div
+      class="absolute inset-0 bg-[#ECE9E1] opacity-25 pointer-events-none"
+    ></div>
     <div class="flex flex-col text-center">
       <h1
         v-if="title"
@@ -58,7 +51,7 @@ defineProps({
       </h1>
       <p
         v-if="subtext"
-        class="text-white font-light text-xs md:text-xl uppercase tracking-[2px]"
+        class="text-black font-light text-xs md:text-xl uppercase tracking-[2px]"
       >
         {{ subtext }}
       </p>

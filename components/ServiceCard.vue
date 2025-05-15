@@ -9,14 +9,27 @@ defineProps({
 </script>
 <template>
   <div class="p-8 text-center flex flex-col gap-6">
-    <img :src="card.img" class="max-h-[300px] object-cover" />
+    <div class="relative max-h-[300px]">
+      <img
+        :src="card.img"
+        class="w-full h-full object-cover max-h-[300px] contrast-[.75]"
+      />
+      <!-- <div
+        class="absolute inset-0 bg-[#ECE9E1] opacity-35 pointer-events-none"
+      ></div> -->
+    </div>
     <h3
-      class="font-serifDisplay text-[24px] md:text-[32px] font-light uppercase tracking-[-2px]"
+      class="font-helveticaDisplay text-[18px] leading-[32px] font-light uppercase tracking-[1px]"
     >
       {{ card.title }}
     </h3>
-    <p class="font-helveticaDisplay text-xs md:text-base">{{ card.text }}</p>
+    <p
+      class="font-helveticaDisplay text-[14px] font-extralight md:font-extralight"
+    >
+      {{ card.text }}
+    </p>
     <button
+      v-if="card.button"
       class="border border-black rounded-[25px] py-2 px-6 max-w-fit m-auto uppercase text-[12px] font-helveticaDisplay"
     >
       {{ card.button }}

@@ -1,5 +1,5 @@
 <script setup>
-import primaryLogo from "~/assets/images/primary-logo.png";
+import primaryLogo from "~/assets/images/Bioglow-logo.png";
 import envelope from "~/assets/images/envelope.png";
 </script>
 <template>
@@ -26,7 +26,7 @@ import envelope from "~/assets/images/envelope.png";
         class="max-w-[300px] md:max-w-[450px] w-full m-auto"
       />
       <h5
-        class="uppercase font-helveticaDisplay text-white w-fit m-auto mt-16 mb-4 text-[12px] text-center md: text-auto md:text-[18px] font-light tracking-[3px] px-[40px] md:px-[0px]"
+        class="uppercase font-helveticaDisplay text-white w-fit m-auto mb-20 text-[12px] text-center md: text-auto md:text-[18px] font-light tracking-[3px] px-[40px] md:px-[0px]"
       >
         ( welcome to your natural radiance oasis )
       </h5>

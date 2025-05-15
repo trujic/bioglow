@@ -1,31 +1,27 @@
 <script setup>
-import flower from "~/assets/images/flower-on-table.jpg";
 const popularTreatments = [
   {
-    title: "DR Schrammek personalized DERMAFACIAL",
-    text: "Includes: welcome shoulder and neck massage, cleansing, toning, exfoliation, mask, scalp massage/hand massage for 60 mins",
-    price: 6000,
+    title: "DR Schrammek personalized DERMAFACIAL - ",
+    subtitle: "60 min ( 6000RSD )",
+    text: "Includes: welcome shoulder and neck massage, cleansing, toning, exfoliation, mask, scalp massage/hand massage for 60 min",
   },
   {
-    title: "DR Schrammek cleanse & go",
-    text: "Includes: cleansing, toning, exfoliation/extractions/ black clearing mask/ hand exfoliation",
-    price: 4000,
+    title: "DR Schrammek personalized DERMAFACIAL - ",
+    subtitle: "90 min ( 9000RSD )",
+    text: "Includes: welcome shoulder and neck massage, cleansing, toning, exfoliation – hand exfoliation, mask – cooling massage, scalp massage, facial lifting massage for 90 min",
   },
   {
-    title: "DR Schrammek personalized DERMAFACIAL",
-    text: "Includes welcome shoulder and neck massage, cleansing, toning, exfoliation – hand exfoliation, mask – cooling massage, scalp massage; facial lifting massage for 90 mins",
-    price: 9000,
+    title: "DR Schrammek cleanse & go - ",
+    subtitle: "40 min ( 4000 RSD )",
+    text: "Includes: cleansing, toning, exfoliation, extractions, black clearing mask, hand exfoliation",
   },
   {
-    title: "Swedish massage",
-    text: "50/80 min  2500/4000 rsd",
-    price: "",
+    title: "SKINCARE SCREENING ( coming soon )",
   },
   {
-    title: "Drift Away Scalp & Neck",
-    text: "30min 1500 rsd",
-    price: "",
+    title: "BODY TREATMENTS & MASSAGES ( coming soon )",
   },
+  { title: "PAIN MANAGEMENT ( coming soon )" },
 ];
 
 const openIndex = ref(null);
@@ -35,51 +31,54 @@ const toggleAccordion = (index) => {
 };
 </script>
 <template>
-  <div
-    class="border-t border-black flex flex-col md:flex-row w-full bg-[#ECE9E1]"
-  >
-    <img
-      :src="flower"
-      class="basis-1/2 flex-shrink-0 object-cover max-h-[750px]"
-    />
-    <div
-      class="py-10 md:py-20 px-4 md:px-32 basis-1/2 flex flex-col gap-10 flex-shrink-0"
-    >
-      <h3
-        class="font-serifDisplay text-[24px] md:text-[46px] font-light max-w-[500px] uppercase tracking-[-1px] md:tracking-[-2px] text-center md:text-start"
-      >
-        Our bestsellers
-      </h3>
-      <div class="mb-6 max-w-[600px]">
-        <div class="w-full max-w-xl space-y-4">
+  <div class="border-t border-black bg-[#ECE9E1] w-full">
+    <div class="container flex justify-center px-4 md:px-0">
+      <div class="py-14 md:py-28 max-w-2xl w-full text-center">
+        <!-- Heading -->
+        <h3
+          class="font-serifDisplay text-[24px] md:text-[42px] font-extralight uppercase tracking-[-1px] leading-[34px]"
+        >
+          Our Treatments
+        </h3>
+
+        <!-- Accordion -->
+        <div class="w-full space-y-4 my-10 px-4 md:px-0 md:my-20">
           <div
             v-for="(item, index) in popularTreatments"
             :key="index"
             class="border-b border-black text-sm md:text-base"
           >
             <button
-              class="w-full text-left p-4 font-medium flex justify-between items-center"
+              class="w-full text-left p-4 font-light font-helveticaDisplay uppercase flex justify-between items-start md:items-center"
               @click="toggleAccordion(index)"
             >
-              <span>{{ item.title }}</span>
-              <span>{{ openIndex === index ? "−" : "+" }}</span>
+              <div class="flex flex-col md:flex-row">
+                <span>{{ item.title }}</span>
+                <span v-if="item.subtitle"> {{ item.subtitle }}</span>
+              </div>
+              <span v-if="item.text">{{
+                openIndex === index ? "−" : "+"
+              }}</span>
             </button>
             <div
+              v-if="item.text"
               v-show="openIndex === index"
-              class="p-4 border-t border-gray-200 text-xs md:text-sm text-gray-700"
+              class="p-4 pt-0 text-xs md:text-sm text-start text-black font-light"
             >
               {{ item.text }}
             </div>
           </div>
         </div>
+
+        <!-- Button -->
+        <NuxtLink to="/contact">
+          <button
+            class="border border-black py-2 px-6 uppercase text-[14px] font-helveticaDisplay"
+          >
+            book an appointment
+          </button>
+        </NuxtLink>
       </div>
-      <NuxtLink to="/contact">
-        <button
-          class="border border-black rounded-[25px] py-2 px-6 max-w-fit uppercase text-[12px] font-helveticaDisplay"
-        >
-          book treatment
-        </button>
-      </NuxtLink>
     </div>
   </div>
 </template>

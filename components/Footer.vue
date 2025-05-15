@@ -29,7 +29,7 @@ import logo from "~/assets/images/logo-with-border.png";
         </div>
         <div class="flex flex-col items-center gap-5">
           <span
-            class="font-serifDisplay font-extralight text-2xl md:text-6xl tracking-[-3px]"
+            class="font-serifDisplay font-extralight text-3xl md:text-6xl tracking-[-3px]"
             >Phone</span
           >
           <a
@@ -40,7 +40,7 @@ import logo from "~/assets/images/logo-with-border.png";
         </div>
         <div class="flex flex-col items-center gap-5">
           <span
-            class="font-serifDisplay font-extralight text-2xl md:text-6xl tracking-[-3px]"
+            class="font-serifDisplay font-extralight text-3xl md:text-6xl tracking-[-3px]"
             >Email</span
           >
           <a

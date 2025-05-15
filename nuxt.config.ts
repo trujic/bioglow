@@ -9,7 +9,8 @@ export default defineNuxtConfig({
       {
         name: 'Noto Serif Display',
         provider: 'google', // or 'none' if self-hosted
-        weights: [100, 300, 400, 600]
+        weights: [100, 200, 300, 400, 500, 600],
+        subsets: ['latin']
       },
     ]
   },

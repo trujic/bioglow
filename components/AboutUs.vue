@@ -40,12 +40,12 @@ import flower from "~/assets/images/flower-2.png";
           <img
             :src="backImg"
             alt="human body back"
-            class="hidden md:block max-w-full h-[250px] md:h-fit m-auto md:max-w-[500px] contrast-[.80]"
+            class="hidden md:block max-w-full h-[250px] md:h-fit m-auto md:max-w-[500px] contrast-[.70]"
           />
           <img
             :src="flower"
             alt="human body back"
-            class="md:hidden max-w-full h-[250px] md:h-fit m-auto md:max-w-[500px] contrast-[.80]"
+            class="md:hidden max-w-full h-[250px] md:h-fit m-auto md:max-w-[500px] contrast-[.70]"
           />
           <h3
             class="welcome font-signature text-[40px] md:text-[70px] font-regular absolute bottom-[25px] md:bottom-[50px] right-[0] md:right-[-120px] leading-[30px] md:leading-[70px]"

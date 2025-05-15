@@ -1,11 +1,12 @@
+<script setup>
+import heroImg from "~/assets/images/hero-small.jpg";
+</script>
 <template>
   <div>
     <Hero
       :bgImage="heroImg"
-      title="Service Menu"
       subtext="( redefining beauty with an elevated glow )"
-      height="60vh"
-      bgPosition="50% 70%"
+      bgPosition="50% 55%"
     />
     <ServiceCards />
     <SingleDetailedService />

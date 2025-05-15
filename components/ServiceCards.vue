@@ -1,60 +1,64 @@
 <script setup>
 import backImage from "~/assets/images/back.jpg";
-import screeningImg from "~/assets/images/screening.jpg";
+import screeningImg from "~/assets/images/hero.jpg";
 import facialsImg from "~/assets/images/facials.jpg";
-import massageImg from "~/assets/images/massage.jpg";
+import massageImg from "~/assets/images/body-treatments.jpg";
 import painImg from "~/assets/images/pain.jpg";
 const cardItems = [
   {
     id: 0,
     img: facialsImg,
     title: "Facials",
-    text: "Experience our rejuvanating body treatments, tailored to detoxify, nourish, and restore balance for total body wellness",
-    button: "see treatments",
+    text: `Experience transformative facials at BioGlow. Our expert care and premium products unveil your skin’s natural glow. Shine with confidence`,
   },
   {
     id: 1,
     img: screeningImg,
     title: "SKINCARE SCREENING",
-    text: "Experience our rejuvanating body treatments, tailored to detoxify, nourish, and restore balance for total body wellness",
-    button: "see treatments",
+    text: `Prioritize your skin’s health with our comprehensive skin screening. Early detection means confident, radiant skin.`,
   },
   {
     id: 2,
     img: massageImg,
-    title: "BODY TREATMENTS & MASSAGES",
-    text: "Experience our rejuvanating body treatments, tailored to detoxify, nourish, and restore balance for total body wellness",
-    button: "see treatments",
+    title: "TREATMENTS & MASSAGES",
+    text: `Revitalize your body with our soothing massages and transformative body treatments. Relax, rejuvenate, and rediscover your best self.`,
   },
   {
     id: 3,
     img: painImg,
     title: "PAIN MANAGEMENT",
-    text: "Experience our rejuvanating body treatments, tailored to detoxify, nourish, and restore balance for total body wellness",
-    button: "see treatments",
+    text: `Relieve discomfort and restore mobility with our targeted pain management treatments. Experience expert care designed to soothe, heal, and revitalize.`,
   },
 ];
 </script>
 <template>
-  <div class="bg-[#ECE9E1] py-10 md:py-20">
+  <div class="bg-[#ECE9E1] py-16 md:py-24">
     <div class="container text-center">
-      <h4 class="font-helveticaDisplay mb-6 text-sm md:text-base">
-        Welcome to bioglow
-      </h4>
       <h2
-        class="text-center font-serifDisplay text-[24px] md:text-[46px] font-extralight tracking-[-1px] md:tracking-[-3px] mb-6"
+        class="text-center font-sloop text-[40px] md:text-[45px] font-light tracking-[-1px] md:tracking-[1px]"
       >
         We've got your glow
       </h2>
-      <p class="mb-24 max-w-[600px] m-auto text-xs md:text-base">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam
-        asperiores cum numquam, consequuntur iure at odit cumque rem, tempora
-        sint aut veniam. Nostrum dolorem nobis corporis eveniet impedit
-        repudiandae!
+      <h3
+        class="text-center font-helveticaDisplay text-[15px] font-extralight tracking-[-1px] md:tracking-[2px] mb-6 uppercase"
+      >
+        ( explore our services )
+      </h3>
+      <p
+        class="mb-12 md:mb-24 max-w-[600px] m-auto text-xs md:font-extralight font-helveticaDisplay mt-10 md:text-[16px] leading-[25px]"
+      >
+        Elevate your health and beauty at Bioglow. Our services, from relaxing
+        massages to luxurious facials, are designed to offer you moments of
+        tranquility and a radiant glow. Experience exceptional care and restore
+        your energy.
       </p>
     </div>
     <div class="container flex flex-col md:flex-row gap-6">
-      <div v-for="card in cardItems" :key="card.id" class="border border-black">
+      <div
+        v-for="card in cardItems"
+        :key="card.id"
+        class="border border-black flex-1 min-w-0"
+      >
         <ServiceCard :card="card" />
       </div>
     </div>

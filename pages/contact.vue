@@ -1,5 +1,5 @@
 <script setup>
-import heroImg from "~/assets/images/contact-hero.png";
+import heroImg from "~/assets/images/flower-hero.png";
 import { onMounted, nextTick, watch } from "vue";
 import { useRoute } from "vue-router";
 
@@ -32,8 +32,7 @@ watch(
       :bgImage="heroImg"
       title="Get in"
       titleMark="touch"
-      height="60vh"
-      bgPosition="50% 70%"
+      bgPosition="50% 75%"
     />
     <ContactForm />
     <WhereWeAre />

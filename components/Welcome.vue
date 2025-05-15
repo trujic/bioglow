@@ -24,7 +24,7 @@ import flowers from "~/assets/images/about-us-image.png";
         class="flex-1 pt-0 md:pt-12 max-w-[300px] md:max-w-[570px] text-center md:text-left m-auto"
       >
         <h3
-          class="text-[#2A2B30] text-[26px] md:text-[32px] font-light font-serifDisplay leading-[28px] md:leading-[40px] tracking-[-2px] uppercase"
+          class="text-[#2A2B30] text-[22px] md:text-[32px] font-light font-serifDisplay leading-[28px] md:leading-[40px] tracking-[1px] uppercase"
         >
           About Bioglow
         </h3>

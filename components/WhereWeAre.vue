@@ -1,6 +1,5 @@
 <script setup>
 import { useRoute } from "vue-router"; // Import useRoute to detect the current route
-import footerBg from "~/assets/images/footer-bg.png";
 
 // Function to handle button click and scroll logic
 const handleButtonClick = () => {
@@ -10,6 +9,7 @@ const handleButtonClick = () => {
   const currentRoute = router.currentRoute._value.path;
 
   // If we're on the '/contact' page, scroll 500px up
+  console.log(currentRoute);
   if (currentRoute === "/contact") {
     window.scrollBy({
       top: -1200, // Scroll 500px upwards
@@ -50,7 +50,7 @@ const handleButtonClick = () => {
             class="uppercase font-bold mb-4 md:mb-8 text-[10px] md:text-base"
             >visit us</span
           >
-          <span class="text-[12px] md:text-base"
+          <span class="text-[12px] md:text-base font-light"
             >Stojana Novakovića 17a, Niš</span
           >
         </div>
@@ -59,8 +59,10 @@ const handleButtonClick = () => {
             class="uppercase font-bold mb-4 md:mb-8 text-[10px] md:text-base"
             >get in touch</span
           >
-          <span class="text-[12px] md:text-base">+381692111524</span>
-          <span class="text-[12px] md:text-base">info@bioglow.com</span>
+          <span class="text-[12px] md:text-base font-light">+381692111524</span>
+          <span class="text-[12px] md:text-base font-light"
+            >info@bioglow.com</span
+          >
         </div>
       </div>
       <NuxtLink @click.prevent="handleButtonClick" to="/contact">

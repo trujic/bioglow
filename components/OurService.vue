@@ -9,14 +9,14 @@
       class="py-10 md:py-40 px-4 md:px-0 flex flex-col font-serifDisplay text-[13px] md:text-[40px] font-extralight text-center md:text-left m-auto"
     >
       <span class="border-b border-black"
-        >01 / &nbsp professional
+        ><span class="md:text-[20px]">01 </span> &nbsp professional
         <NuxtLink to="/services" class="hover:text-[#ECE9E1]">
           <span class="font-sloop text-[32px] md:text-[70px] px-4">facial</span>
         </NuxtLink>
         treatments</span
       >
       <span class="border-b border-black"
-        >02 / &nbsp skincare
+        ><span class="md:text-[20px]">02 </span> &nbsp skincare
         <NuxtLink to="/services" class="hover:text-[#ECE9E1]">
           <span class="font-sloop text-[32px] md:text-[70px] px-4"
             >screening</span
@@ -27,7 +27,7 @@
         ></span
       >
       <span class="border-b border-black"
-        >03 /
+        ><span class="md:text-[20px]">03 </span>
         <NuxtLink to="/services" class="hover:text-[#ECE9E1]"
           ><span class="font-sloop text-[32px] md:text-[70px] px-4"
             >body</span
@@ -39,7 +39,7 @@
         ></span
       >
       <span
-        >04 /
+        ><span class="md:text-[20px]">04 </span>
         <NuxtLink to="/services" class="hover:text-[#ECE9E1]"
           ><span class="font-sloop text-[32px] md:text-[70px] px-4"
             >pain</span
