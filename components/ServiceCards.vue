@@ -4,6 +4,7 @@ import screeningImg from "~/assets/images/hero.jpg";
 import facialsImg from "~/assets/images/facials.jpg";
 import massageImg from "~/assets/images/body-treatments.jpg";
 import painImg from "~/assets/images/pain.jpg";
+import bow from "~/assets/images/bow.png";
 const cardItems = [
   {
     id: 0,
@@ -32,7 +33,7 @@ const cardItems = [
 ];
 </script>
 <template>
-  <div class="bg-[#ECE9E1] py-16 md:py-24">
+  <div class="relative bg-[#ECE9E1] pt-16 pb-20 md:py-24">
     <div class="container text-center">
       <h2
         class="text-center font-sloop text-[40px] md:text-[45px] font-light tracking-[-1px] md:tracking-[1px]"
@@ -62,5 +63,10 @@ const cardItems = [
         <ServiceCard :card="card" />
       </div>
     </div>
+    <img
+      :src="bow"
+      alt="infinity"
+      class="w-full max-w-[180px] md:max-w-[450px] absolute bottom-[-80px] md:bottom-[-180px] left-1/2 z-10 transform -translate-x-1/2"
+    />
   </div>
 </template>

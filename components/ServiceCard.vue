@@ -14,9 +14,6 @@ defineProps({
         :src="card.img"
         class="w-full h-full object-cover max-h-[300px] contrast-[.75]"
       />
-      <!-- <div
-        class="absolute inset-0 bg-[#ECE9E1] opacity-35 pointer-events-none"
-      ></div> -->
     </div>
     <h3
       class="font-helveticaDisplay text-[18px] leading-[32px] font-light uppercase tracking-[1px]"

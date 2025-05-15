@@ -6,15 +6,6 @@ import flowers from "~/assets/images/about-us-image.png";
     <div
       class="container px-10 md:px-28 flex flex-col md:flex-row md:justify-between gap-10 md:gap-40 relative"
     >
-      <!-- <h3
-        class="welcome font-signature text-[90px] font-regular absolute top-[-60px] left-0"
-        style="
-          text-shadow: -0.5px -0.5px 0 #2a2b30, 0.5px -0.5px 0 #2a2b30,
-            -0.5px 0.5px 0 #2a2b30, 0.5px 0.5px 0 #2a2b30;
-        "
-      >
-        Welcome!
-      </h3> -->
       <img
         :src="flowers"
         alt="flowers on the table"

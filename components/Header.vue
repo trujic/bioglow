@@ -69,7 +69,7 @@ const isActive = ref(false);
           class="absolute w-full h-[100vh] text-[#2A2B30] uppercase text-[12px] font-regular font-helveticaDisplay tracking-[2px] justify-between z-10"
         >
           <video
-            src="/videos/about-us-video.mp4"
+            src="/videos/mobile-video.mp4"
             autoplay
             muted
             loop

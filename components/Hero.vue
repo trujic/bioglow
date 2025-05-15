@@ -1,6 +1,4 @@
 <script setup>
-/* import heroImg from "~/assets/images/hero.jpg"; */
-
 defineProps({
   bgImage: {
     type: String,
@@ -9,7 +7,7 @@ defineProps({
   },
   title: {
     type: String,
-    required: true,
+    required: false,
     default: "",
   },
   titleMark: {
@@ -55,14 +53,6 @@ defineProps({
       >
         {{ subtext }}
       </p>
-      <NuxtLink to="/contact">
-        <button
-          v-if="cta"
-          class="border-b p-2 max-w-[280px] uppercase text-white font-light font-helveticaDisplay text-[20px] m-auto mt-32"
-        >
-          {{ cta }}
-        </button>
-      </NuxtLink>
     </div>
   </div>
 </template>

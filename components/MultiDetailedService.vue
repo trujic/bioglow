@@ -34,7 +34,6 @@ const toggleAccordion = (index) => {
   <div class="border-t border-black bg-[#ECE9E1] w-full">
     <div class="container flex justify-center px-4 md:px-0">
       <div class="py-14 md:py-28 max-w-2xl w-full text-center">
-        <!-- Heading -->
         <h3
           class="font-serifDisplay text-[24px] md:text-[42px] font-extralight uppercase tracking-[-1px] leading-[34px]"
         >
@@ -70,7 +69,6 @@ const toggleAccordion = (index) => {
           </div>
         </div>
 
-        <!-- Button -->
         <NuxtLink to="/contact">
           <button
             class="border border-black py-2 px-6 uppercase text-[14px] font-helveticaDisplay"
