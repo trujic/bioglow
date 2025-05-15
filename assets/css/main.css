@@ -25,3 +25,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}

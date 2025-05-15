@@ -31,7 +31,7 @@ defineProps({
 </script>
 <template>
   <div
-    class="w-full bg-no-repeat bg-cover flex items-center justify-center bg-[#838776] brightness-80 contrast-[.80] border-b border-black h-[400px] md:h-[600px]"
+    class="relative w-full bg-no-repeat bg-cover flex items-center justify-center bg-[#838776] brightness-80 contrast-[.80] border-b border-black h-[400px] md:h-[600px]"
     :style="`background-image: url(${bgImage}); background-position: ${bgPosition};`"
   >
     <div
@@ -51,7 +51,7 @@ defineProps({
       </h1>
       <p
         v-if="subtext"
-        class="text-black font-light text-xs md:text-xl uppercase tracking-[2px]"
+        class="text-black font-light text-[10px] md:text-xl uppercase tracking-[2px]"
       >
         {{ subtext }}
       </p>

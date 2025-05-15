@@ -35,20 +35,6 @@ const schema = yup.object({
     :style="`background-image: url(${contactFormBg})`"
   >
     <div class="container">
-      <!-- <h2
-        class="text-[24px] md:text-[64px] text-[#2A2B30] text-center font-light pb-[24px] font-serifDisplay tracking-[-1px] md:tracking-[-4px] uppercase"
-      >
-        Book an appointment &nbsp; / &nbsp;
-        <span
-          class="font-signature tracking-[0px] text-[40px] md:text-[60px] lowercase font-regular"
-          style="
-            text-shadow: -0.5px -0.5px 0 #2a2b30, 0.5px -0.5px 0 #2a2b30,
-              -0.5px 0.5px 0 #2a2b30, 0.5px 0.5px 0 #2a2b30;
-          "
-        >
-          leave us a note
-        </span>
-      </h2> -->
       <div class="relative px-4 md:px-0">
         <img
           :src="envelope"
@@ -65,15 +51,6 @@ const schema = yup.object({
             class="text-[34px] md:text-[46px] text-[#2A2B30] text-center font-light pb-[24px] font-sloop tracking-[-1px] md:tracking-[2px]"
           >
             Book an appointment
-            <!-- <span
-              class="font-signature tracking-[0px] text-[40px] md:text-[50px] lowercase font-regular"
-              style="
-                text-shadow: -0.5px -0.5px 0 #2a2b30, 0.5px -0.5px 0 #2a2b30,
-                  -0.5px 0.5px 0 #2a2b30, 0.5px 0.5px 0 #2a2b30;
-              "
-            >
-              leave us a note
-            </span> -->
           </h4>
           <div class="flex flex-col">
             <label
@@ -135,7 +112,7 @@ const schema = yup.object({
 
           <div class="flex flex-col">
             <label
-              class="uppercase font-light font-helveticaDisplay text-xs md:text-base tracking-[1px]"
+              class="uppercase font-light font-helveticaDisplay text-xs md:text-base tracking-[1px] w-full"
             >
               Select a date
             </label>
