@@ -1,17 +1,17 @@
 <script setup>
 const popularTreatments = [
   {
-    title: "DR Schrammek personalized DERMAFACIAL - ",
+    title: "DR Schrammek personalized DERMAFACIAL",
     subtitle: "60 min ( 6000RSD )",
     text: "Includes: welcome shoulder and neck massage, cleansing, toning, exfoliation, mask, scalp massage/hand massage for 60 min",
   },
   {
-    title: "DR Schrammek personalized DERMAFACIAL - ",
+    title: "DR Schrammek personalized DERMAFACIAL",
     subtitle: "90 min ( 9000RSD )",
     text: "Includes: welcome shoulder and neck massage, cleansing, toning, exfoliation – hand exfoliation, mask – cooling massage, scalp massage, facial lifting massage for 90 min",
   },
   {
-    title: "DR Schrammek cleanse & go - ",
+    title: "DR Schrammek cleanse & go",
     subtitle: "40 min ( 4000 RSD )",
     text: "Includes: cleansing, toning, exfoliation, extractions, black clearing mask, hand exfoliation",
   },
@@ -52,7 +52,7 @@ const toggleAccordion = (index) => {
               class="w-full text-left p-4 font-light font-helveticaDisplay uppercase flex justify-between items-start md:items-center"
               @click="toggleAccordion(index)"
             >
-              <div class="flex flex-col md:flex-row">
+              <div class="flex flex-col md:flex-row text-[12px] md:text-base">
                 <span>{{ item.title }}</span>
                 <span v-if="item.subtitle"> {{ item.subtitle }}</span>
               </div>
