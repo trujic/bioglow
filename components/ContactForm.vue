@@ -60,7 +60,7 @@ const schema = yup.object({
             </label>
             <Field
               name="name"
-              class="bg-[#ECE9E1] border-b border-black outline-none text-xs md:text-base"
+              class="bg-[#ECE9E1] border-b border-black outline-none text-base md:text-base"
             />
             <ErrorMessage name="name" class="text-red-600 text-sm" />
           </div>
@@ -73,7 +73,7 @@ const schema = yup.object({
             </label>
             <Field
               name="phone"
-              class="bg-[#ECE9E1] border-b border-black outline-none text-xs md:text-base"
+              class="bg-[#ECE9E1] border-b border-black outline-none text-base md:text-base"
             />
             <ErrorMessage name="phone" class="text-red-600 text-sm" />
           </div>
@@ -86,7 +86,7 @@ const schema = yup.object({
             </label>
             <Field
               name="email"
-              class="bg-[#ECE9E1] border-b border-black outline-none text-xs md:text-base"
+              class="bg-[#ECE9E1] border-b border-black outline-none text-base md:text-base"
             />
             <ErrorMessage name="email" class="text-red-600 text-sm" />
           </div>
@@ -100,7 +100,7 @@ const schema = yup.object({
             <Field
               as="select"
               name="treatment"
-              class="bg-[#ECE9E1] border-b border-black outline-none text-xs md:text-base"
+              class="bg-[#ECE9E1] border-b border-black outline-none text-base md:text-base"
             >
               <option value="" disabled>Select a treatment</option>
               <option v-for="t in treatments" :key="t" :value="t">
@@ -120,7 +120,7 @@ const schema = yup.object({
               name="date"
               type="date"
               :min="new Date(Date.now() + 86400000).toISOString().split('T')[0]"
-              class="bg-[#ECE9E1] border-b border-black outline-none text-xs md:text-base"
+              class="bg-[#ECE9E1] border-b border-black outline-none text-base md:text-base"
             />
             <ErrorMessage name="date" class="text-red-600 text-sm" />
           </div>
@@ -134,7 +134,7 @@ const schema = yup.object({
             <Field
               as="textarea"
               name="message"
-              class="bg-[#ECE9E1] border-b border-black outline-none text-xs md:text-base"
+              class="bg-[#ECE9E1] border-b border-black outline-none text-base md:text-base"
             />
             <ErrorMessage name="message" class="text-red-600 text-sm" />
           </div>
