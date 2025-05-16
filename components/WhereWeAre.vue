@@ -1,37 +1,38 @@
 <script setup>
-import { useRoute } from "vue-router"; // Import useRoute to detect the current route
+import { useRouter } from "vue-router"; // Import useRouter for route info
 
 // Function to handle button click and scroll logic
 const handleButtonClick = () => {
-  // Get the current route path
   const router = useRouter();
-
   const currentRoute = router.currentRoute._value.path;
 
-  // If we're on the '/contact' page, scroll 500px up
   console.log(currentRoute);
   if (currentRoute === "/contact") {
     window.scrollBy({
-      top: -1200, // Scroll 500px upwards
-      behavior: "smooth", // Enable smooth scrolling
+      top: -1200, // Scroll 1200px upwards
+      behavior: "smooth",
     });
   }
 };
 </script>
 
 <template>
-  <div class="pb-20 md:pb-32 bg-cover bg-center border-b border-black">
+  <!-- Wrapper is relative to position video absolutely -->
+  <div class="relative bg-cover bg-center border-b border-black">
+    <!-- Video fills entire wrapper, matching content height -->
     <video
       src="/videos/horses.mp4"
       autoplay
       muted
       loop
       playsinline
-      class="absolute w-full h-[60vh] md:h-[100vh] object-cover z-[-1]"
+      class="absolute inset-0 w-full h-full object-cover z-[-1]"
       loading="lazy"
     ></video>
+
+    <!-- Content with padding determines container height -->
     <div
-      class="pt-20 md:pt-32 flex flex-col gap-10 md:gap-24 justify-between align-center container"
+      class="pt-20 pb-20 md:pb-32 md:pt-32 flex flex-col gap-10 md:gap-24 justify-between container relative z-10"
     >
       <div>
         <h2

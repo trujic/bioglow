@@ -11,20 +11,20 @@ import flowers from "~/assets/images/about-us-image.png";
         alt="flowers on the table"
         class="w-[280px] md:w-[360px] h-[380px] md:h-[450px] m-auto"
       />
-      <div
-        class="flex-1 pt-0 md:pt-12 max-w-[300px] md:max-w-[570px] text-center md:text-left m-auto"
-      >
+      <div class="flex-1 pt-0 md:pt-12 max-w-[300px] md:max-w-[570px] m-auto">
         <h3
-          class="text-[#2A2B30] text-[22px] md:text-[32px] font-light font-serifDisplay leading-[28px] md:leading-[40px] tracking-[1px] uppercase"
+          class="text-[#2A2B30] text-[22px] md:text-[32px] font-light font-serifDisplay leading-[28px] md:leading-[40px] tracking-[1px] uppercase text-center md:text-left"
         >
           About Bioglow
         </h3>
-        <h4 class="font-sloop text-[24px] md:text-[32px] leading-[20px] mt-4">
+        <h4
+          class="font-sloop text-[24px] md:text-[32px] leading-[20px] mt-4 text-center md:text-left"
+        >
           ( serendipitous encounter that <br class="md:hidden" />changed our
           lives )
         </h4>
         <p
-          class="text-[#2A2B30] mt-10 font-light font-helveticaDisplay text-xs md:text-base max-w-[440px]"
+          class="text-[#2A2B30] mt-10 font-light font-helveticaDisplay text-sm md:text-base max-w-[440px]"
         >
           Bioglow was born from a serendipitous encounter that changed our
           lives. One of us is an international skincare and spa expert with over

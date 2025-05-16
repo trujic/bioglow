@@ -46,7 +46,7 @@ const cardItems = [
         ( explore our services )
       </h3>
       <p
-        class="mb-12 md:mb-24 max-w-[600px] m-auto text-xs font-helveticaDisplay font-extralight mt-10 md:text-[16px] leading-[18px]"
+        class="mb-12 md:mb-24 max-w-[600px] m-auto text-sm font-helveticaDisplay font-extralight mt-10 md:text-[16px] leading-[18px]"
       >
         Elevate your health and beauty at Bioglow. Our services, from relaxing
         massages to luxurious facials, are designed to offer you moments of

@@ -4,6 +4,7 @@ import { Form, Field, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
 import envelope from "~/assets/images/envelope.png";
 
+const bookingForm = ref();
 // List of treatments
 const treatments = [
   "DR Schrammek DERMAFACIAL (60 min)",
@@ -24,9 +25,19 @@ const schema = yup.object({
   treatment: yup.string(),
   date: yup
     .date()
-    .min(new Date(Date.now() + 86400000), "Date must be tomorrow or later"),
+    .min(
+      new Date(new Date().setHours(0, 0, 0, 0) + 86400000),
+      "Date must be tomorrow or later"
+    ),
   message: yup.string(),
 });
+
+function handleSubmit(values) {
+  console.log(values);
+
+  // Clear form
+  bookingForm.value.resetForm();
+}
 </script>
 
 <template>
@@ -42,8 +53,10 @@ const schema = yup.object({
           class="absolute bottom-[-120px] md:bottom-[-250px] left-1/2 transform -translate-x-1/2 max-w-[850px] w-full z-0"
         />
         <Form
+          ref="bookingForm"
           :validation-schema="schema"
-          @submit="(values) => console.log(values)"
+          type="submit"
+          @submit="handleSubmit"
           class="bg-[#ECE9E1] pt-6 md:pt-20 pb-24 px-4 md:px-20 flex flex-col gap-4 max-w-[550px] m-auto relative z-10 border border-black"
           id="booking"
         >

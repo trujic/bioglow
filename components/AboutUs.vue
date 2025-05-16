@@ -19,7 +19,7 @@ import flower from "~/assets/images/flower-2.png";
             ( Behind the brand )
           </h3>
           <div
-            class="max-w-[500px] mt-12 font-helveticaDisplay font-light leading-[18px] text-xs md:text-base"
+            class="max-w-[500px] mt-12 font-helveticaDisplay font-light leading-[18px] text-sm md:text-base"
           >
             <p>
               At Bioglow we are passionate about blending science with
