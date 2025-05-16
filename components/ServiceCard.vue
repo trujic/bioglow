@@ -13,6 +13,7 @@ defineProps({
       <img
         :src="card.img"
         class="w-full h-full object-cover max-h-[300px] contrast-[.75]"
+        loading="lazy"
       />
     </div>
     <h3

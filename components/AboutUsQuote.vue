@@ -10,6 +10,7 @@ import logo from "~/assets/images/bio-glow-logo.png";
       loop
       playsinline
       class="absolute w-full h-[60vh] md:h-[100vh] object-cover z-[-1]"
+      loading="lazy"
     ></video>
     <div class="absolute inset-0 flex items-center justify-center z-10">
       <img :src="logo" alt="white logo" class="w-56" />

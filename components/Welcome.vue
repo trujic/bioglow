@@ -9,7 +9,7 @@ import flowers from "~/assets/images/about-us-image.png";
       <img
         :src="flowers"
         alt="flowers on the table"
-        class="w-[280px] md:w-[360px] h-[300px] md:h-[450px] m-auto"
+        class="w-[280px] md:w-[360px] h-[380px] md:h-[450px] m-auto"
       />
       <div
         class="flex-1 pt-0 md:pt-12 max-w-[300px] md:max-w-[570px] text-center md:text-left m-auto"

@@ -66,7 +66,7 @@ const cardItems = [
     <img
       :src="bow"
       alt="infinity"
-      class="w-full max-w-[180px] md:max-w-[450px] absolute bottom-[-80px] md:bottom-[-180px] left-1/2 z-10 transform -translate-x-1/2"
+      class="w-full max-w-[180px] md:max-w-[450px] absolute bottom-[-80px] md:bottom-[-200px] left-1/2 z-10 transform -translate-x-1/2"
     />
   </div>
 </template>

@@ -28,6 +28,7 @@ const handleButtonClick = () => {
       loop
       playsinline
       class="absolute w-full h-[60vh] md:h-[100vh] object-cover z-[-1]"
+      loading="lazy"
     ></video>
     <div
       class="pt-20 md:pt-32 flex flex-col gap-10 md:gap-24 justify-between align-center container"

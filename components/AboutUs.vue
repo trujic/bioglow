@@ -31,7 +31,7 @@ import flower from "~/assets/images/flower-2.png";
             </p>
             <p class="mt-5">
               If this sounds like the place for you, we'd love to welcome you to
-              our salon in the heart of Nis. We operate by appointment only and
+              our salon in the heart of Niš. We operate by appointment only and
               reservations are required at least one week in advance.
             </p>
           </div>

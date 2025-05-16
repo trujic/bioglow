@@ -14,15 +14,15 @@ import bgImage from "~/assets/images/services-bg.png";
 
     <!-- Fixed Text Content Centered -->
     <div
-      class="absolute inset-0 flex flex-col justify-center items-center text-center px-8 z-10 text-black mt-10 md:mt-20"
+      class="absolute inset-0 flex flex-col justify-center items-center text-center px-8 z-10 text-black"
     >
       <h3
-        class="font-sloop text-[28px] md:text-[64px] font-extralight max-w-fit tracking-[-1px] leading-[1.2]"
+        class="font-helveticaDisplay text-[10px] md:text-[16px] uppercase font-extralight max-w-fit tracking-[1px] leading-[1.2]"
       >
-        It's time to enter your glow era
+        ( It's time to enter your glow era )
       </h3>
       <p
-        class="mt-2 md:mt-4 max-w-[440px] text-[10px] md:text-lg font-extralight font-helveticaDisplay px-16 md:px-0"
+        class="mt-2 md:mt-4 max-w-[700px] text-sm md:text-3xl uppercase font-extralight font-serifDisplay px-6 md:px-0"
       >
         This isn’t just about outer beauty, it’s about embracing a new state of
         being. A time where radiance begins from within and shines effortlessly

@@ -12,6 +12,7 @@ import envelope from "~/assets/images/envelope.png";
       muted
       loop
       playsinline
+      preload="auto"
       class="w-full h-full object-cover z-[-1] fixed brightness-90"
     ></video>
     <div class="py-20">

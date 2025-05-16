@@ -75,6 +75,7 @@ const isActive = ref(false);
             loop
             playsinline
             class="w-full h-full object-cover z-[-1] fixed"
+            loading="lazy"
           ></video>
 
           <img
