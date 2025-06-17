@@ -3,6 +3,7 @@ import contactFormBg from "~/assets/images/contact-form-bg.jpg";
 import { Form, Field, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
 import envelope from "~/assets/images/envelope.png";
+import { ref } from "vue";
 
 const bookingForm = ref();
 // List of treatments
@@ -32,11 +33,27 @@ const schema = yup.object({
   message: yup.string(),
 });
 
-function handleSubmit(values) {
-  console.log(values);
+async function handleSubmit(values) {
+  try {
+    const res = await fetch("/.netlify/functions/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    });
 
-  // Clear form
-  bookingForm.value.resetForm();
+    if (!res.ok) {
+      const errorData = await res.json();
+      alert(`Greška prilikom slanja: ${errorData.error || "Nepoznata greška"}`);
+      return;
+    }
+
+    alert("Poruka uspešno poslata!");
+    bookingForm.value.resetForm();
+  } catch (error) {
+    alert("Greška prilikom slanja: " + error.message);
+  }
 }
 </script>
 
@@ -56,9 +73,12 @@ function handleSubmit(values) {
           ref="bookingForm"
           :validation-schema="schema"
           type="submit"
-          @submit="handleSubmit"
           class="bg-[#ECE9E1] pt-6 md:pt-20 pb-24 px-4 md:px-20 flex flex-col gap-4 max-w-[550px] m-auto relative z-10 border border-black"
           id="booking"
+          name="booking"
+          method="POST"
+          netlify
+          @submit="handleSubmit"
         >
           <h4
             class="text-[34px] md:text-[46px] text-[#2A2B30] text-center font-light pb-[24px] font-sloop tracking-[-1px] md:tracking-[2px]"
