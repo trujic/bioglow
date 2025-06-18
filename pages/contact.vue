@@ -3,6 +3,18 @@ import heroImg from "~/assets/images/flower-hero.png";
 import { onMounted, nextTick, watch } from "vue";
 import { useRoute } from "vue-router";
 
+useSeoMeta({
+  title: "Contact Us | Bioglow",
+  description:
+    "Get in touch with Bioglow to book an appointment or ask us anything. We’re here to help you shine.",
+  ogTitle: "Contact Us | Bioglow",
+  ogDescription:
+    "Reach out to Bioglow for bookings, questions, or more information about our natural skincare treatments.",
+  ogImage: "https://bioglow.rs/og-image.jpg",
+  ogUrl: "https://www.bioglow.rs/contact",
+  twitterCard: "summary_large_image",
+});
+
 const route = useRoute();
 
 const scrollToHash = async () => {

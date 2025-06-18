@@ -39,7 +39,7 @@ const schema = yup.object({
   message: yup.string(),
 });
 
-async function handleSubmit(values) {
+async function onSubmit(values) {
   try {
     const res = await fetch("/.netlify/functions/send-email", {
       method: "POST",
