@@ -69,13 +69,14 @@ const isActive = ref(false);
           class="absolute w-full h-[100vh] text-[#2A2B30] uppercase text-[12px] font-regular font-helveticaDisplay tracking-[2px] justify-between z-10"
         >
           <video
-            src="/videos/mobile-video.mp4"
+            src="/videos/video.webm"
             autoplay
             muted
             loop
             playsinline
             class="w-full h-full object-cover z-[-1] fixed"
             loading="lazy"
+            preload="auto"
           ></video>
 
           <img

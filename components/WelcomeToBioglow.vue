@@ -1,4 +1,14 @@
 <script setup>
+useHead({
+  link: [
+    {
+      rel: "preload",
+      as: "video",
+      href: "/videos/video.webm",
+      type: "video/webm",
+    },
+  ],
+});
 import primaryLogo from "~/assets/images/Bioglow-logo.png";
 import envelope from "~/assets/images/envelope.png";
 </script>
@@ -7,13 +17,13 @@ import envelope from "~/assets/images/envelope.png";
     class="border-b border-black py-4 md:py-20 relative w-full h-screen overflow-hidden"
   >
     <video
-      src="/videos/video.mp4"
+      src="/videos/video.webm"
       autoplay
       muted
       loop
       playsinline
       preload="auto"
-      class="w-full h-full object-cover z-[-1] fixed brightness-90"
+      class="w-full h-[100vh] object-cover z-[-1] fixed brightness-90"
     ></video>
     <div class="py-20">
       <h2

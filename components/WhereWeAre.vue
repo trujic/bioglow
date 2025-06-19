@@ -21,7 +21,7 @@ const handleButtonClick = () => {
   <div class="relative bg-cover bg-center border-b border-black">
     <!-- Video fills entire wrapper, matching content height -->
     <video
-      src="/videos/horses.mp4"
+      src="/videos/Horse-video.webm"
       autoplay
       muted
       loop

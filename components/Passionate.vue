@@ -46,7 +46,11 @@ const content = [
       >
         <div v-for="item in content" :key="item.index">
           <div class="flex flex-col gap-2 md:gap-4 items-center">
-            <img :src="item.icon" class="w-[30px] md:w-[60px]" />
+            <img
+              :src="item.icon"
+              class="w-[30px] md:w-[60px]"
+              :alt="'icon representing ' + item.text"
+            />
             <span
               class="font-helveticaDisplay uppercase text-[10px] md:text-[14px] tracking-[1px]"
               >{{ item.text }}</span
