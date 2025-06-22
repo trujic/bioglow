@@ -1,5 +1,4 @@
 <script setup>
-import faceCloseup from "~/assets/images/face-closeup.png";
 import backImg from "~/assets/images/back.jpg";
 import flower from "~/assets/images/flower-2.png";
 </script>
@@ -58,8 +57,11 @@ import flower from "~/assets/images/flower-2.png";
           </h3>
         </div>
       </div>
-      <img
-        :src="faceCloseup"
+      <NuxtImg
+        src="/face-closeup.png"
+        format="webp"
+        width="270"
+        height="270"
         alt="face closeup with a herb near the eye"
         class="hidden md:block w-[270px] h-[270px] object-cover absolute top-[-80px] left-[20%]"
       />

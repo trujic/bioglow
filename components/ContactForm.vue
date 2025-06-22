@@ -2,7 +2,6 @@
 import contactFormBg from "~/assets/images/contact-form-bg.jpg";
 import { Form, Field, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
-import envelope from "~/assets/images/envelope.png";
 import { ref } from "vue";
 
 const bookingForm = ref();
@@ -70,8 +69,9 @@ async function onSubmit(values) {
   >
     <div class="container">
       <div class="relative px-4 md:px-0">
-        <img
-          :src="envelope"
+        <NuxtImg
+          src="/envelope.png"
+          format="webp"
           alt="envelope"
           class="absolute bottom-[-120px] md:bottom-[-250px] left-1/2 transform -translate-x-1/2 max-w-[850px] w-full z-0"
         />

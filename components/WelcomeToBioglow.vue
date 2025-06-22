@@ -10,7 +10,6 @@ useHead({
   ],
 });
 import primaryLogo from "~/assets/images/Bioglow-logo.png";
-import envelope from "~/assets/images/envelope.png";
 </script>
 <template>
   <div
@@ -41,8 +40,9 @@ import envelope from "~/assets/images/envelope.png";
       >
         ( welcome to your natural radiance oasis )
       </h5>
-      <img
-        :src="envelope"
+      <NuxtImg
+        src="/envelope.png"
+        format="webp"
         alt="primary logo"
         class="max-w-[600px] w-full m-auto"
       />

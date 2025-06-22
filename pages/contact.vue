@@ -1,5 +1,4 @@
 <script setup>
-import heroImg from "~/assets/images/flower-hero.png";
 import { onMounted, nextTick, watch } from "vue";
 import { useRoute } from "vue-router";
 
@@ -41,7 +40,7 @@ watch(
 <template>
   <div>
     <Hero
-      :bgImage="heroImg"
+      bgImage="/flower-hero.png"
       title="Get in"
       titleMark="touch"
       bgPosition="50% 75%"

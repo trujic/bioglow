@@ -1,13 +1,14 @@
-<script setup>
-import flowers from "~/assets/images/about-us-image.png";
-</script>
+<script setup></script>
 <template>
   <div class="bg-[#ECE9E1] py-20 md:py-40 border-b border-black">
     <div
       class="container px-10 md:px-28 flex flex-col md:flex-row md:justify-between gap-10 md:gap-40 relative"
     >
-      <img
-        :src="flowers"
+      <NuxtImg
+        src="/about-us-image.png"
+        format="webp"
+        width="360"
+        height="450"
         alt="flowers on the table"
         class="w-[280px] md:w-[360px] h-[380px] md:h-[450px] m-auto"
       />

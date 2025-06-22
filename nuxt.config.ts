@@ -2,7 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxt/image', '@nuxtjs/tailwindcss', '@nuxt/fonts', '@nuxt/icon'],
+  modules: ['@nuxt/image-edge', '@nuxtjs/tailwindcss', '@nuxt/fonts', '@nuxt/icon'],
+  image: {
+    format: ['webp'],
+  },
   css: ['@/assets/css/main.css'],
   fonts: {
     families: [
@@ -18,4 +21,15 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static'
   },
+  app: {
+    head: {
+      title: 'Bioglow',
+      htmlAttrs: {
+        lang: 'en',
+      },
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ]
+    }
+  }
 })

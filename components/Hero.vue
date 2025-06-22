@@ -1,5 +1,5 @@
 <script setup>
-defineProps({
+const props = defineProps({
   bgImage: {
     type: String,
     required: true,
@@ -26,11 +26,20 @@ defineProps({
     default: "50% 0%",
   },
 });
+const img = useImage();
+
+const bgImageUrl = computed(() =>
+  img(props.bgImage, {
+    format: "webp",
+    width: 1600,
+    quality: 60,
+  })
+);
 </script>
 <template>
   <div
     class="relative w-full bg-no-repeat bg-cover flex items-center justify-center bg-[#838776] brightness-80 contrast-[.80] border-b border-black h-[400px] md:h-[600px]"
-    :style="`background-image: url(${bgImage}); background-position: ${bgPosition};`"
+    :style="`background-image: url(${bgImageUrl}); background-position: ${bgPosition};`"
   >
     <div
       class="absolute inset-0 bg-[#ECE9E1] opacity-25 pointer-events-none"

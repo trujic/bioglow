@@ -1,5 +1,4 @@
 <script setup>
-import heroImg from "~/assets/images/hero-small.jpg";
 useSeoMeta({
   title: "Our Services | Bioglow",
   description:
@@ -15,7 +14,7 @@ useSeoMeta({
 <template>
   <div>
     <Hero
-      :bgImage="heroImg"
+      bgImage="/hero-small.jpg"
       subtext="( redefining beauty with an elevated glow )"
       bgPosition="50% 55%"
     />
