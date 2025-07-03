@@ -41,32 +41,29 @@ const schema = yup.object({
   message: yup.string(),
 });
 
-async function onSubmit(values) {
+async function onSubmit(values, resetForm) {
   loading.value = true;
   try {
     const res = await fetch("/.netlify/functions/send-email", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),
     });
 
     if (!res.ok) {
-      const errorData = await res.json();
       message.value = `Error while trying to send email. Please try again later.`;
       emailSent.value = true;
-      loading.value = false;
       return;
     }
 
-    message.value =
-      "Thank you for contacting us. We will reach back to you in a short time!";
+    message.value = "Thank you for contacting us!";
     emailSent.value = true;
-    loading.value = false;
-    bookingForm.value.resetForm();
+    resetForm(); // ✅ works without relying on a ref
   } catch (error) {
-    message.value = "Error while trying to send email " + error.message;
+    message.value = "Error while trying to send email: " + error.message;
+    emailSent.value = true;
+  } finally {
+    loading.value = false;
   }
 }
 </script>
@@ -115,11 +112,13 @@ async function onSubmit(values) {
         <Form
           ref="bookingForm"
           :validation-schema="schema"
-          v-slot="{ handleSubmit }"
-          v-if="!loading"
+          v-slot="{ handleSubmit, resetForm }"
+          v-if="!loading && !emailSent"
         >
           <form
-            @submit.prevent="handleSubmit(onSubmit)"
+            @submit.prevent="
+              handleSubmit((values) => onSubmit(values, resetForm))
+            "
             class="bg-[#ECE9E1] pt-6 md:pt-20 pb-24 px-4 md:px-20 flex flex-col gap-4 max-w-[550px] m-auto relative z-10 border border-black"
             id="booking"
             name="booking"
