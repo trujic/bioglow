@@ -5,6 +5,9 @@ import * as yup from "yup";
 import { ref } from "vue";
 
 const bookingForm = ref();
+const loading = ref(false);
+const emailSent = ref(false);
+const message = ref("");
 // List of treatments
 const treatments = [
   "DR Schrammek DERMAFACIAL (60 min)",
@@ -39,6 +42,7 @@ const schema = yup.object({
 });
 
 async function onSubmit(values) {
+  loading.value = true;
   try {
     const res = await fetch("/.netlify/functions/send-email", {
       method: "POST",
@@ -50,14 +54,19 @@ async function onSubmit(values) {
 
     if (!res.ok) {
       const errorData = await res.json();
-      alert(`Greška prilikom slanja: ${errorData.error || "Nepoznata greška"}`);
+      message.value = `Error while trying to send email. Please try again later.`;
+      emailSent.value = true;
+      loading.value = false;
       return;
     }
 
-    alert("Poruka uspešno poslata!");
+    message.value =
+      "Thank you for contacting us. We will reach back to you in a short time!";
+    emailSent.value = true;
+    loading.value = false;
     bookingForm.value.resetForm();
   } catch (error) {
-    alert("Greška prilikom slanja: " + error.message);
+    message.value = "Error while trying to send email " + error.message;
   }
 }
 </script>
@@ -75,10 +84,39 @@ async function onSubmit(values) {
           alt="envelope"
           class="absolute bottom-[-120px] md:bottom-[-250px] left-1/2 transform -translate-x-1/2 max-w-[850px] w-full z-0"
         />
+        <div
+          v-if="emailSent"
+          class="z-40 text-center bg-[#ECE9E1] p-4 border border-black max-w-[300px] m-auto"
+        >
+          <p>{{ message }}</p>
+        </div>
+        <div v-if="loading" class="flex justify-center py-10">
+          <svg
+            class="animate-spin h-6 w-6 text-black"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              stroke-width="4"
+            ></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+            ></path>
+          </svg>
+        </div>
         <Form
           ref="bookingForm"
           :validation-schema="schema"
           v-slot="{ handleSubmit }"
+          v-if="!loading"
         >
           <form
             @submit.prevent="handleSubmit(onSubmit)"
@@ -183,9 +221,11 @@ async function onSubmit(values) {
             <div class="absolute bottom-4 right-10">
               <button
                 type="submit"
+                :disabled="loading"
                 class="max-w-fit border-b border-black md:p-2 px-4 font-light text-[26px] md:text-[40px] font-sloop"
               >
-                Send
+                <span v-if="!loading">Send</span>
+                <span v-else>Sending...</span>
               </button>
             </div>
           </form>

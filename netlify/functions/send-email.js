@@ -12,7 +12,7 @@ export async function handler(event, context) {
     const data = JSON.parse(event.body);
 
     // validacija - možeš dodati i detaljniju ako želiš
-    const { name, email, phone, message } = data;
+    const { name, email, phone, message, treatment, date } = data;
     if (!name || !email || !phone) {
       return {
         statusCode: 400,
@@ -39,6 +39,8 @@ export async function handler(event, context) {
         Ime: ${name}
         Email: ${email}
         Telefon: ${phone}
+        Tretman: ${treatment}
+        Datum: ${date}
         Poruka: ${message || 'Nema poruke'}
       `,
     };
