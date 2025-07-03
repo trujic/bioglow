@@ -82,14 +82,11 @@ async function onSubmit(values, resetForm) {
           class="absolute bottom-[-120px] md:bottom-[-250px] left-1/2 transform -translate-x-1/2 max-w-[850px] w-full z-0"
         />
         <div
-          v-if="emailSent"
-          class="z-40 text-center bg-[#ECE9E1] p-4 border border-black max-w-[300px] m-auto"
+          v-if="loading"
+          class="fixed inset-0 bg-[#ECE9E1]/80 flex items-center justify-center z-50"
         >
-          <p>{{ message }}</p>
-        </div>
-        <div v-if="loading" class="flex justify-center py-10">
           <svg
-            class="animate-spin h-6 w-6 text-black"
+            class="animate-spin h-12 w-12 text-black"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -109,11 +106,17 @@ async function onSubmit(values, resetForm) {
             ></path>
           </svg>
         </div>
+        <div
+          v-else-if="emailSent"
+          class="z-40 text-center bg-[#ECE9E1] p-4 border border-black max-w-[300px] m-auto"
+        >
+          <p>{{ message }}</p>
+        </div>
         <Form
+          v-else
           ref="bookingForm"
           :validation-schema="schema"
           v-slot="{ handleSubmit, resetForm }"
-          v-if="!loading && !emailSent"
         >
           <form
             @submit.prevent="
