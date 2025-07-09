@@ -33,7 +33,7 @@ export async function handler(event, context) {
 
     const mailOptions = {
       from: '"Bioglow Website" <info@bioglow.rs>',
-      to: 'info@bioglow.rs',
+      to: ['info@bioglow.rs', 'nemanja.trujic@hotmail.com'],
       replyTo: email, // korisnikov email
       subject: `Nova poruka od ${name} sa sajta`,
       text: `
