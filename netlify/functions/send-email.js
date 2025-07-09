@@ -32,7 +32,7 @@ export async function handler(event, context) {
     });
 
     const mailOptions = {
-      from: '"Bioglow Website" <info@bioglow.rs>',
+      from: '"Bioglow Website" <website@bioglow.rs>',
       to: 'info@bioglow.rs', // ili gde želiš da stignu mailovi
       subject: `Nova poruka od ${name} sa sajta`,
       text: `
