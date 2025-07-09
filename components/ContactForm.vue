@@ -79,7 +79,7 @@ async function onSubmit(values, resetForm) {
           src="/envelope.png"
           format="webp"
           alt="envelope"
-          class="absolute bottom-[-120px] md:bottom-[-250px] left-1/2 transform -translate-x-1/2 max-w-[850px] w-full z-0"
+          class="absolute bottom-[-120px] md:bottom-[-250px] left-1/2 transform -translate-x-1/2 max-w-[850px] w-full z-10"
         />
         <div
           v-if="loading"
@@ -108,7 +108,7 @@ async function onSubmit(values, resetForm) {
         </div>
         <div
           v-else-if="emailSent"
-          class="z-40 text-center bg-[#ECE9E1] p-4 border border-black max-w-[300px] m-auto"
+          class="z-10 relative text-center bg-[#ECE9E1] p-4 border border-black max-w-[350px] m-auto"
         >
           <p>{{ message }}</p>
         </div>
