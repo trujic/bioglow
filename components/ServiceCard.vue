@@ -22,7 +22,7 @@ defineProps({
       {{ card.title }}
     </h3>
     <p
-      class="font-helveticaDisplay text-[14px] font-extralight md:font-extralight"
+      class="font-helveticaDisplay text-[17px] font-extralight md:font-extralight"
     >
       {{ card.text }}
     </p>

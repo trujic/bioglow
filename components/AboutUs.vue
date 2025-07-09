@@ -13,12 +13,12 @@ import flower from "~/assets/images/flower-2.png";
             Our <i>story</i>
           </h2>
           <h3
-            class="font-helveticaDisplay text-[14px] md:text-[24px] text-center md:text-left mb-[-4px] uppercase font-light tracking-[1px]"
+            class="font-helveticaDisplay text-[17px] md:text-[24px] text-center md:text-left mb-[-4px] uppercase font-light tracking-[1px]"
           >
             ( Behind the brand )
           </h3>
           <div
-            class="max-w-[500px] mt-12 font-helveticaDisplay font-light leading-[18px] text-sm md:text-base"
+            class="max-w-[500px] mt-12 font-helveticaDisplay font-light text-[17px] md:text-base"
           >
             <p>
               At Bioglow we are passionate about blending science with

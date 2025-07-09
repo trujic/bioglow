@@ -52,8 +52,10 @@ const toggleAccordion = (index) => {
               @click="toggleAccordion(index)"
             >
               <div class="flex flex-col md:flex-row text-[12px] md:text-base">
-                <span>{{ item.title }}</span>
-                <span v-if="item.subtitle"> {{ item.subtitle }}</span>
+                <span class="text-[14px]">{{ item.title }}</span>
+                <span v-if="item.subtitle" class="text-[14px]">
+                  {{ item.subtitle }}</span
+                >
               </div>
               <span v-if="item.text">{{
                 openIndex === index ? "−" : "+"
@@ -62,7 +64,7 @@ const toggleAccordion = (index) => {
             <div
               v-if="item.text"
               v-show="openIndex === index"
-              class="p-4 pt-0 text-xs md:text-sm text-start text-black font-light"
+              class="p-4 pt-0 text-[14px] md:text-sm text-start text-black font-light"
             >
               {{ item.text }}
             </div>

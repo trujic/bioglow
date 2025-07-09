@@ -19,13 +19,13 @@
           About Bioglow
         </h3>
         <h4
-          class="font-sloop text-[24px] md:text-[32px] leading-[20px] mt-4 text-center md:text-left"
+          class="font-sloop text-[28px] md:text-[32px] leading-[20px] mt-4 text-center md:text-left"
         >
           ( serendipitous encounter that <br class="md:hidden" />changed our
           lives )
         </h4>
         <p
-          class="text-[#2A2B30] mt-10 font-light font-helveticaDisplay text-sm md:text-base max-w-[440px]"
+          class="text-[#2A2B30] mt-10 font-light font-helveticaDisplay text-[17px] md:text-base max-w-[440px]"
         >
           Bioglow was born from a serendipitous encounter that changed our
           lives. One of us is an international skincare and spa expert with over

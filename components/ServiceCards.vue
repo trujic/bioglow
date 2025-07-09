@@ -4,7 +4,7 @@ import screeningImg from "~/assets/images/hero.jpg";
 import facialsImg from "~/assets/images/facials.jpg";
 import massageImg from "~/assets/images/body-treatments.jpg";
 import painImg from "~/assets/images/pain.jpg";
-import bow from "~/assets/images/bow.png";
+import shell from "~/assets/images/shell.webp";
 const cardItems = [
   {
     id: 0,
@@ -46,7 +46,7 @@ const cardItems = [
         ( explore our services )
       </h3>
       <p
-        class="mb-12 md:mb-24 max-w-[600px] m-auto text-sm font-helveticaDisplay font-extralight mt-10 md:text-[16px] leading-[18px]"
+        class="mb-12 md:mb-24 max-w-[600px] m-auto text-[17px] font-helveticaDisplay font-light mt-10 md:text-[16px] md:leading-[18px]"
       >
         Elevate your health and beauty at Bioglow. Our services, from relaxing
         massages to luxurious facials, are designed to offer you moments of
@@ -64,9 +64,9 @@ const cardItems = [
       </div>
     </div>
     <img
-      :src="bow"
+      :src="shell"
       alt="infinity"
-      class="w-full max-w-[180px] md:max-w-[450px] absolute bottom-[-80px] md:bottom-[-200px] left-1/2 z-10 transform -translate-x-1/2"
+      class="w-full max-w-[100px] md:max-w-[150px] absolute bottom-[-50px] md:bottom-[-80px] left-1/2 z-10 transform -translate-x-1/2"
     />
   </div>
 </template>
