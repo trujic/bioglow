@@ -3,7 +3,7 @@ import bgImage from "~/assets/images/services-bg.png";
 </script>
 <template>
   <section
-    class="relative w-full h-[50vh] md:h-[75vh] overflow-hidden text-white"
+    class="relative w-full h-[60vh] md:h-[75vh] overflow-hidden text-white"
     :style="`
       background-image: url(${bgImage});
       background-size: cover;
