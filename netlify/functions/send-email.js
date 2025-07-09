@@ -32,8 +32,9 @@ export async function handler(event, context) {
     });
 
     const mailOptions = {
-      from: '"Bioglow Website" <website@bioglow.rs>',
-      to: 'info@bioglow.rs', // ili gde želiš da stignu mailovi
+      from: '"Bioglow Website" <info@bioglow.rs>',
+      to: 'info@bioglow.rs',
+      replyTo: email, // korisnikov email
       subject: `Nova poruka od ${name} sa sajta`,
       text: `
         Ime: ${name}
