@@ -10,14 +10,14 @@ const emailSent = ref(false);
 const message = ref("");
 // List of treatments
 const treatments = [
-  "DR Schrammek DERMAFACIAL (60 min)",
-  "DR Schrammek DERMAFACIAL (90 min)",
-  "DR Schrammek Cleanse & Go",
-  "Swedish massage",
-  "Drain & Sculpt",
-  "Drift Away Scalp & Neck",
-  "Walk On Clouds",
-  "Bioglow Full Body Bliss",
+  "BIOGLOW Dermafacial — 60 min / 6000RSD",
+  "BIOGLOW Dermafacial Plus — 90 min / 9000 RSD",
+  "BIOGLOW Cleanse & Go — 40 min / 4000 RSD",
+  "Swedish Massage",
+  "Leg Massage with Sculpting & Drainage",
+  "Neck & Scalp Massage",
+  "Foot Reflexology & Lower Leg Relief",
+  "BIOGLOW Ritual of Renewal",
 ];
 
 // Validation schema

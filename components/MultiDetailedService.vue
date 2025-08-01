@@ -27,27 +27,27 @@ const treatmentGroups = [
     title: "Bioglow Body Rituals - Ladies only",
     items: [
       {
-        title: "Swedish Massage",
+        title: "Swedish Massage\u00A0",
         subtitle: "50 min – 2,500 RSD / 80 min – 4,000 RSD",
         text: "Classic full-body massage that improves circulation, eases tension, and restores balance.",
       },
       {
-        title: "Leg Massage with Sculpting & Drainage",
+        title: "Leg Massage with Sculpting & Drainage\u00A0",
         subtitle: "30 min – 1,500 RSD / 50 min – 2,500 RSD",
         text: "Combines vacuum cups and Gua Sha for light legs, reduced swelling, and lymphatic flow.",
       },
       {
-        title: "Neck & Scalp Massage",
+        title: "Neck & Scalp Massage\u00A0",
         subtitle: "30 min – 1,500 RSD",
         text: "Relieves mental tension and soothes the nervous system.",
       },
       {
-        title: "Foot Reflexology & Lower Leg Relief",
+        title: "Foot Reflexology & Lower Leg Relief\u00A0",
         subtitle: "50 min – 2,500 RSD",
         text: "Focused massage for heavy legs and fluid retention, with reflex point stimulation.",
       },
       {
-        title: "BIOGLOW Ritual of Renewal",
+        title: "BIOGLOW Ritual of Renewal\u00A0",
         subtitle: "150 min – 8,500 RSD",
         text: "Signature experience: full-body massage, reflexology, scalp care, and lifting facial touch.",
       },
