@@ -1,9 +1,8 @@
 <script setup>
-import backImage from "~/assets/images/back.jpg";
-import screeningImg from "~/assets/images/hero.jpg";
-import facialsImg from "~/assets/images/facials.jpg";
-import massageImg from "~/assets/images/body-treatments.jpg";
-import painImg from "~/assets/images/pain.jpg";
+import screeningImg from "~/assets/images/scincare-screening.webp";
+import facialsImg from "~/assets/images/facials.webp";
+import massageImg from "~/assets/images/treatments-massages.webp";
+import painImg from "~/assets/images/pain-management.webp";
 import shell from "~/assets/images/shell.webp";
 const cardItems = [
   {

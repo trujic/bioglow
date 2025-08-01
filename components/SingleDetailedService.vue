@@ -1,5 +1,5 @@
 <script setup>
-import bgImage from "~/assets/images/services-bg.png";
+import bgImage from "~/assets/images/services-bg.webp";
 </script>
 <template>
   <section

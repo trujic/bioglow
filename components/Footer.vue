@@ -2,7 +2,7 @@
 import logo from "~/assets/images/logo-with-border.png";
 </script>
 <template>
-  <div class="relative py-10 md:py-20 bg-[#ECE9E1]">
+  <div class="relative pb-4 pt-10 md:pt-20 bg-[#ECE9E1]">
     <h4
       class="mt-10 md:mt-0 text-center font-helveticaDisplay text-base md:text-xl uppercase font-light"
     >
@@ -13,7 +13,7 @@ import logo from "~/assets/images/logo-with-border.png";
       alt="logo"
       class="w-28 absolute top-[-55px] left-1/2 transform -translate-x-1/2"
     />
-    <div class="mt-10 md:mt-20">
+    <div class="mt-10 md:mt-20 mb-16">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center container">
         <div class="flex flex-col items-center gap-5">
           <span
@@ -50,6 +50,15 @@ import logo from "~/assets/images/logo-with-border.png";
           >
         </div>
       </div>
+    </div>
+    <div class="text-center text-xs">
+      Design and developed by
+      <a
+        href="https://www.instagram.com/overthemug/"
+        target="_blank"
+        class="underline"
+        >OvertheMug</a
+      >
     </div>
   </div>
 </template>

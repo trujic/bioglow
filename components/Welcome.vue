@@ -27,12 +27,13 @@
         <p
           class="text-[#2A2B30] mt-10 font-light font-helveticaDisplay text-[17px] md:text-base max-w-[440px]"
         >
-          Bioglow was born from a serendipitous encounter that changed our
-          lives. One of us is an international skincare and spa expert with over
-          10 years of experience working in the best hotels, resorts, cruise
-          ships, while the other is a master biologist specialized in Artificial
-          Intelligence solutions for improving health care and diagnostics.
-          Together our mission is simple - to help you glow from within.
+          BIOGLOW was created from years of experience in some of the world’s
+          finest hotels and spas — and a shared mission to bring that five-star
+          care into a space made just for you We believe beauty begins within.
+          That slowing down is powerful. And that skincare is not just a
+          routine, but a ritual of balance, health, and self-respect. At
+          BIOGLOW, every detail is designed to help you reconnect — with your
+          body, your rhythm, and your inner glow.
         </p>
       </div>
     </div>

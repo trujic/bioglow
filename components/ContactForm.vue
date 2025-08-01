@@ -1,5 +1,5 @@
 <script setup>
-import contactFormBg from "~/assets/images/contact-form-bg.jpg";
+import contactFormBg from "~/assets/images/contact-form-bg.webp";
 import { Form, Field, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
 import { ref } from "vue";

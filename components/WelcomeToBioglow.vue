@@ -40,12 +40,14 @@ import primaryLogo from "~/assets/images/Bioglow-logo.png";
       >
         ( welcome to your natural radiance oasis )
       </h5>
-      <NuxtImg
-        src="/envelope.png"
-        format="webp"
-        alt="primary logo"
-        class="max-w-[600px] w-full m-auto"
-      />
+      <nuxt-link to="/contact">
+        <NuxtImg
+          src="/envelope.png"
+          format="webp"
+          alt="primary logo"
+          class="max-w-[600px] w-full m-auto"
+        />
+      </nuxt-link>
     </div>
   </div>
 </template>

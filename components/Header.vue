@@ -25,6 +25,7 @@ const isActive = ref(false);
           <NuxtLink to="/">Home</NuxtLink>
           <NuxtLink to="/about">About</NuxtLink>
           <NuxtLink to="/services">Services</NuxtLink>
+          <NuxtLink to="/education">Education</NuxtLink>
           <NuxtLink to="/contact">Contact</NuxtLink>
         </nav>
       </header>
@@ -95,6 +96,9 @@ const isActive = ref(false);
               >
               <NuxtLink @click="isActive = !isActive" to="/services"
                 >Services</NuxtLink
+              >
+              <NuxtLink @click="isActive = !isActive" to="/education"
+                >Education</NuxtLink
               >
               <NuxtLink @click="isActive = !isActive" to="/contact"
                 >Contact</NuxtLink
