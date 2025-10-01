@@ -47,7 +47,7 @@ const handleButtonClick = () => {
         </h2>
       </div>
       <div class="flex gap-20 md:gap-32">
-        <div class="flex flex-col">
+        <!-- <div class="flex flex-col">
           <span
             class="uppercase font-bold mb-4 md:mb-8 text-[12px] md:text-base"
             >visit us</span
@@ -55,15 +55,17 @@ const handleButtonClick = () => {
           <span class="text-[14px] md:text-base font-light"
             >Stojana Novakovića 17a, Niš</span
           >
-        </div>
+        </div> -->
         <div class="flex flex-col">
           <span
             class="uppercase font-bold mb-4 md:mb-8 text-[12px] md:text-base"
             >get in touch</span
           >
-          <span class="text-[14px] md:text-base font-light">+381692111524</span>
-          <span class="text-[14px] md:text-base font-light"
-            >info@bioglow.com</span
+          <!-- <span class="text-[14px] md:text-base font-light">+381692111524</span> -->
+          <a
+            href="mailto:info@bioglow.com"
+            class="text-[14px] md:text-base font-light"
+            >info@bioglow.com</a
           >
         </div>
       </div>

@@ -33,7 +33,6 @@ import logo from "~/assets/images/logo-with-border.png";
             >Phone</span
           >
           <a
-            href="tel:+381692111524"
             class="uppercase text-[10px] md:text-base font-light font-helveticaDisplay border-b border-black"
             >call us</a
           >
