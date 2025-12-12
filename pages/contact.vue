@@ -38,13 +38,7 @@ watch(
 );
 </script>
 <template>
-  <div>
-    <Hero
-      bgImage="/flower-hero.png"
-      title="Get in"
-      titleMark="touch"
-      bgPosition="50% 75%"
-    />
+  <div class="pt-10">
     <ContactForm />
     <WhereWeAre />
   </div>

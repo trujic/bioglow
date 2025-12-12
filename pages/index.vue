@@ -13,6 +13,12 @@ useSeoMeta({
 </script>
 <template>
   <div>
-    <WelcomeToBioglow /><Passionate /><OurService /><AboutUs /><WhereWeAre />
+    <WelcomeToBioglow />
+    <div class="bg-[#ECE9E1]">
+      <FadeWrapper> <Passionate hydrate-on-visible /> </FadeWrapper
+      ><FadeWrapper><OurService hydrate-on-visible /></FadeWrapper
+      ><FadeWrapper><AboutUs hydrate-on-visible /></FadeWrapper
+      ><FadeWrapper><WhereWeAre hydrate-on-visible /></FadeWrapper>
+    </div>
   </div>
 </template>

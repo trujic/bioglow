@@ -9,14 +9,26 @@ useHead({
     },
   ],
 });
+
 import primaryLogo from "~/assets/images/Bioglow-logo.png";
+
+import { ref, onMounted, onUnmounted } from "vue";
+
+const target = ref(null);
+const isVisible = ref(false);
+
+onMounted(() => {
+  setTimeout(() => {
+    isVisible.value = true;
+  }, "700");
+});
 </script>
 <template>
   <div
     class="border-b border-black py-4 md:py-20 relative w-full h-screen overflow-hidden"
   >
     <video
-      src="/videos/video.webm"
+      src="/videos/about-us-video.mp4"
       autoplay
       muted
       loop
@@ -38,7 +50,7 @@ import primaryLogo from "~/assets/images/Bioglow-logo.png";
       <h5
         class="uppercase font-helveticaDisplay text-white w-fit m-auto mb-20 text-[12px] text-center md: text-auto md:text-[18px] font-light tracking-[3px] px-[40px] md:px-[0px]"
       >
-        ( welcome to your natural radiance oasis )
+        your natural radiance oasis
       </h5>
       <nuxt-link to="/contact">
         <NuxtImg
@@ -46,6 +58,13 @@ import primaryLogo from "~/assets/images/Bioglow-logo.png";
           format="webp"
           alt="primary logo"
           class="max-w-[600px] w-full m-auto"
+          ref="target"
+          :class="[
+            'transition-all duration-1000 ease-out',
+            isVisible
+              ? 'opacity-100 translate-y-0'
+              : 'opacity-0 translate-y-40',
+          ]"
         />
       </nuxt-link>
     </div>

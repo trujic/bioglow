@@ -44,8 +44,8 @@ const isActive = ref(false);
         >
           <img v-if="!isActive" :src="logo" alt="logo" class="w-10" />
         </NuxtLink>
-        <div class="w-12"></div>
-
+        <div class="uppercase container text-[12px]" v-if="isActive">menu</div>
+        <div></div>
         <Icon
           v-if="!isActive"
           @click="isActive = true"
@@ -53,7 +53,7 @@ const isActive = ref(false);
           width="96"
           height="96"
           style="color: #000; font-size: 30px; font-weight: 200"
-          class="mr-2"
+          class="mr-[2rem]"
         />
         <Icon
           v-if="isActive"
@@ -62,47 +62,67 @@ const isActive = ref(false);
           width="96"
           height="96"
           style="color: #000; font-size: 30px; font-weight: 200"
-          class="mr-2"
+          class="mr-[2rem]"
         />
       </div>
       <div v-if="isActive">
         <nav
           class="absolute w-full h-[100vh] text-[#2A2B30] uppercase text-[12px] font-regular font-helveticaDisplay tracking-[2px] justify-between z-10"
         >
-          <video
-            src="/videos/video.webm"
-            autoplay
-            muted
-            loop
-            playsinline
-            class="w-full h-full object-cover z-[-1] fixed"
-            loading="lazy"
-            preload="auto"
-          ></video>
-
-          <img
-            :src="flower"
-            alt="image of an flower"
-            class="w-32 m-auto mb-8"
-          />
-          <div class="flex flex-col m-auto text-center gap-10">
-            <span class="uppercase font-helveticaDisplay">( Welcome )</span>
+          <div
+            class="flex flex-col m-auto text-start gap-10 bg-[#ECE9E1] container"
+          >
             <div
-              class="font-sloop flex flex-col gap-10 normal-case text-[32px]"
+              class="font-sloop flex flex-col justify-center mt-[-46px] normal-case text-[42px] h-screen items-start text-start max-w-[200px] m-auto"
             >
-              <NuxtLink @click="isActive = !isActive" to="/">Home</NuxtLink>
-              <NuxtLink @click="isActive = !isActive" to="/about"
-                >About</NuxtLink
-              >
-              <NuxtLink @click="isActive = !isActive" to="/services"
-                >Services</NuxtLink
-              >
-              <NuxtLink @click="isActive = !isActive" to="/education"
-                >Education</NuxtLink
-              >
-              <NuxtLink @click="isActive = !isActive" to="/contact"
-                >Contact</NuxtLink
-              >
+              <div class="flex">
+                <div
+                  class="font-helveticaNow text-[10px] mr-2 font-semibold pt-3"
+                >
+                  01.
+                </div>
+                <NuxtLink @click="isActive = !isActive" to="/"> home</NuxtLink>
+              </div>
+              <div class="flex">
+                <div
+                  class="font-helveticaNow text-[10px] mr-2 font-semibold pt-3"
+                >
+                  02.
+                </div>
+                <NuxtLink @click="isActive = !isActive" to="/about"
+                  >about</NuxtLink
+                >
+              </div>
+              <div class="flex">
+                <div
+                  class="font-helveticaNow text-[10px] mr-2 font-semibold pt-3"
+                >
+                  03.
+                </div>
+                <NuxtLink @click="isActive = !isActive" to="/services"
+                  >services</NuxtLink
+                >
+              </div>
+              <div class="flex">
+                <div
+                  class="font-helveticaNow text-[10px] mr-2 font-semibold pt-3"
+                >
+                  04.
+                </div>
+                <NuxtLink @click="isActive = !isActive" to="/education"
+                  >education</NuxtLink
+                >
+              </div>
+              <div class="flex">
+                <div
+                  class="font-helveticaNow text-[10px] mr-2 font-semibold pt-3"
+                >
+                  05.
+                </div>
+                <NuxtLink @click="isActive = !isActive" to="/contact"
+                  >contact</NuxtLink
+                >
+              </div>
             </div>
           </div>
         </nav>

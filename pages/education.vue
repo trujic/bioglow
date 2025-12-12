@@ -14,9 +14,14 @@ useSeoMeta({
 <template>
   <div>
     <Hero
-      bgImage="/flower-hero.png"
-      title="Education and career consulting"
+      bgImage="/education-hero.png"
+      subtext="education and career consulting"
       bgPosition="50% 75%"
-    /><FacialTraining /><WhereWeAre />
+    />
+    <div class="pt-[400px] md:pt-[600px]">
+      <div class="relative bg-[#ECE9E1] z-2">
+        <FacialTraining /><FadeWrapper><WhereWeAre /></FadeWrapper>
+      </div>
+    </div>
   </div>
 </template>

@@ -26,7 +26,7 @@ const handleButtonClick = () => {
       muted
       loop
       playsinline
-      class="absolute inset-0 w-full h-full object-cover z-[-1]"
+      class="absolute inset-0 w-full h-full object-cover"
       loading="lazy"
     ></video>
 

@@ -38,7 +38,7 @@ const bgImageUrl = computed(() =>
 </script>
 <template>
   <div
-    class="relative w-full bg-no-repeat bg-cover flex items-center justify-center bg-[#838776] brightness-80 contrast-[.80] border-b border-black h-[400px] md:h-[600px]"
+    class="fixed w-full bg-no-repeat bg-cover flex items-center justify-center bg-[#838776] brightness-80 contrast-[.80] border-b border-black h-[400px] md:h-[600px] z-2"
     :style="`background-image: url(${bgImageUrl}); background-position: ${bgPosition};`"
   >
     <div
@@ -58,7 +58,7 @@ const bgImageUrl = computed(() =>
       </h1>
       <p
         v-if="subtext"
-        class="text-black font-light text-[10px] md:text-xl uppercase tracking-[2px]"
+        class="text-white font-light text-base md:text-xl uppercase tracking-[2px]"
       >
         {{ subtext }}
       </p>

@@ -22,7 +22,7 @@ const toggleItem = (localIndex) => {
       class="border-b border-black text-sm md:text-base"
     >
       <button
-        class="w-full text-left p-4 font-light font-helveticaDisplay uppercase flex justify-between items-start md:items-center"
+        class="w-full text-left py-4 font-light font-helveticaDisplay uppercase flex justify-between items-start md:items-center"
         @click="toggleItem(index)"
       >
         <div class="flex flex-col md:flex-row text-[12px] md:text-base">
@@ -31,7 +31,7 @@ const toggleItem = (localIndex) => {
             item.subtitle
           }}</span>
         </div>
-        <span v-if="item.text">{{
+        <span v-if="item.text" class="text-[20px] leading-none select-none">{{
           openIndex === baseIndex + index ? "−" : "+"
         }}</span>
       </button>

@@ -12,5 +12,12 @@ useSeoMeta({
 });
 </script>
 <template>
-  <div><Welcome /><AboutUsQuote /><AboutUs /><WhereWeAre /></div>
+  <div>
+    <Welcome />
+    <div class="bg-[#ECE9E1]">
+      <FadeWrapper><AboutUsQuote /></FadeWrapper
+      ><FadeWrapper><AboutUs /></FadeWrapper
+      ><FadeWrapper><WhereWeAre /></FadeWrapper>
+    </div>
+  </div>
 </template>

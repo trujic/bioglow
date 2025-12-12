@@ -66,20 +66,35 @@ async function onSubmit(values, resetForm) {
     loading.value = false;
   }
 }
+
+import { onMounted, onUnmounted } from "vue";
+
+const target = ref(null);
+const isVisible = ref(false);
+
+onMounted(() => {
+  setTimeout(() => {
+    isVisible.value = true;
+  }, "700");
+});
 </script>
 
 <template>
-  <div
-    class="py-20 md:py-40 bg-cover"
-    :style="`background-image: url(${contactFormBg})`"
-  >
+  <div class="relative py-20 md:py-40 bg-cover z-10 bg-[#ECE9E1]">
     <div class="container">
-      <div class="relative px-4 md:px-0">
+      <div class="relative">
         <NuxtImg
           src="/envelope.png"
           format="webp"
           alt="envelope"
           class="absolute bottom-[-120px] md:bottom-[-250px] left-1/2 transform -translate-x-1/2 max-w-[850px] w-full z-10"
+          ref="target"
+          :class="[
+            'transition-all duration-1000 ease-out',
+            isVisible
+              ? 'opacity-100 translate-y-0'
+              : 'opacity-0 translate-y-40',
+          ]"
         />
         <div
           v-if="loading"
@@ -179,7 +194,7 @@ async function onSubmit(values, resetForm) {
               <Field
                 as="select"
                 name="treatment"
-                class="bg-[#ECE9E1] border-b border-black outline-none text-base md:text-base hover:cursor-pointer"
+                class="bg-[#ECE9E1] border-b border-black outline-none text-[14px] md:text-base hover:cursor-pointer"
               >
                 <option value="" disabled>Select a treatment</option>
                 <option v-for="t in treatments" :key="t" :value="t">
@@ -201,7 +216,7 @@ async function onSubmit(values, resetForm) {
                 :min="
                   new Date(Date.now() + 86400000).toISOString().split('T')[0]
                 "
-                class="bg-[#ECE9E1] border-b border-black outline-none text-base md:text-base"
+                class="bg-[#ECE9E1] border-b border-black outline-none text-[14px] md:text-base"
               />
               <ErrorMessage name="date" class="text-red-600 text-sm" />
             </div>

@@ -4,7 +4,7 @@ import flower from "~/assets/images/flower-2.png";
 </script>
 <template>
   <div class="bg-[#ECE9E1] py-10 md:py-40 relative border-b border-black">
-    <div class="container px-12">
+    <div class="container px-6 md:px-12">
       <div class="flex flex-col gap-4 md:flex-row md:gap-0 justify-between">
         <div class="mt-0 mr-0 md:mt-20 md:mr-20">
           <h2
@@ -20,8 +20,8 @@ import flower from "~/assets/images/flower-2.png";
           <div
             class="max-w-[500px] mt-12 font-helveticaDisplay font-light text-[17px] md:text-base"
           >
-            <p>
-              BIOGLOW was born from a friendship, shaped by years of experience
+            <p class="text-justify md:text-left">
+              Bioglow was born from a friendship, shaped by years of experience
               in luxury spas and wellness spaces across the world. What started
               between treatments, sea breezes, and quiet cups of coffee became a
               shared vision: to create a space where women can feel completely
@@ -47,7 +47,7 @@ import flower from "~/assets/images/flower-2.png";
           <img
             :src="flower"
             alt="human body back"
-            class="md:hidden max-w-full h-[250px] md:h-fit m-auto md:max-w-[500px] contrast-[.70]"
+            class="md:hidden max-w-full h-[170px] md:h-[250px] md:h-fit m-auto md:max-w-[500px] contrast-[.70]"
           />
           <h3
             class="welcome font-signature text-[40px] md:text-[70px] font-regular absolute bottom-[25px] md:bottom-[50px] right-[0] md:right-[-120px] leading-[30px] md:leading-[70px]"

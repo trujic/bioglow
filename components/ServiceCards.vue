@@ -39,11 +39,6 @@ const cardItems = [
       >
         We've got your glow
       </h2>
-      <h3
-        class="text-center font-helveticaDisplay text-[15px] font-extralight tracking-[-1px] md:tracking-[2px] mb-6 uppercase"
-      >
-        ( explore our services )
-      </h3>
       <p
         class="mb-12 md:mb-24 max-w-[600px] m-auto text-[17px] font-helveticaDisplay font-light mt-10 md:text-[16px] md:leading-[18px]"
       >

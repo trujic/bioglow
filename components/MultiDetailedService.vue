@@ -69,7 +69,7 @@ const toggleAccordion = (index) => {
 </script>
 
 <template>
-  <div class="border-t border-black bg-[#ECE9E1] w-full">
+  <div class="border-t border-black bg-[#ECE9E1] w-full relative">
     <div class="container flex justify-center px-4 md:px-0">
       <div class="py-14 md:py-28 max-w-2xl w-full text-center">
         <h3
@@ -78,7 +78,7 @@ const toggleAccordion = (index) => {
           Our Treatments
         </h3>
 
-        <div class="w-full my-10 px-4 md:px-0 md:my-20">
+        <div class="w-full my-20">
           <div
             v-for="(group, groupIndex) in treatmentGroups"
             :key="groupIndex"

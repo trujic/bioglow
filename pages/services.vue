@@ -15,12 +15,22 @@ useSeoMeta({
   <div>
     <Hero
       bgImage="/hero-small.jpg"
-      subtext="( redefining beauty with an elevated glow )"
+      subtext="explore our services"
       bgPosition="50% 55%"
     />
-    <ServiceCards />
-    <SingleDetailedService />
-    <MultiDetailedService />
-    <WhereWeAre />
+    <div class="pt-[400px] md:pt-[600px]">
+      <div class="relative bg-[#ECE9E1]">
+        <ServiceCards />
+        <FadeWrapper>
+          <SingleDetailedService />
+        </FadeWrapper>
+        <FadeWrapper>
+          <MultiDetailedService />
+        </FadeWrapper>
+        <FadeWrapper>
+          <WhereWeAre />
+        </FadeWrapper>
+      </div>
+    </div>
   </div>
 </template>
