@@ -3,30 +3,6 @@ import { ref } from "vue";
 import flower from "~/assets/images/flower-2.png";
 import logo from "~/assets/images/bio-glow-logo.png";
 
-const training = [
-  { title: "Anatomy of the skin and common conditions" },
-  { title: "How to structure a professional facial treatment" },
-  { title: "Deep cleansing techniques: chemical & manual" },
-  { title: "Skin exfoliation – methods & practice" },
-  { title: "Masks – selection, purpose, application" },
-  {
-    title: "Facial massage techniques – relaxation, toning, lymphatic drainage",
-  },
-  { title: "Spa vs. medical facial treatments" },
-  { title: "Proper product layering: serums, creams, finishing steps" },
-  { title: "The art of creating a calm, client-centered spa experience" },
-  { title: "Practical sessions with models" },
-  { title: "Insights into leading spa brands and protocols" },
-];
-
-const format = [
-  { title: "1-on-1 private training, fully personalized" },
-  { title: "Held at Bioglow Studio in Niš, Serbia" },
-  { title: "Includes theory + hands-on practice" },
-  { title: "Duration: 2 to 5 days (depending on program choice)" },
-  { title: "All materials and models are provided" },
-];
-
 // accordion state
 const openIndex = ref(null);
 
@@ -37,21 +13,81 @@ const toggleAccordion = (index) => {
 // sections
 const educationSections = [
   {
-    title: "Format",
-    items: format.map((i) => i.title),
+    title: "EDUCATION & CONSULTING",
+    html: `<p>BIOGLOW Education is designed for professionals and individuals who wish to deepen their understanding of skin health, facial treatment design, and modern spa practices.</p><br>
+
+<p>Drawing from international spa experience and professional skincare systems, these programs combine practical knowledge, refined manual techniques, and a holistic approach to treatment.</p><br>
+
+<p>The focus is not only on learning techniques, but on elevating the quality of treatment experience and professional confidence.</p><br>
+
+<p>Trainings are conducted in small groups or one-on-one formats to ensure a focused and personalized learning environment.</p><br>
+
+<p>All education sessions are held in Belgrade (Vracar) and Nis (city center).</p>`,
   },
   {
-    title: "What you will learn",
-    items: training.map((i) => i.title),
+    title: "FACIAL TREATMENT EDUCATION",
+    html: `
+      <p>
+        Professional training for therapists and beauty specialists who wish to elevate their facial treatments to a higher professional and experiential level.
+      </p>
+      <br>
+      <p>
+        These workshops focus on modern facial techniques and treatment structuring used in high-end spa environments, combining technical precision with a refined client experience.
+      </p>
+      <br>
+      <p>Topics may include:</p>
+      <ul>
+        <li>Professional skin assessment and consultation</li>
+        <li>Designing complete facial treatment flows</li>
+        <li>Modern manual techniques such as <i>gua sha, facial cupping, and toning massage</i></li>
+        <li>Creating lifting and sculpting facial sequences</li>
+        <li>Integrating professional skincare systems into treatments</li>
+        <li>Developing a <strong>five-star facial experience</strong> through touch, rhythm, and atmosphere</li>
+        <li>Elevating treatment presentation and client communication</li>
+      </ul>
+
+      <p>
+        The goal of these trainings is to help therapists refine their technique, elevate their service standards, and deliver treatments that feel both effective and memorable.
+      </p>
+
+      <p>Available formats:</p>
+      <ul>
+        <li>1-day workshops</li>
+        <li>Weekend intensive training</li>
+        <li>Private one-on-one education</li>
+      </ul>
+    `,
   },
   {
-    title: "Additional support",
-    items: [
-      "Guidance in building or refining their treatment style",
-      "Professional support in setting up their own beauty business",
-      "Spa service design, pricing, and customer experience tips",
-      "Career development and transition within the spa & wellness industry",
-    ],
+    title: "SKINCARE WORKSHOPS",
+    html: `<p>Educational workshops designed for individuals who wish to better understand their skin and learn how to care for it effectively.<br>
+
+These sessions focus on practical knowledge that helps participants make better skincare decisions and build routines suited to their skin’s needs.</p>
+
+<p>Topics may include:</p>
+<ul>
+        <li>Understanding skin types and conditions</li>
+        <li>Building a personalized skincare routine</li>
+        <li>Common skincare mistakes</li>
+        <li>Product selection and ingredient basics</li>
+        <li>Maintaining long-term skin health</li>
+      </ul>
+      <p>Workshops are conducted in small groups to allow open discussion and personalized guidance.</p>
+`,
+  },
+  {
+    title: "SPA & BEAUTY CONSULTING",
+    html: `<p>Consulting services for spa studios, beauty professionals, and wellness businesses seeking support in developing treatment concepts and service standards.<br><p>
+          <p>Consulting may include:</p>
+<ul>
+        <li>Treatment menu development</li>
+        <li>Facial and body protocol design</li>
+        <li>Therapist training and mentoring</li>
+        <li>Spa concept development</li>
+        <li>Service quality and client experience design</li>
+      </ul>
+      <p>These services draw on experience from international spa environments and professional skincare systems.<br>Consulting is available <strong>by request.</strong></p>
+`,
   },
 ];
 </script>
@@ -62,19 +98,26 @@ const educationSections = [
       <!-- HEADER -->
       <div class="mb-32 md:mb-60 px-4 md:px-0">
         <h3
-          class="text-[46px] md:text-[84px] text-black text-center font-light pb-[12px] md:pb-[24px] font-serifDisplay leading-[60px] md:leading-[100px] tracking-[-3px] md:tracking-[-8px] mt-20 md:mt-40"
+          class="text-[36px] md:text-[64px] text-black text-center font-light pb-[12px] md:pb-[24px] font-serifDisplay leading-[60px] md:leading-[100px] tracking-[-3px] md:tracking-[-6px] mt-20 md:mt-40"
         >
-          Bioglow 1-on-1 Facial Training
+          Education & Consulting
         </h3>
 
         <p
-          class="font-helveticaDisplay my-4 text-justify md:text-center max-w-3xl mt-4 md:mt-0 md:mx-auto"
+          class="font-helveticaDisplay my-4 text-justify md:text-center max-w-3xl mt-4 md:mt-12 md:mx-auto"
         >
-          At Bioglow, we believe that expertise is built through presence,
-          precision, and practice. Our private facial training program is
-          designed for beauty professionals who want to go beyond surface-level
-          treatments and master the “spa way” — a method rooted in anatomy,
-          technique, and holistic care.
+          BIOGLOW Education is designed for professionals and individuals who
+          wish to deepen their understanding of skin health, facial treatment
+          design, and modern spa practices. <br /><br />Drawing from
+          international spa experience and professional skincare systems, these
+          programs combine practical knowledge, refined manual techniques, and a
+          holistic approach to treatment.<br /><br />
+          The focus is not only on learning techniques, but on elevating the
+          quality of treatment experience and professional confidence. Trainings
+          are conducted in small groups or one-on-one formats to ensure a
+          focused and personalized learning environment.<br /><br />
+          All education sessions are held in
+          <strong>Belgrade (Vracar) and Nis (city center).</strong>
         </p>
       </div>
 
@@ -140,17 +183,30 @@ const educationSections = [
 
             <!-- CONTENT -->
             <transition name="fade">
-              <div v-if="openIndex === i" class="mt-4 py-6 md:py-10">
-                <ul class="list-disc list-inside">
-                  <li
-                    v-for="(item, idx) in section.items"
-                    :key="idx"
-                    class="ml-4"
+              <transition name="fade">
+                <div v-if="openIndex === i" class="mt-4 py-6 md:py-10">
+                  <!-- Simple list sections -->
+                  <ul
+                    v-if="section.items"
+                    class="list-disc list-inside space-y-2"
                   >
-                    {{ item }}
-                  </li>
-                </ul>
-              </div>
+                    <li
+                      v-for="(item, idx) in section.items"
+                      :key="idx"
+                      class="ml-4"
+                    >
+                      {{ item }}
+                    </li>
+                  </ul>
+
+                  <!-- HTML sections -->
+                  <div
+                    v-else-if="section.html"
+                    v-html="section.html"
+                    class="font-helveticaDisplay [&>p]:mb-4 [&>ul]:list-disc [&>ul]:ml-6 [&>ul]:mb-4 [&>li]:ml-2"
+                  ></div>
+                </div>
+              </transition>
             </transition>
           </div>
         </div>
@@ -175,7 +231,7 @@ const educationSections = [
   </div>
 </template>
 
-<style>
+<style lang="css" scoped>
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease;

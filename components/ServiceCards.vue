@@ -37,15 +37,22 @@ const cardItems = [
       <h2
         class="text-center font-sloop text-[40px] md:text-[45px] font-light tracking-[-1px] md:tracking-[1px]"
       >
-        We've got your glow
+        Bioglow
       </h2>
       <p
-        class="mb-12 md:mb-24 max-w-[600px] m-auto text-[17px] font-helveticaDisplay font-light mt-10 md:text-[16px] md:leading-[18px]"
+        class="mb-12 md:mb-10 max-w-[600px] m-auto text-[14px] font-helveticaDisplay font-light mt-10 md:text-[16px] md:leading-[18px]"
       >
-        Elevate your health and beauty at Bioglow. Our services, from relaxing
-        massages to luxurious facials, are designed to offer you moments of
-        tranquility and a radiant glow. Experience exceptional care and restore
-        your energy.
+        Woman - Only Slow Beauty Studio in the Heart of Niš
+      </p>
+      <p
+        class="mb-12 md:mb-24 max-w-[750px] m-auto text-[14px] font-helveticaDisplay font-light md:text-[16px] leading-[18px] md:leading-[20px]"
+      >
+        At <i>Bioglow</i>, beauty is not rushed. It is cultivated. Every ritual
+        is designed as a one-on-one experience — without noise, without
+        pressure. We combine international spa expertise, professional systems,
+        and a deeply personal approach to create care that is structured,
+        intentional, and restorative. <br /><br />This <i>is not</i> a fast
+        salon. This is <i>your pause</i>.
       </p>
     </div>
     <div class="container flex flex-col md:flex-row gap-6">

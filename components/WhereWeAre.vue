@@ -65,8 +65,16 @@ const handleButtonClick = () => {
           <a
             href="mailto:info@bioglow.com"
             class="text-[14px] md:text-base font-light"
-            >info@bioglow.com</a
+            >mail: info@bioglow.com</a
           >
+          <a
+            href="tel:+381641480123"
+            class="text-[14px] md:text-base font-light mt-4"
+            >phone: +381641480123</a
+          >
+          <span class="text-[14px] md:text-base font-light mt-4">
+            adress: Strahinjica Bana 2a, Niš
+          </span>
         </div>
       </div>
       <NuxtLink @click.prevent="handleButtonClick" to="/contact">
