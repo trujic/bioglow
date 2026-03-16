@@ -33,3 +33,27 @@ select {
   appearance: none;
   border-radius: 0;
 }
+
+.button {
+    @apply max-w-full w-full md:max-w-fit
+           p-2 px-4 border border-black
+           text-xs md:text-base uppercase
+           relative overflow-hidden
+           transition-colors duration-300
+           hover:text-white;
+  }
+
+  .button::before {
+    content: "";
+    @apply absolute inset-0 bg-black
+           translate-y-full
+           transition-transform duration-300;
+  }
+
+  .button:hover::before {
+    @apply translate-y-0;
+  }
+
+  .button > span {
+    @apply relative z-10;
+  }

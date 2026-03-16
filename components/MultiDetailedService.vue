@@ -168,7 +168,9 @@ const toggleAccordion = (index) => {
               group.title
             }}</span>
             <div v-if="group.descr">
-              <p class="text-[12px] md:text-[14px] mt-2 mb-8 md:mb-14">
+              <p
+                class="text-[12px] md:text-[14px] mt-2 mb-8 md:mb-14 w-full md:w-[90%]"
+              >
                 {{ group.descr }}
               </p>
             </div>
@@ -187,10 +189,8 @@ const toggleAccordion = (index) => {
         </div>
 
         <NuxtLink to="/contact">
-          <button
-            class="border border-black py-2 px-6 uppercase text-[14px] font-helveticaDisplay"
-          >
-            book an appointment
+          <button class="button">
+            <span> book an appointment </span>
           </button>
         </NuxtLink>
       </div>

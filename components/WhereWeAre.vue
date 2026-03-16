@@ -78,11 +78,7 @@ const handleButtonClick = () => {
         </div>
       </div>
       <NuxtLink @click.prevent="handleButtonClick" to="/contact">
-        <button
-          class="max-w-full w-full md:max-w-fit p-2 px-4 border border-black text-xs md:text-base uppercase"
-        >
-          book an appointment
-        </button>
+        <button class="button"><span>book an appointment</span></button>
       </NuxtLink>
     </div>
   </div>

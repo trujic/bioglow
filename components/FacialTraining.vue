@@ -98,7 +98,7 @@ These sessions focus on practical knowledge that helps participants make better 
       <!-- HEADER -->
       <div class="mb-32 md:mb-60 px-4 md:px-0">
         <h3
-          class="text-[36px] md:text-[64px] text-black text-center font-light pb-[12px] md:pb-[24px] font-serifDisplay leading-[60px] md:leading-[100px] tracking-[-3px] md:tracking-[-6px] mt-20 md:mt-40"
+          class="text-[36px] md:text-[64px] text-black text-center font-light pb-[12px] md:pb-[24px] font-serifDisplay leading-[60px] md:leading-[100px] tracking-[-3px] md:tracking-[-6px] mt-20 md:mt-30"
         >
           Education & Consulting
         </h3>
@@ -203,7 +203,7 @@ These sessions focus on practical knowledge that helps participants make better 
                   <div
                     v-else-if="section.html"
                     v-html="section.html"
-                    class="font-helveticaDisplay [&>p]:mb-4 [&>ul]:list-disc [&>ul]:ml-6 [&>ul]:mb-4 [&>li]:ml-2"
+                    class="font-helveticaDisplay [&>p]:mb-4 [&>ul]:list-disc [&>ul]:ml-6 [&>ul]:mb-4 [&>li]:ml-2 p-4"
                   ></div>
                 </div>
               </transition>
@@ -218,10 +218,8 @@ These sessions focus on practical knowledge that helps participants make better 
           </span>
           <div class="container">
             <NuxtLink to="/contact">
-              <button
-                class="max-w-full w-full md:max-w-fit p-2 px-4 border border-black text-xs md:text-base uppercase"
-              >
-                contact us
+              <button class="button">
+                <span class="relative z-10">contact us</span>
               </button>
             </NuxtLink>
           </div>
