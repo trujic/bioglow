@@ -1,0 +1,275 @@
+{ 
+  "Home": "Početna",
+  "About": "O nama",
+  "Services": "Usluge",
+  "Education": "Edukacije",
+  "Contact": "Kontakt",
+  "Book your appointment": "Zakažite vaš tretman",
+  "menu": "meni",
+  "Welcome to": "Dobrodošli u",
+  "your natural radiance oasis": "vašu oazu prirodnog sjaja",
+  "At Bioglow": "U Bioglow-u",
+  "( we are passionate about )": "( verujemo u )",
+  "science": "nauku iza tretmana",
+  "relaxation": "relaksaciju",
+  "holism": "holistički pristup",
+  "quality": "kvalitet",
+  "serenity": "spokoj",
+  "Our Services": "Naše Usluge",
+  "Our": "Naša",
+  "story": "priča",
+  "( Behind the brand )": "( Iza brenda )",
+  "aboutText": "Bioglow je rođen iz prijateljstva, a oblikovan godinama iskustva u luksuznim spa i wellness centrima širom sveta. Ono što je počelo između tretmana, uz miris mora i trenutke mira uz kafu, pretvorilo se u zajedničku viziju: stvaranje prostora u kojem se žene osećaju potpuno podržano – gde nisu samo klijentkinje, već neko ko je zaista primećen. Spajamo preciznost nauke sa toplinom nege. Svaki tretman je s namerom kreiran da radi u harmoniji sa prirodnim ritmom vašeg tela, koristeći dokazane tehnike i preparate vrhunskog kvaliteta. Ipak, pored svih sastojaka i metoda, ono što nas izdvaja je atmosfera – mirna, posvećena isključivo Vama, u radu „jedan na jedan“. Ovo je više od salona. Ovo je povratak sebi. Ako osećate da je ovo mesto za vas, sa radošću vas iščekujemo u našem prostoru u srcu Niša. Radimo isključivo putem zakazivanja, te vas ljubazno molimo da svoj termin rezervišete najmanje nedelju dana unapred.",
+  "Nourish your skin,": "Neguj svoju kožu",
+  "feed your soul": "hrani svoju dušu",
+  "Experience your": "Doživite svoj",
+  "glow": "sjaj",
+  "here": "ovde",
+  "get in touch": "kontakt",
+  "phone": "telefon",
+  "address": "adresa",
+  "book an appointment": "zakažite termin", 
+  "About Bioglow": "O Bioglow-u",
+  "( serendipitous encounter that": "( slučajni susret koji nam je",
+  "changed our lives )": "promenio živote )",
+  "aboutUsText": "Bioglow je nastao iz dugogodišnjeg iskustva u nekim od najprestižnijih svetskih hotela i spa centara – i zajedničke misije da tu negu od pet zvezdica prenesemo u prostor kreiran isključivo za vas. Verujemo da lepota počinje iznutra. Da usporavanje nosi ogromnu moć. I da nega kože nije samo puka rutina, već ritual ravnoteže, zdravlja i poštovanja prema sebi. U Bioglow-u, svaki detalj je osmišljen da vam pomogne da se ponovo povežete – sa svojim telom, svojim ritmom i svojim unutrašnjim sjajem.",
+  "heroServices": {
+    "subtext": "Istražite naše usluge"
+  },
+  "Woman - Only Slow Beauty Studio in the Heart of Niš": "Ženski „Slow Beauty” studio u srcu Niša",
+  "At Bioglow, beauty is not rushed. It is cultivated. Every ritual is designed as a one-on-one experience — without noise, without pressure. We combine international spa expertise, professional systems, and a deeply personal approach to create care that is structured, intentional, and restorative.": "U Bioglow-u, lepota se ne požuruje. Ona se neguje. Svaki ritual je osmišljen kao iskustvo „jedan na jedan” – bez buke, bez pritiska. Spajamo internacionalno spa iskustvo, profesionalne sisteme i duboko lični pristup kako bismo kreirali negu koja je strukturisana, namerna i obnavljajuća.",
+  "This": "Ovo",
+  "is not": "nije",
+  "a fast salon": "salon brze usluge",
+  "This is": "Ovo je",
+  "your pause": "Vaša pauza",
+  "( It's time to enter your glow era )": "( Vreme je za tvoju eru blistavosti )",
+  "This isn't just about outer beauty, it's about embracing a new state of being. A time where radiance begins from within and shines effortlessly on the outside.": "Ovde nije reč samo o spoljašnjoj lepoti, već o trenutku kada počinjete da se osećate najbolje u svojoj koži. To je vreme kada sjaj dolazi iznutra i prirodno se vidi na vašem licu.",
+  "Our treatments": "Naši tretmani",
+  "treatments": {
+    "signatureSkin": {
+      "title": "Signature skin",
+      "descr": "Zasnovano na originalnom Dr. Schrammek Professional sistemu. Svaki tretman lica započinjemo stručnom analizom kože i detaljnim konsultacijama. Radimo isključivo sa originalnim nemačkim Dr. Schrammek formulacijama, kreiranim da vrate koži balans, ojačaju njenu barijeru i osiguraju dugoročno zdravlje kože.",
+      "bioglow": {
+        "title": "BIOGLOW Signature Skin Ritual —\u00A0",
+        "subtitle": "60 min / 6500 RSD",
+        "text": "Naš najtraženiji tretman lica, osmišljen kao savršen balans nege i uživanja. Svaki korak je personalizovan i prilagođen trenutnom stanju vaše kože, uz duboko uvažavanje njenih potreba. Ritual započinjemo temeljnim čišćenjem i enzimskim ili kombinovanim pilingom, koji na nežan, ali efikasan način obnavlja teksturu kože. Poseban fokus stavljamo na visokokoncentrovanu ampulu i ciljano dejstvo maski, uz opuštajuću masažu lica i zaštitnu završnu negu. Stvoren da pruži vidljive rezultate i vrati koži njen prirodni, dugotrajni mir."
+      },
+      "bioglowExtended": {
+        "title": "BIOGLOW Signature Skin Ritual Extended —\u00A0",
+        "subtitle": "90 min / 10,000 RSD",
+        "text": "Sveobuhvatno iskustvo obnove koje spaja napredne protokole pilinga (uključujući i Triple Effect pristup) sa tehnikama manuelnog liftinga. Ovaj ritual je istovremeno korektivan i duboko opuštajući , osmišljen za potpunu transformaciju kože i „reset” nervnog sistema. Iskustvo upotpunjujemo osvežavajućom masažom Cryo kuglicama, koja umiruje i tonira kožu, dok masaža vrata i ramena toplim kamenjem pruža osećaj duboke relaksacije i oslobađa od napetosti. Uz produženo vreme za posvećenost svakom detalju, ovo je tretman koji vraća i sjaj i unutrašnji mir."
+      },
+      "cleanseGo": {
+        "title": "BIOGLOW Cleanse & Go —\u00A0",
+        "subtitle": "40 min / 4,200 RSD",
+        "text": "Elegantan i efikasan predah za vašu kožu, osmišljen da povrati svežinu lica između intenzivnijih tretmana ili kao savršena priprema za poseban događaj. Ovaj ritual objedinjuje profesionalno čišćenje i enzimski krem-piling koji suptilno obnavlja teksturu kože, dok Black Clearing maska pruža duboku detoksikaciju i pročišćavanje. Ritual krunišemo odgovarajucom zavrsnom negom, koja pruža koži osećaj duboke smirenosti i zaštite. *Duboko čišćenje pora (manuelna ekstrakcija) nije deo ovog protokola. Ukoliko vaša koža zahteva dodatnu pažnju, tretman se može dopuniti Precision Skin Refinement dodatkom — on podrazumeva pedantnu manuelnu ekstrakciju, nakon koje sledi Darsonval terapija za smirivanje lica i podsticanje vitalnosti kože. Efikasno. Ciljano. Obnavljajuće."
+      },
+      "renewalRitual": {
+        "title": "BIOGLOW Signature Renewal Ritual —\u00A0",
+        "subtitle": "150 min / 12,500 RSD",
+        "text": "Naše najobuhvatnije iskustvo za lice i telo. Pažljivo osmišljen redosled pokreta koji objedinjuje masažu celog tela, refleksologiju stopala, masažu i negu skalpa i mini tretman lica fokusiran na manuelne tehnike. Ovo nije samo tretman – ovo je putovanje ka potpunom unutrašnjem miru i povratak sebi."
+      }
+    },
+    "enhance": {
+      "title": "Upotpunite svoje rituale",
+      "precisionRefinement": {
+        "title": "Precision Skin Refinement —\u00A0",
+        "subtitle": "1,500 RSD",
+        "text": "Pedantna manuelna ekstrakcija komedona, izvedena s posebnom pažnjom kada je vašoj koži potrebno dublje čišćenje. Tretman upotpunjujemo Darsonval terapijom visokom frekvencijom, koja trenutno umiruje lice, podstiče mikrocirkulaciju i ubrzava prirodni oporavak kože"
+      },
+      "handGlow": {
+        "title": "Hand Glow Ritual —\u00A0",
+        "subtitle": "1,800 RSD",
+        "text": "Brzi manikir uz originalni CND Shellac sistem — prefinjen završni detalj vašeg rituala koji rukama pruža besprekoran izgled i dugotrajan sjaj."
+      },
+      "bodySculptAddon": {
+        "title": "Body Sculpt Add-On —\u00A0",
+        "subtitle": "20 min / 2,500 RSD",
+        "text": "Ciljana stimulacija mišića i potkožnog tkiva uz pomoć Ultra Contour Touch tehnologije. Ovaj dodatak je osmišljen kao podrška tonusu i mikrocirkulaciji određene regije tela."
+      }
+    },
+    "bodyRituals": {
+      "title": "Tretmani tela",
+      "descr": "Weekend Specialist Collection. Rituali koje vodi fizioterapeutkinja sa 30 godina iskustva. Ova kolekcija objedinjuje kliničko znanje i senzibilitet vrhunske spa nege. Svaki pokret je izveden sa jasnom namerom i dubokim razumevanjem tela.",
+      "deepRelease": {
+        "title": "Deep Release Body Ritual —\u00A0",
+        "subtitle": "50 min / 4,500 RSD",
+        "text": "Strukturirana masaža celog tela usmerena na oslobađanje mišićne napetosti, unapređenje cirkulacije i uspostavljanje funkcionalnog balansa. Posebno blagotvorna kod akumuliranog stresa u predelu leđa, vrata i ramena."
+      },
+      "deepReleaseExtended": {
+        "title": "Deep Release Body Ritual Extended —\u00A0",
+        "subtitle": "80 min / 6,800 RSD",
+        "text": "Produžena terapeutska sesija sa fokusom na specifične tačke nelagode i stanja hroničnog mišićnog preopterećenja. Dodatno vreme omogućava detaljniji pristup regijama koje zahtevaju intenzivniju pažnju i postepeno oslobađanje duboke napetosti."
+      },
+      "legRenewal": {
+        "title": "Leg Renewal Sculpt Ritual —\u00A0",
+        "subtitle": "30 / 50 min - 3,000 / 4,800 RSD",
+        "text": "Ciljani tretman nogu koji kombinuje tehnike drenaže i manuelne metode oblikovanja. Fokus je na podsticanju mikrocirkulacije i postizanju osećaja lakoće, uz podršku tonusu tkiva."
+      },
+      "headNeck": {
+        "title": "Head & Neck Reset Ritual —\u00A0",
+        "subtitle": "30 min / 3,000 RSD",
+        "text": "Fokusirani ritual za vrat, ramena i skalp — regije u kojima se emocionalna napetost najčešće akumulira. Tiho. Prizemljujuće. Neophodno."
+      },
+      "reflexBalance": {
+        "title": "Reflex Balance Foot Ritual —\u00A0",
+        "subtitle": "50 min / 4,800 RSD",
+        "text": "Stimulacija refleksnih zona u kombinaciji sa tehnikama relaksacije, usmerena na postizanje opšte harmonije i balansa čitavog organizma."
+      }
+    },
+    "bodyContour": {
+      "title": "Body contour rituals",
+      "bodySculpt": {
+        "title": "BIOGLOW Body Sculpt Ritual —\u00A0",
+        "subtitle": "90 min / 7,900 RSD",
+        "text": "Sveobuhvatan ritual za telo osmišljen da podstakne cirkulaciju, podrži tonus tkiva i prirodnu metaboličku aktivnost. Tretman se odvija kroz pažljivo strukturirane faze:",
+        "list": {
+          "0": "Suvo četkanje tela za aktivaciju mikrocirkulacije",
+          "1": "Limfna priprema kao podrška drenažnim putevima",
+          "2": "Ciljana stimulacija mišića uz pomoć Ultra Contour Touch tehnologije",
+          "3": "Skulpturisanje fascije gua sha tehnikama",
+          "4": "Drenaža primenom nežnih vakuum čašica",
+          "5": "Umirujuća masaža za integraciju i opuštanje"
+        },
+        "afterText": "Tehnologija objedinjuje mišićnu stimulaciju i aktivaciju drenaže radi podrške metabolizmu tkiva i čvrstini kože. Tehnologija podržava proces. Ritual ga vodi."
+      },
+      "targetedContour": {
+        "title": "Targeted Contour Session —\u00A0",
+        "subtitle": "30-40 min / 4,200 RSD",
+        "text": "Fokusiran tretman namenjen radu na specifičnoj regiji tela uz primenu tehnologije mišićne stimulacije. Pogodan za ciljane zone poput abdomena, butina, bokova ili ruku. Čest izbor kao tretman održavanja između celovitih rituala. Zasnovan na Ultra Contour Touch tehnologiji."
+      }
+    },
+    "handRituals": {
+      "title": "Hand rituals",
+      "descr": "Original CND Shellac System Koristimo isključivo originalni CND Shellac — globalni pionir u profesionalnoj, dugotrajnoj negi noktiju. Formula je osmišljena tako da pruža postojanost uz punu zaštitu prirodne nokatne ploče.",
+      "signatureGloss": {
+        "title": "Signature Gloss Manicure Ritual —\u00A0",
+        "subtitle": "2,500 RSD",
+        "text": "Precizan brzi manikir uz postojan Shellac završni sjaj."
+      },
+      "signatureGlossSpa": {
+        "title": "Signature Gloss Manicure Ritual – Spa Edition —\u00A0",
+        "subtitle": "3,000 RSD",
+        "text": "Proširen manikir ritual sa dodatnim fokusom na negu zanoktica, hidrataciju kože i duboku relaksaciju šaka."
+      },
+      "naturalHandCare": {
+        "title": "Natural Hand Care Ritual —\u00A0",
+        "subtitle": "2,000 RSD",
+        "text": "Manikir bez lakiranja, usmeren na zdravlje, oporavak i prirodnu mekoću nokatne ploče i kože ruku."
+      }
+    },
+    "smoothSkin": {
+      "title": "Smooth skin rituals",
+      "descr": "Bez paralelnih tretmana. Bez žurbe. Bez izlaganja.",
+      "waxing": {
+        "title": "Depilacija u privatnom, isključivo ženskom prostoru",
+        "text": "30 - 50 - 80 min /  1,500 - 2,500 - 4,000 RSD"
+      }
+    }
+  },
+  "heroEducation": {
+    "subtext": "edukacije & konsultacije"
+  },
+  "education": {
+    "pageTitle": "Edukacije & Konsultacije",
+    "headerText1": "BIOGLOW Edukacije su namenjene profesionalcima i pojedincima koji žele da prodube svoje razumevanje zdravlja kože, dizajna tretmana i savremenih spa praksi.",
+    "headerText2": "Zasnovani na internacionalnom spa iskustvu i profesionalnim sistemima nege, ovi programi povezuju praktično znanje, rafinisane manuelne tehnike i holistički pristup tretmanu. Fokus nije isključivo na učenju tehnika, već na podizanju kvaliteta samog iskustva tretmana i profesionalnog samopouzdanja.",
+    "headerText3": "Edukacije se sprovode u malim grupama ili u formatu 1-na-1, čime se osigurava posvećeno i personalizovano okruženje za rad.",
+    "headerText4": "Lokacije:",
+    "headerText4Bold": "Beograd (Vracar) i Niš (centar).",
+    "uniqueTitle": "Po čemu je naš program jedinstven?",
+    "uniqueText": "Pod vođstvom internacionalnog spa trenera sa preko deset godina iskustva u hotelima sa pet zvezdica i luksuznim kruzerima/jahtama, obuka je prilagođena vašem trenutnom nivou i stilu učenja. Bilo da ste na početku ili ste iskusan terapeut koji želi da usavrši svoj 'dodir', program je građen tako da osnaži vašu veštinu i sigurnost u radu.",
+    "ctaText": "Zainteresovani ste za naše edukacije?",
+    "ctaButton": "kontaktirajte nas",
+    "sections": {
+      "overview": {
+        "title": "EDUCATION & CONSULTING",
+        "p1": "BIOGLOW Edukacije su namenjene profesionalcima i pojedincima koji žele da prodube svoje razumevanje zdravlja kože, dizajna tretmana i savremenih spa praksi.",
+        "p2": "Zasnovani na internacionalnom spa iskustvu i profesionalnim sistemima nege, ovi programi povezuju praktično znanje, rafinisane manuelne tehnike i holistički pristup tretmanu.",
+        "p3": "Fokus nije isključivo na učenju tehnika, već na podizanju kvaliteta samog iskustva tretmana i profesionalnog samopouzdanja.",
+        "p4": "Edukacije se sprovode u malim grupama ili u formatu 1-na-1, čime se osigurava posvećeno i personalizovano okruženje za rad.",
+        "p5": "Sve edukacije se održavaju u Beogradu (Vračar) i Nišu (centar)."
+      },
+      "facial": {
+        "title": "Facial Treatment Education",
+        "p1": "Stručna obuka za terapeute i specijaliste lepote koji žele da svoje tretmane lica podignu na viši profesionalni i iskustveni nivo.",
+        "p2": "Radionice su fokusirane na moderne tehnike i strukturiranje tretmana po uzoru na visoke spa standarde, spajajući tehničku preciznost sa prefinjenim iskustvom za klijenta.",
+        "topicsLabel": "Teme edukacije:",
+        "topics": {
+          "0": "Profesionalna procena kože i konsultacije",
+          "1": "Dizajniranje kompletnog protokola tretmana lica",
+          "2": "Moderne manuelne tehnike (gua sha, vakuum čašice, tonizirajuća masaža)",
+          "3": "Kreiranje lifting i sculpting sekvenci",
+          "4": "Integracija profesionalnih sistema nege u tretmane",
+          "5": "Razvijanje five-star iskustva kroz dodir, ritam i atmosferu",
+          "6": "Unapređenje prezentacije tretmana i komunikacije sa klijentom"
+        },
+        "formatsLabel": "Dostupni formati:",
+        "formats": {
+          "0": "jednodnevne radionice,",
+          "1": "vikend intenzivni treninzi",
+          "2": "privatna 1-na-1 edukacija"
+        }
+      },
+      "skincare": {
+        "title": "SKINCARE WORKSHOPS",
+        "p1": "Edukativne radionice za pojedince koji žele da bolje razumeju svoju kožu i nauče kako da je efikasno neguju.",
+        "p2": "Fokus je na praktičnom znanju koje pomaže u donošenju boljih odluka i kreiranju rutine prilagođene stvarnim potrebama kože.",
+        "topicsLabel": "Teme radionica:",
+        "topics": {
+          "0": "Razumevanje tipova i stanja kože",
+          "1": "Kreiranje personalizovane rutine nege",
+          "2": "Najčešće zablude i greške u nezi",
+          "3": "Osnove sastojaka i odabir proizvoda",
+          "4": "Dugoročno održavanje zdravlja kože"
+        }
+      },
+      "consulting": {
+        "title": "SPA & BEAUTY CONSULTING",
+        "p1": "Konsultantske usluge za spa studije, profesionalce i wellness biznise koji traže podršku u razvoju koncepata i standarda usluge.",
+        "topicsLabel": "Usluge uključuju:",
+        "topics": {
+          "0": "Razvoj menija tretmana",
+          "1": "Dizajn protokola za lice i telo",
+          "2": "Obuku i mentorstvo terapeuta",
+          "3": "Razvoj spa koncepta",
+          "4": "Dizajn kvaliteta usluge i iskustva klijenta"
+        },
+        "p3": "Usluge konsaltinga su dostupne na upit."
+      }
+    }
+  },
+  "Let's connect": "Povežimo se",
+  "follow along": "Zapratite nas",
+  "call us": "Pozovite nas",
+  "Get in touch": "Kontaktirajte nas",
+  "Phone": "Telefon",
+  "Book an appointment": "Zakažite termin",
+  "Full name": "Ime i prezime",
+  "Message": "Poruka",
+  "Send": "Pošalji",
+  "Sending...": "Šalje se...",
+  "cards": {
+    "facials": {
+      "title": "Tretmani lica",
+      "text": "Doživite transformaciju uz BioGlow tretmane lica. Naša stručna nega i premijum proizvodi otkrivaju prirodni sjaj vaše kože. Zablistajte sa samopouzdanjem."
+    },
+    "screening": {
+      "title": "Analiza kože",
+      "text": "Stavite zdravlje svoje kože na prvo mesto uz našu detaljnu analizu. Kroz stručni pregled i razgovor, dolazimo do rešenja za vašu zdravu i blistavu kožu."
+    },
+    "massages": {
+      "title": "Tretmani tela i masaže",
+      "text": "Vitalizujte svoje telo uz naše opuštajuće masaže i transformativne tretmane tela. Opustite se, podmladite i ponovo otkrijte najbolju verziju sebe."
+    },
+    "pain": {
+      "title": "Rešavanje bola",
+      "text": "Ublažite nelagodnost i vratite pokretljivost uz naše ciljane tretmane za eliminaciju bola. Iskusite stručnu negu dizajniranu da umiri, isceli i revitalizuje vaš organizam."
+    }
+  },
+  "professional": "profesionalni",
+  "facial": "lica",
+  "skincare":"kože",
+  "screening": "analiza"
+}

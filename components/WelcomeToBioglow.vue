@@ -1,4 +1,5 @@
 <script setup>
+const localePath = useLocalePath();
 useHead({
   link: [
     {
@@ -40,7 +41,7 @@ onMounted(() => {
       <h2
         class="font-sloop text-center mb-8 md:mb-0 text-[40px] md:text-[70px] text-white"
       >
-        Welcome to
+        {{ $t("Welcome to") }}
       </h2>
       <img
         :src="primaryLogo"
@@ -50,9 +51,9 @@ onMounted(() => {
       <h5
         class="uppercase font-helveticaDisplay text-white w-fit m-auto mb-20 text-[12px] text-center md: text-auto md:text-[18px] font-light tracking-[3px] px-[40px] md:px-[0px]"
       >
-        your natural radiance oasis
+        {{ $t("your natural radiance oasis") }}
       </h5>
-      <nuxt-link to="/contact">
+      <nuxt-link :to="localePath('contact')">
         <NuxtImg
           src="/envelope.png"
           format="webp"

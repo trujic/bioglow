@@ -4,32 +4,36 @@ import facialsImg from "~/assets/images/facials.webp";
 import massageImg from "~/assets/images/treatments-massages.webp";
 import painImg from "~/assets/images/pain-management.webp";
 import shell from "~/assets/images/shell.webp";
-const cardItems = [
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+
+const cardItems = computed(() => [
   {
     id: 0,
     img: facialsImg,
-    title: "Facials",
-    text: `Experience transformative facials at BioGlow. Our expert care and premium products unveil your skin’s natural glow. Shine with confidence`,
+    title: t("cards.facials.title"),
+    text: t("cards.facials.text"),
   },
   {
     id: 1,
     img: screeningImg,
-    title: "SKINCARE SCREENING",
-    text: `Prioritize your skin’s health with our comprehensive skin screening. Early detection means confident, radiant skin.`,
+    title: t("cards.screening.title"),
+    text: t("cards.screening.text"),
   },
   {
     id: 2,
     img: massageImg,
-    title: "TREATMENTS & MASSAGES",
-    text: `Revitalize your body with our soothing massages and transformative body treatments. Relax, rejuvenate, and rediscover your best self.`,
+    title: t("cards.massages.title"),
+    text: t("cards.massages.text"),
   },
   {
     id: 3,
     img: painImg,
-    title: "PAIN MANAGEMENT",
-    text: `Relieve discomfort and restore mobility with our targeted pain management treatments. Experience expert care designed to soothe, heal, and revitalize.`,
+    title: t("cards.pain.title"),
+    text: t("cards.pain.text"),
   },
-];
+]);
 </script>
 <template>
   <div class="relative bg-[#ECE9E1] pt-16 pb-20 md:py-24">
@@ -42,17 +46,19 @@ const cardItems = [
       <p
         class="mb-12 md:mb-10 max-w-[600px] m-auto text-[14px] font-helveticaDisplay font-light mt-10 md:text-[16px] md:leading-[18px]"
       >
-        Woman - Only Slow Beauty Studio in the Heart of Niš
+        {{ $t("Woman - Only Slow Beauty Studio in the Heart of Niš") }}
       </p>
       <p
         class="mb-12 md:mb-24 max-w-[750px] m-auto text-[14px] font-helveticaDisplay font-light md:text-[16px] leading-[18px] md:leading-[20px]"
       >
-        At <i>Bioglow</i>, beauty is not rushed. It is cultivated. Every ritual
-        is designed as a one-on-one experience — without noise, without
-        pressure. We combine international spa expertise, professional systems,
-        and a deeply personal approach to create care that is structured,
-        intentional, and restorative. <br /><br />This <i>is not</i> a fast
-        salon. This is <i>your pause</i>.
+        {{
+          $t(
+            "At Bioglow, beauty is not rushed. It is cultivated. Every ritual is designed as a one-on-one experience — without noise, without pressure. We combine international spa expertise, professional systems, and a deeply personal approach to create care that is structured, intentional, and restorative."
+          )
+        }}<br /><br />{{ $t("This") }} <i>{{ $t("is not") }}</i>
+        {{ $t("a fast salon") }}. {{ $t("This is") }}
+        <i>{{ $t("your pause") }}</i
+        >.
       </p>
     </div>
     <div class="container flex flex-col md:flex-row gap-6">

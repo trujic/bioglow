@@ -1,0 +1,278 @@
+{ 
+  "Home": "Home",
+  "About": "About",
+  "Services": "Services",
+  "Education": "Education",
+  "Contact": "Contact",
+  "Book your appointment": "Book your appointment",
+  "menu": "menu",
+  "Welcome to": "Welcome to",
+  "your natural radiance oasis": "your natural radiance oasis",
+  "At Bioglow": "At Bioglow",
+  "( we are passionate about )": "( we are passionate about )",
+  "science": "science",
+  "relaxation": "relaxation",
+  "holism": "holism",
+  "quality": "quality",
+  "serenity": "serenity",
+  "Our Services": "Our Services",
+  "Our": "Our",
+  "story": "story",
+  "( Behind the brand )": "( Behind the brand )",
+  "aboutText": "Bioglow was born from a friendship, shaped by years of experience in luxury spas and wellness spaces across the world. What started between treatments, sea breezes, and quiet cups of coffee became a shared vision: to create a space where women can feel completely supported — not just treated, but truly seen. We combine the precision of science with the warmth of care. Each treatment is intentionally crafted to work in harmony with your body’s natural rhythm, using proven techniques and top-tier products. But beyond the ingredients and methods, what sets us apart is the atmosphere — calm, one-on-one, and devoted entirely to you. This is not just skincare. It’s a return to yourself. If that resonates with you, we’d love to welcome you to our space in the heart of Niš. We work by appointment only, and reservations are kindly requested at least one week in advance.",
+  "Nourish your skin,": "Nourish your skin,",
+  "feed your soul": "feed your soul",
+  "Experience your": "Experience your",
+  "glow": "glow",
+  "here": "here",
+  "get in touch": "get in touch",
+  "phone": "phone",
+  "address": "address",
+  "book an appointment": "book an appointment",
+  "About Bioglow": "About Bioglow",
+  "( serendipitous encounter that": "( serendipitous encounter that",
+  "changed our lives )": "changed our lives )",
+  "aboutUsText": "Bioglow was created from years of experience in some of the world’s finest hotels and spas — and a shared mission to bring that five-star care into a space made just for you We believe beauty begins within. That slowing down is powerful. And that skincare is not just a routine, but a ritual of balance, health, and self-respect. At Bioglow, every detail is designed to help you reconnect — with your body, your rhythm, and your inner glow.",
+  "heroServices": {
+    "subtext": "Explore our services"
+  },
+  "Woman - Only Slow Beauty Studio in the Heart of Niš": "Woman - Only Slow Beauty Studio in the Heart of Niš",
+  "At Bioglow, beauty is not rushed. It is cultivated. Every ritual is designed as a one-on-one experience — without noise, without pressure. We combine international spa expertise, professional systems, and a deeply personal approach to create care that is structured, intentional, and restorative.": "At Bioglow, beauty is not rushed. It is cultivated. Every ritual is designed as a one-on-one experience — without noise, without pressure. We combine international spa expertise, professional systems, and a deeply personal approach to create care that is structured, intentional, and restorative.",
+  "This": "This",
+  "is not": "is not",
+  "a fast salon": "a fast salon",
+  "This is": "This is",
+  "your pause": "your pause",
+  "( It's time to enter your glow era )": "( It's time to enter your glow era )",
+  "This isn't just about outer beauty, it's about embracing a new state of being. A time where radiance begins from within and shines effortlessly on the outside.": "This isn't just about outer beauty, it's about embracing a new state of being. A time where radiance begins from within and shines effortlessly on the outside.",
+  "Our treatments": "Our treatments",
+  "treatments": {
+    "signatureSkin": {
+      "title": "Signature skin",
+      "descr": "Powered by the Original Dr. Schrammek Professional System. Each facial begins with a professional skin assessment and thoughtful consultation. We work exclusively with original German Dr. Schrammek formulations, designed to restore balance, strengthen the skin barrier, and support long-term skin health.",
+      "bioglow": {
+        "title": "BIOGLOW Signature Skin Ritual —\u00A0",
+        "subtitle": "60 min / 6500 RSD",
+        "text": "Our most balanced and most requested facial. A personalized treatment designed according to your skin's current condition and long-term needs. Includes precise cleansing, refined exfoliation, targeted mask therapy, relaxing facial massage, and protective finishing care. Manual purification may be incorporated when necessary. Structured for visible results. Designed for lasting balance."
+      },
+      "bioglowExtended": {
+        "title": "BIOGLOW Signature Skin Ritual Extended —\u00A0",
+        "subtitle": "90 min / 10,000 RSD",
+        "text": "An immersive renewal experience featuring advanced peeling protocols (including the Triple Effect approach), manual lifting techniques, and extended relaxation time. Corrective yet deeply calming. For skin transformation and nervous system reset."
+      },
+      "cleanseGo": {
+        "title": "BIOGLOW Cleanse & Go —\u00A0",
+        "subtitle": "40 min / 4,200 RSD",
+        "text": "A focused professional refresh treatment ideal between intensive protocols or before important occasions. Includes cleansing, gentle exfoliation, targeted mask therapy, and protective finishing care. Deep pore purification (manual extraction) is not included in this treatment. When deeper cleansing is required, it can be added as Precision Skin Refinement, performed with meticulous extraction techniques and followed by Darsonval high-frequency therapy to calm the skin and support circulation. Efficient. Intentional. Restorative."
+      },
+      "renewalRitual": {
+        "title": "BIOGLOW Signature Renewal Ritual —\u00A0",
+        "subtitle": "150 min / 12,500 RSD",
+        "text": "Our most complete face & body experience. A carefully sequenced ritual combining therapeutic body massage, reflexology, scalp care, and a mini facial. This is not simply a treatment. It is a full return to yourself."
+      }
+    },
+    "enhance": {
+      "title": "Enhance your rituals",
+      "precisionRefinement": {
+        "title": "Precision Skin Refinement —\u00A0",
+        "subtitle": "1,500 RSD",
+        "text": "Manual comedone extraction performed with precision and care when additional deep cleansing is required. Finished with Darsonval high-frequency therapy to calm the skin, stimulate circulation, and support recovery."
+      },
+      "handGlow": {
+        "title": "Hand Glow Ritual —\u00A0",
+        "subtitle": "1,800 RSD",
+        "text": "Express manicure using the original CND Shellac system — the final polished detail of your ritual."
+      },
+      "bodySculptAddon": {
+        "title": "Body Sculpt Add-On —\u00A0",
+        "subtitle": "20 min / 2,500 RSD",
+        "text": "Targeted stimulation supporting circulation and tissue tone using muscle stimulation technology. Powered by Ultra Contour Touch technology."
+      }
+    },
+    "bodyRituals": {
+      "title": "Body rituals",
+      "descr": "Weekend Specialist Collection. Led by a senior physiotherapist with 30 years of experience. These rituals combine clinical knowledge with spa sensitivity. Every movement has intention.",
+      "deepRelease": {
+        "title": "Deep Release Body Ritual —\u00A0",
+        "subtitle": "50 min / 4,500 RSD",
+        "text": "Structured full-body massage focused on releasing muscular tension, improving circulation, and restoring functional balance. Especially beneficial for stress carried in the back, neck, and shoulders."
+      },
+      "deepReleaseExtended": {
+        "title": "Deep Release Body Ritual Extended —\u00A0",
+        "subtitle": "80 min / 6,800 RSD",
+        "text": "A deeper therapeutic session with extended focus on specific areas of discomfort and long-term muscular overload."
+      },
+      "legRenewal": {
+        "title": "Leg Renewal Sculpt Ritual —\u00A0",
+        "subtitle": "30 / 50 min - 3,000 / 4,800 RSD",
+        "text": "Targeted leg treatment combining drainage techniques and sculpting methods for improved microcirculation and lightness."
+      },
+      "headNeck": {
+        "title": "Head & Neck Reset Ritual —\u00A0",
+        "subtitle": "30 min / 3,000 RSD",
+        "text": "Focused ritual for neck, shoulders, and scalp — where emotional tension often accumulates. Quiet. Grounding. Necessary."
+      },
+      "reflexBalance": {
+        "title": "Reflex Balance Foot Ritual —\u00A0",
+        "subtitle": "50 min / 4,800 RSD",
+        "text": "Reflex stimulation combined with relaxation techniques to support full-body harmony and balance."
+      }
+    },
+    "bodyContour": {
+      "title": "Body contour rituals",
+      "bodySculpt": {
+        "title": "BIOGLOW Body Sculpt Ritual —\u00A0",
+        "subtitle": "90 min / 7,900 RSD",
+        "text": "A complete body ritual designed to stimulate circulation, support tissue tone, and encourage natural metabolic activity. The treatment unfolds through carefully structured phases:",
+        "list": {
+          "0": "dry body brushing to activate circulation",
+          "1": "lymphatic preparation to support drainage pathways",
+          "2": "targeted muscle stimulation using Ultra Contour Touch technology",
+          "3": "fascia sculpting with gua sha techniques",
+          "4": "gentle cupping drainage",
+          "5": "calming integration massage"
+        },
+        "afterText": "The technology combines muscle stimulation and drainage activation designed to support tissue metabolism, circulation, and skin firmness. Technology supports the process. The ritual leads it."
+      },
+      "targetedContour": {
+        "title": "Targeted Contour Session —\u00A0",
+        "subtitle": "30-40 min / 4,200 RSD",
+        "text": "A focused treatment for clients who wish to work on a specific body area using muscle stimulation technology. Suitable for targeted areas such as abdomen, thighs, hips, or arms. Often chosen as a maintenance treatment between full rituals. Powered by Ultra Contour Touch technology."
+      }
+    },
+    "handRituals": {
+      "title": "Hand rituals",
+      "descr": "Original CND Shellac System. We use exclusively the original CND Shellac — the global pioneer in professional long-lasting nail care, formulated to protect the natural nail plate.",
+      "signatureGloss": {
+        "title": "Signature Gloss Manicure Ritual —\u00A0",
+        "subtitle": "2,500 RSD",
+        "text": "Precise express manicure with flawless Shellac finish."
+      },
+      "signatureGlossSpa": {
+        "title": "Signature Gloss Manicure Ritual – Spa Edition —\u00A0",
+        "subtitle": "3,000 RSD",
+        "text": "Extended manicure ritual with additional focus on cuticle care, skin nourishment, and relaxation."
+      },
+      "naturalHandCare": {
+        "title": "Natural Hand Care Ritual —\u00A0",
+        "subtitle": "2,000 RSD",
+        "text": "Polish-free manicure centered on nail health, restoration, and softness."
+      }
+    },
+    "smoothSkin": {
+      "title": "Smooth skin rituals",
+      "descr": "No parallel treatments. No rush. No exposure.",
+      "waxing": {
+        "title": "Waxing performed in a private, woman-only space",
+        "text": "30 - 50 - 80 min /  1,500 - 2,500 - 4,000 RSD"
+      }
+    }
+  },
+  "heroEducation": {
+    "subtext": "education and career consulting"
+  },
+  "education": {
+    "pageTitle": "Education & Consulting",
+    "headerText1": "BIOGLOW Education is designed for professionals and individuals who wish to deepen their understanding of skin health, facial treatment design, and modern spa practices.",
+    "headerText2": "Drawing from international spa experience and professional skincare systems, these programs combine practical knowledge, refined manual techniques, and a holistic approach to treatment.",
+    "headerText3": "The focus is not only on learning techniques, but on elevating the quality of treatment experience and professional confidence. Trainings are conducted in small groups or one-on-one formats to ensure a focused and personalized learning environment.",
+    "headerText4": "All education sessions are held in",
+    "headerText4Bold": "Belgrade (Vracar) and Nis (city center).",
+    "uniqueTitle": "What makes our program unique?",
+    "uniqueText": "Led by an international spa trainer with over a decade of experience in five-star hotels and cruise ship spas, this 1-on-1 training is tailored to your level and your learning style. Whether you are a beginner or a seasoned esthetician looking to refine your touch, the program is built to elevate your skill and confidence.",
+    "ctaText": "Interested in our education programs?",
+    "ctaButton": "contact us",
+    "sections": {
+      "overview": {
+        "title": "EDUCATION & CONSULTING",
+        "p1": "BIOGLOW Education is designed for professionals and individuals who wish to deepen their understanding of skin health, facial treatment design, and modern spa practices.",
+        "p2": "Drawing from international spa experience and professional skincare systems, these programs combine practical knowledge, refined manual techniques, and a holistic approach to treatment.",
+        "p3": "The focus is not only on learning techniques, but on elevating the quality of treatment experience and professional confidence.",
+        "p4": "Trainings are conducted in small groups or one-on-one formats to ensure a focused and personalized learning environment.",
+        "p5": "All education sessions are held in Belgrade (Vracar) and Nis (city center)."
+      },
+      "facial": {
+        "title": "FACIAL TREATMENT EDUCATION",
+        "p1": "Professional training for therapists and beauty specialists who wish to elevate their facial treatments to a higher professional and experiential level.",
+        "p2": "These workshops focus on modern facial techniques and treatment structuring used in high-end spa environments, combining technical precision with a refined client experience.",
+        "topicsLabel": "Topics may include:",
+        "topics": {
+          "0": "Professional skin assessment and consultation",
+          "1": "Designing complete facial treatment flows",
+          "2": "Modern manual techniques such as gua sha, facial cupping, and toning massage",
+          "3": "Creating lifting and sculpting facial sequences",
+          "4": "Integrating professional skincare systems into treatments",
+          "5": "Developing a five-star facial experience through touch, rhythm, and atmosphere",
+          "6": "Elevating treatment presentation and client communication"
+        },
+        "p3": "The goal of these trainings is to help therapists refine their technique, elevate their service standards, and deliver treatments that feel both effective and memorable.",
+        "formatsLabel": "Available formats:",
+        "formats": {
+          "0": "1-day workshops",
+          "1": "Weekend intensive training",
+          "2": "Private one-on-one education"
+        }
+      },
+      "skincare": {
+        "title": "SKINCARE WORKSHOPS",
+        "p1": "Educational workshops designed for individuals who wish to better understand their skin and learn how to care for it effectively.",
+        "p2": "These sessions focus on practical knowledge that helps participants make better skincare decisions and build routines suited to their skin's needs.",
+        "topicsLabel": "Topics may include:",
+        "topics": {
+          "0": "Understanding skin types and conditions",
+          "1": "Building a personalized skincare routine",
+          "2": "Common skincare mistakes",
+          "3": "Product selection and ingredient basics",
+          "4": "Maintaining long-term skin health"
+        },
+        "p3": "Workshops are conducted in small groups to allow open discussion and personalized guidance."
+      },
+      "consulting": {
+        "title": "SPA & BEAUTY CONSULTING",
+        "p1": "Consulting services for spa studios, beauty professionals, and wellness businesses seeking support in developing treatment concepts and service standards.",
+        "topicsLabel": "Consulting may include:",
+        "topics": {
+          "0": "Treatment menu development",
+          "1": "Facial and body protocol design",
+          "2": "Therapist training and mentoring",
+          "3": "Spa concept development",
+          "4": "Service quality and client experience design"
+        },
+        "p2": "These services draw on experience from international spa environments and professional skincare systems.",
+        "p3": "Consulting is available by request."
+      }
+    }
+  },
+  "Let's connect": "Let's connect",
+  "Follow along": "Follow along",
+  "Call us": "Call us",
+  "Get in touch": "Get in touch",
+  "Phone": "Phone",
+  "Book an appointment": "Book an appointment",
+  "Full name": "Full name",
+  "Message": "Message",
+  "Send": "Send",
+  "Sending...": "Sending...",
+  "cards": {
+    "facials": {
+      "title": "Facials",
+      "text": "Experience transformative facials at BioGlow. Our expert care and premium products unveil your skin's natural glow. Shine with confidence."
+    },
+    "screening": {
+      "title": "SKINCARE SCREENING",
+      "text": "Prioritize your skin's health with our comprehensive skin screening. Early detection means confident, radiant skin."
+    },
+    "massages": {
+      "title": "TREATMENTS & MASSAGES",
+      "text": "Revitalize your body with our soothing massages and transformative body treatments. Relax, rejuvenate, and rediscover your best self."
+    },
+    "pain": {
+      "title": "PAIN MANAGEMENT",
+      "text": "Relieve discomfort and restore mobility with our targeted pain management treatments. Experience expert care designed to soothe, heal, and revitalize."
+    }
+  },
+  "professional": "professional",
+  "facial": "facial",
+  "skincare":"skincare",
+  "screening": "screening"
+}

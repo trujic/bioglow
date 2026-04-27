@@ -6,7 +6,7 @@ import logo from "~/assets/images/logo-with-border.png";
     <h4
       class="mt-10 md:mt-0 text-center font-helveticaDisplay text-base md:text-xl uppercase font-light"
     >
-      Let's connect
+      {{ $t(`Let's connect`) }}
     </h4>
     <img
       :src="logo"
@@ -24,18 +24,18 @@ import logo from "~/assets/images/logo-with-border.png";
             href="https://instagram.com"
             target="_blank"
             class="uppercase text-[10px] md:text-base font-light font-helveticaDisplay border-b border-black"
-            >follow along</a
+            >{{ $t("follow along") }}</a
           >
         </div>
         <div class="flex flex-col items-center gap-5">
           <span
             class="font-serifDisplay font-extralight text-3xl md:text-6xl tracking-[-3px]"
-            >Phone</span
+            >{{ $t("Phone") }}</span
           >
           <a
             href="tel:+381641480123"
             class="uppercase text-[10px] md:text-base font-light font-helveticaDisplay border-b border-black"
-            >call us</a
+            >{{ $t("call us") }}</a
           >
         </div>
         <div class="flex flex-col items-center gap-5">
@@ -46,18 +46,15 @@ import logo from "~/assets/images/logo-with-border.png";
           <a
             href="mailto:info.bioglow@gmail.com"
             class="uppercase text-[10px] md:text-base font-light font-helveticaDisplay border-b border-black"
-            >get in touch</a
+            >{{ $t("Get in touch") }}</a
           >
         </div>
       </div>
     </div>
     <div class="text-center text-xs">
       Design and developed by
-      <a
-        href="https://www.instagram.com/overthemug/"
-        target="_blank"
-        class="underline"
-        >OvertheMug</a
+      <a href="https://overthemug.com/" target="_blank" class="underline"
+        >Over the Mug</a
       >
     </div>
   </div>

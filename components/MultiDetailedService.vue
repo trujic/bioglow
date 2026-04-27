@@ -1,147 +1,159 @@
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
+import { useI18n } from "vue-i18n";
 import AccordionList from "./AccordionList.vue";
+const localePath = useLocalePath();
+const { t } = useI18n();
+const openIndex = ref(null);
 
-const treatmentGroups = [
+const treatmentGroupDefs = [
   {
-    title: "Signature skin",
-    descr:
-      "Powered by the Original Dr. Schrammek Professional System. Each facial begins with a professional skin assessment and thoughtful consultation. We work exclusively with original German Dr. Schrammek formulations, designed to restore balance, strengthen the skin barrier, and support long-term skin health.",
+    titleKey: "treatments.signatureSkin.title",
+    descrKey: "treatments.signatureSkin.descr",
     items: [
       {
-        title: "BIOGLOW Signature Skin Ritual —\u00A0",
-        subtitle: "60 min / 6500 RSD",
-        text: "Our most balanced and most requested facial. A personalized treatment designed according to your skin’s current condition and long-term needs. Includes precise cleansing, refined exfoliation, targeted mask therapy, relaxing facial massage, and protective finishing care. Manual purification may be incorporated when necessary. Structured for visible results. Designed for lasting balance.",
+        titleKey: "treatments.signatureSkin.bioglow.title",
+        subtitleKey: "treatments.signatureSkin.bioglow.subtitle",
+        textKey: "treatments.signatureSkin.bioglow.text",
       },
       {
-        title: "BIOGLOW Signature Skin Ritual Extended —\u00A0",
-        subtitle: "90 min / 10,000 RSD",
-        text: "An immersive renewal experience featuring advanced peeling protocols (including the Triple Effect approach), manual lifting techniques, and extended relaxation time. Corrective yet deeply calming. For skin transformation and nervous system reset.",
+        titleKey: "treatments.signatureSkin.bioglowExtended.title",
+        subtitleKey: "treatments.signatureSkin.bioglowExtended.subtitle",
+        textKey: "treatments.signatureSkin.bioglowExtended.text",
       },
       {
-        title: "BIOGLOW Cleanse & Go —\u00A0",
-        subtitle: "40 min / 4,200 RSD",
-        text: "A focused professional refresh treatment ideal between intensive protocols or before important occasions. Includes cleansing, gentle exfoliation, targeted mask therapy, and protective finishing care. Deep pore purification (manual extraction) is not included in this treatment. When deeper cleansing is required, it can be added as Precision Skin Refinement, performed with meticulous extraction techniques and followed by Darsonval high-frequency therapy to calm the skin and support circulation. Efficient. Intentional. Restorative.",
+        titleKey: "treatments.signatureSkin.cleanseGo.title",
+        subtitleKey: "treatments.signatureSkin.cleanseGo.subtitle",
+        textKey: "treatments.signatureSkin.cleanseGo.text",
       },
       {
-        title: "BIOGLOW Signature Renewal Ritual —\u00A0",
-        subtitle: "150 min / 12,500 RSD",
-        text: "Our most complete face & body experience. A carefully sequenced ritual combining therapeutic body massage, reflexology, scalp care, and a mini facial. This is not simply a treatment. It is a full return to yourself.",
+        titleKey: "treatments.signatureSkin.renewalRitual.title",
+        subtitleKey: "treatments.signatureSkin.renewalRitual.subtitle",
+        textKey: "treatments.signatureSkin.renewalRitual.text",
       },
     ],
   },
   {
-    title: "Enhance your rituals",
+    titleKey: "treatments.enhance.title",
     items: [
       {
-        title: "Precision Skin Refinement —\u00A0",
-        subtitle: "1,500 RSD",
-        text: "Manual comedone extraction performed with precision and care when additional deep cleansing is required. Finished with Darsonval high-frequency therapy to calm the skin, stimulate circulation, and support recovery.",
+        titleKey: "treatments.enhance.precisionRefinement.title",
+        subtitleKey: "treatments.enhance.precisionRefinement.subtitle",
+        textKey: "treatments.enhance.precisionRefinement.text",
       },
       {
-        title: "Hand Glow Ritual —\u00A0",
-        subtitle: "1,800 RSD",
-        text: "Express manicure using the original CND Shellac system — the final polished detail of your ritual.",
+        titleKey: "treatments.enhance.handGlow.title",
+        subtitleKey: "treatments.enhance.handGlow.subtitle",
+        textKey: "treatments.enhance.handGlow.text",
       },
       {
-        title: "Body Sculpt Add-On —\u00A0",
-        subtitle: "20 min / 2,500 RSD",
-        text: "Targeted stimulation supporting circulation and tissue tone using muscle stimulation technology. Powered by Ultra Contour Touch technology.",
+        titleKey: "treatments.enhance.bodySculptAddon.title",
+        subtitleKey: "treatments.enhance.bodySculptAddon.subtitle",
+        textKey: "treatments.enhance.bodySculptAddon.text",
       },
     ],
   },
   {
-    title: "Body rituals",
-    descr:
-      "Weekend Specialist Collection. Led by a senior physiotherapist with 30 years of experience. These rituals combine clinical knowledge with spa sensitivity. Every movement has intention.",
+    titleKey: "treatments.bodyRituals.title",
+    descrKey: "treatments.bodyRituals.descr",
     items: [
       {
-        title: "Deep Release Body Ritual —\u00A0",
-        subtitle: "50 min / 4,500 RSD",
-        text: "Structured full-body massage focused on releasing muscular tension, improving circulation, and restoring functional balance. Especially beneficial for stress carried in the back, neck, and shoulders.",
+        titleKey: "treatments.bodyRituals.deepRelease.title",
+        subtitleKey: "treatments.bodyRituals.deepRelease.subtitle",
+        textKey: "treatments.bodyRituals.deepRelease.text",
       },
       {
-        title: "Deep Release Body Ritual Extended —\u00A0",
-        subtitle: "80 min / 6,800 RSD",
-        text: "A deeper therapeutic session with extended focus on specific areas of discomfort and long-term muscular overload.",
+        titleKey: "treatments.bodyRituals.deepReleaseExtended.title",
+        subtitleKey: "treatments.bodyRituals.deepReleaseExtended.subtitle",
+        textKey: "treatments.bodyRituals.deepReleaseExtended.text",
       },
       {
-        title: "Leg Renewal Sculpt Ritual —\u00A0",
-        subtitle: "30 / 50 min - 3,000 / 4,800 RSD",
-        text: "Targeted leg treatment combining drainage techniques and sculpting methods for improved microcirculation and lightness.",
+        titleKey: "treatments.bodyRituals.legRenewal.title",
+        subtitleKey: "treatments.bodyRituals.legRenewal.subtitle",
+        textKey: "treatments.bodyRituals.legRenewal.text",
       },
       {
-        title: "Head & Neck Reset Ritual —\u00A0",
-        subtitle: "30 min / 3,000 RSD",
-        text: "Focused ritual for neck, shoulders, and scalp — where emotional tension often accumulates. Quiet. Grounding. Necessary.",
+        titleKey: "treatments.bodyRituals.headNeck.title",
+        subtitleKey: "treatments.bodyRituals.headNeck.subtitle",
+        textKey: "treatments.bodyRituals.headNeck.text",
       },
       {
-        title: "Reflex Balance Foot Ritual —\u00A0",
-        subtitle: "50 min / 4,800 RSD",
-        text: "Reflex stimulation combined with relaxation techniques to support full-body harmony and balance.",
+        titleKey: "treatments.bodyRituals.reflexBalance.title",
+        subtitleKey: "treatments.bodyRituals.reflexBalance.subtitle",
+        textKey: "treatments.bodyRituals.reflexBalance.text",
       },
     ],
   },
   {
-    title: "Body contour rituals",
+    titleKey: "treatments.bodyContour.title",
     items: [
       {
-        title: "BIOGLOW Body Sculpt Ritual —\u00A0",
-        subtitle: "90 min / 7,900 RSD",
-        text: "A complete body ritual designed to stimulate circulation, support tissue tone, and encourage natural metabolic activity. The treatment unfolds through carefully structured phases:",
-        list: [
-          "dry body brushing to activate circulation",
-          "lymphatic preparation to support drainage pathways",
-          "targeted muscle stimulation using Ultra Contour Touch technology",
-          "fascia sculpting with gua sha techniques",
-          "gentle cupping drainage",
-          "calming integration massage",
+        titleKey: "treatments.bodyContour.bodySculpt.title",
+        subtitleKey: "treatments.bodyContour.bodySculpt.subtitle",
+        textKey: "treatments.bodyContour.bodySculpt.text",
+        listKeys: [
+          "treatments.bodyContour.bodySculpt.list.0",
+          "treatments.bodyContour.bodySculpt.list.1",
+          "treatments.bodyContour.bodySculpt.list.2",
+          "treatments.bodyContour.bodySculpt.list.3",
+          "treatments.bodyContour.bodySculpt.list.4",
+          "treatments.bodyContour.bodySculpt.list.5",
         ],
-        afterText:
-          "The technology combines muscle stimulation and drainage activation designed to support tissue metabolism, circulation, and skin firmness. Technology supports the process. The ritual leads it.",
+        afterTextKey: "treatments.bodyContour.bodySculpt.afterText",
       },
       {
-        title: "Targeted Contour Session —\u00A0",
-        subtitle: "30-40 min / 4,200 RSD",
-        text: "A focused treatment for clients who wish to work on a specific body area using muscle stimulation technology. Suitable for targeted areas such as abdomen, thighs, hips, or arms. Often chosen as a maintenance treatment between full rituals. Powered by Ultra Contour Touch technology.",
-      },
-    ],
-  },
-  {
-    title: "Hand rituals",
-    descr:
-      "Original CND Shellac System. We use exclusively the original CND Shellac — the global pioneer in professional long-lasting nail care, formulated to protect the natural nail plate.",
-    items: [
-      {
-        title: "Signature Gloss Manicure Ritual —\u00A0",
-        subtitle: "2,500 RSD",
-        text: "Precise express manicure with flawless Shellac finish.",
-      },
-      {
-        title: "Signature Gloss Manicure Ritual – Spa Edition —\u00A0",
-        subtitle: "3,000 RSD",
-        text: "Extended manicure ritual with additional focus on cuticle care, skin nourishment, and relaxation.",
-      },
-      {
-        title: "Natural Hand Care Ritual —\u00A0",
-        subtitle: "2,000 RSD",
-        text: "Polish-free manicure centered on nail health, restoration, and softness.",
+        titleKey: "treatments.bodyContour.targetedContour.title",
+        subtitleKey: "treatments.bodyContour.targetedContour.subtitle",
+        textKey: "treatments.bodyContour.targetedContour.text",
       },
     ],
   },
   {
-    title: "Smooth skin rituals",
-    descr: "No parallel treatments. No rush. No exposure.",
+    titleKey: "treatments.handRituals.title",
+    descrKey: "treatments.handRituals.descr",
     items: [
       {
-        title: "Waxing performed in a private, woman-only space",
-        text: "30 - 50 - 80 min /  1,500 - 2,500 - 4,000 RSD",
+        titleKey: "treatments.handRituals.signatureGloss.title",
+        subtitleKey: "treatments.handRituals.signatureGloss.subtitle",
+        textKey: "treatments.handRituals.signatureGloss.text",
+      },
+      {
+        titleKey: "treatments.handRituals.signatureGlossSpa.title",
+        subtitleKey: "treatments.handRituals.signatureGlossSpa.subtitle",
+        textKey: "treatments.handRituals.signatureGlossSpa.text",
+      },
+      {
+        titleKey: "treatments.handRituals.naturalHandCare.title",
+        subtitleKey: "treatments.handRituals.naturalHandCare.subtitle",
+        textKey: "treatments.handRituals.naturalHandCare.text",
+      },
+    ],
+  },
+  {
+    titleKey: "treatments.smoothSkin.title",
+    descrKey: "treatments.smoothSkin.descr",
+    items: [
+      {
+        titleKey: "treatments.smoothSkin.waxing.title",
+        textKey: "treatments.smoothSkin.waxing.text",
       },
     ],
   },
 ];
 
-const openIndex = ref(null);
+const treatmentGroups = computed(() =>
+  treatmentGroupDefs.map((group) => ({
+    title: t(group.titleKey),
+    descr: group.descrKey ? t(group.descrKey) : undefined,
+    items: group.items.map((item) => ({
+      title: t(item.titleKey),
+      subtitle: item.subtitleKey ? t(item.subtitleKey) : undefined,
+      text: item.textKey ? t(item.textKey) : undefined,
+      list: item.listKeys ? item.listKeys.map((k) => t(k)) : undefined,
+      afterText: item.afterTextKey ? t(item.afterTextKey) : undefined,
+    })),
+  }))
+);
 
 const toggleAccordion = (index) => {
   openIndex.value = openIndex.value === index ? null : index;
@@ -155,7 +167,7 @@ const toggleAccordion = (index) => {
         <h3
           class="font-serifDisplay text-[24px] md:text-[42px] font-extralight uppercase tracking-[-1px] leading-[34px]"
         >
-          Our Treatments
+          {{ $t("Our treatments") }}
         </h3>
 
         <div class="w-full my-20">
@@ -188,9 +200,9 @@ const toggleAccordion = (index) => {
           </div>
         </div>
 
-        <NuxtLink to="/contact">
+        <NuxtLink :to="localePath('contact')">
           <button class="button">
-            <span> book an appointment </span>
+            <span> {{ $t("book an appointment") }} </span>
           </button>
         </NuxtLink>
       </div>

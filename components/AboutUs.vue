@@ -10,31 +10,18 @@ import flower from "~/assets/images/flower-2.png";
           <h2
             class="text-[52px] md:text-[86px] font-sloop font-extralight tracking-[-1px] text-center md:text-left capitalize"
           >
-            Our <i>story</i>
+            {{ $t("Our") }} <i>{{ $t("story") }}</i>
           </h2>
           <h3
             class="font-helveticaDisplay text-[17px] md:text-[24px] text-center md:text-left mb-[-4px] uppercase font-light tracking-[1px]"
           >
-            ( Behind the brand )
+            {{ $t("( Behind the brand )") }}
           </h3>
           <div
             class="max-w-[500px] mt-12 font-helveticaDisplay font-light text-[17px] md:text-base"
           >
             <p class="text-justify md:text-left">
-              Bioglow was born from a friendship, shaped by years of experience
-              in luxury spas and wellness spaces across the world. What started
-              between treatments, sea breezes, and quiet cups of coffee became a
-              shared vision: to create a space where women can feel completely
-              supported — not just treated, but truly seen. We combine the
-              precision of science with the warmth of care. Each treatment is
-              intentionally crafted to work in harmony with your body’s natural
-              rhythm, using proven techniques and top-tier products. But beyond
-              the ingredients and methods, what sets us apart is the atmosphere
-              — calm, one-on-one, and devoted entirely to you. This is not just
-              skincare. It’s a return to yourself. If that resonates with you,
-              we’d love to welcome you to our space in the heart of Niš. We work
-              by appointment only, and reservations are kindly requested at
-              least one week in advance.
+              {{ $t("aboutText") }}
             </p>
           </div>
         </div>
@@ -56,7 +43,7 @@ import flower from "~/assets/images/flower-2.png";
                 -0.5px 0.5px 0 #2a2b30, 0.5px 0.5px 0 #2a2b30;
             "
           >
-            Nourish your skin, <br />feed your soul
+            {{ $t("Nourish your skin,") }} <br />{{ $t("feed your soul") }}
           </h3>
         </div>
       </div>

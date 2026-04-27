@@ -15,7 +15,7 @@ useSeoMeta({
   <div>
     <Hero
       bgImage="/hero-small.jpg"
-      subtext="explore our services"
+      :subtext="$t('heroServices.subtext')"
       bgPosition="50% 55%"
     />
     <div class="pt-[400px] md:pt-[600px]">

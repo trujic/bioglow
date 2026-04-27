@@ -15,7 +15,7 @@ useSeoMeta({
   <div>
     <Hero
       bgImage="/education-hero.png"
-      subtext="education and career consulting"
+      :subtext="$t('heroEducation.subtext')"
       bgPosition="50% 75%"
     />
     <div class="pt-[400px] md:pt-[600px]">

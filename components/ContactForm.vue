@@ -144,13 +144,13 @@ onMounted(() => {
             <h4
               class="text-[34px] md:text-[46px] text-[#2A2B30] text-center font-light pb-[24px] font-sloop tracking-[-1px] md:tracking-[2px]"
             >
-              Book an appointment
+              {{ $t("Book an appointment") }}
             </h4>
             <div class="flex flex-col">
               <label
                 class="uppercase font-light font-helveticaDisplay text-xs md:text-base tracking-[1px]"
               >
-                Full name
+                {{ $t("Full name") }}
               </label>
               <Field
                 name="name"
@@ -163,7 +163,7 @@ onMounted(() => {
               <label
                 class="uppercase font-light font-helveticaDisplay text-xs md:text-base tracking-[1px]"
               >
-                Phone
+                {{ $t("Phone") }}
               </label>
               <Field
                 name="phone"
@@ -225,7 +225,7 @@ onMounted(() => {
               <label
                 class="uppercase font-light font-helveticaDisplay text-xs md:text-base tracking-[1px]"
               >
-                Message
+                {{ $t("Message") }}
               </label>
               <Field
                 as="textarea"
@@ -241,8 +241,8 @@ onMounted(() => {
                 :disabled="loading"
                 class="max-w-fit border-b border-black md:p-2 px-4 font-light text-[26px] md:text-[40px] font-sloop"
               >
-                <span v-if="!loading">Send</span>
-                <span v-else>Sending...</span>
+                <span v-if="!loading">{{ $t("Send") }}</span>
+                <span v-else>{{ $t("Sending...") }}</span>
               </button>
             </div>
           </form>

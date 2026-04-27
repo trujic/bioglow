@@ -1,7 +1,10 @@
 <script setup>
 import logo from "~/assets/images/logo-with-border.png";
 import flower from "~/assets/images/flower.jpg";
+
 const isActive = ref(false);
+const localePath = useLocalePath();
+const { locale, locales, setLocale } = useI18n();
 </script>
 
 <template>
@@ -11,7 +14,9 @@ const isActive = ref(false);
         v-if="!isActive"
         class="w-full bg-[#D4CEBC] text-black text-center font-helveticaDisplay text-[10px] py-1 uppercase"
       >
-        <NuxtLink to="/contact">Book your appointment</NuxtLink>
+        <NuxtLink :to="localePath('contact')">{{
+          $t("Book your appointment")
+        }}</NuxtLink>
       </div>
       <header
         class="hidden md:flex justify-between items-center z-10 top-0 left-0 w-full px-4 md:px-16 bg-[#ECE9E1] py-4 md:py-2"
@@ -22,20 +27,40 @@ const isActive = ref(false);
         <nav
           class="flex gap-10 text-[#2A2B30] uppercase text-[12px] font-regular font-helveticaDisplay tracking-[2px] w-full md:w-fit justify-between md:justify-auto"
         >
-          <NuxtLink to="/">Home</NuxtLink>
-          <NuxtLink to="/about">About</NuxtLink>
-          <NuxtLink to="/services">Services</NuxtLink>
-          <NuxtLink to="/education">Education</NuxtLink>
-          <NuxtLink to="/contact">Contact</NuxtLink>
+          <NuxtLink :to="localePath('/')">{{ $t("Home") }}</NuxtLink>
+          <NuxtLink :to="localePath('about')">{{ $t("About") }}</NuxtLink>
+          <NuxtLink :to="localePath('services')">{{ $t("Services") }}</NuxtLink>
+          <NuxtLink :to="localePath('education')">{{
+            $t("Education")
+          }}</NuxtLink>
+          <NuxtLink :to="localePath('contact')">{{ $t("Contact") }}</NuxtLink>
+
+          <!-- LANGUAGE SWITCHER -->
+          <div
+            class="flex gap-2 items-center font-helveticaDisplay text-[12px] tracking-[2px]"
+          >
+            <button
+              v-for="loc in locales"
+              :key="loc.code"
+              @click="setLocale(loc.code)"
+              :class="locale === loc.code ? 'opacity-100' : 'opacity-30'"
+              class="uppercase transition-opacity hover:opacity-70"
+            >
+              {{ loc.code }}
+            </button>
+          </div>
         </nav>
       </header>
     </div>
+
     <header class="block md:hidden bg-[#ECE9E1] fixed z-20 w-full">
       <div
         v-if="!isActive"
         class="w-full bg-[#D4CEBC] text-black text-center font-helveticaDisplay text-[10px] py-1 uppercase"
       >
-        <NuxtLink to="/contact">Book your appointment</NuxtLink>
+        <NuxtLink :to="localePath('contact')">{{
+          $t("Book your appointment")
+        }}</NuxtLink>
       </div>
       <div class="relative flex items-center justify-between w-full py-2">
         <NuxtLink
@@ -44,7 +69,9 @@ const isActive = ref(false);
         >
           <img v-if="!isActive" :src="logo" alt="logo" class="w-10" />
         </NuxtLink>
-        <div class="uppercase container text-[12px]" v-if="isActive">menu</div>
+        <div class="uppercase container text-[12px]" v-if="isActive">
+          {{ $t("menu") }}
+        </div>
         <div></div>
         <Icon
           v-if="!isActive"
@@ -65,6 +92,7 @@ const isActive = ref(false);
           class="mr-[2rem]"
         />
       </div>
+
       <div v-if="isActive">
         <nav
           class="absolute w-full h-[100vh] text-[#2A2B30] uppercase text-[12px] font-regular font-helveticaDisplay tracking-[2px] justify-between z-10"
@@ -81,7 +109,9 @@ const isActive = ref(false);
                 >
                   01.
                 </div>
-                <NuxtLink @click="isActive = !isActive" to="/"> home</NuxtLink>
+                <NuxtLink @click="isActive = !isActive" :to="localePath('/')">{{
+                  $t("Home")
+                }}</NuxtLink>
               </div>
               <div class="flex">
                 <div
@@ -89,8 +119,10 @@ const isActive = ref(false);
                 >
                   02.
                 </div>
-                <NuxtLink @click="isActive = !isActive" to="/about"
-                  >about</NuxtLink
+                <NuxtLink
+                  @click="isActive = !isActive"
+                  :to="localePath('about')"
+                  >{{ $t("About") }}</NuxtLink
                 >
               </div>
               <div class="flex">
@@ -99,8 +131,10 @@ const isActive = ref(false);
                 >
                   03.
                 </div>
-                <NuxtLink @click="isActive = !isActive" to="/services"
-                  >services</NuxtLink
+                <NuxtLink
+                  @click="isActive = !isActive"
+                  :to="localePath('services')"
+                  >{{ $t("Services") }}</NuxtLink
                 >
               </div>
               <div class="flex">
@@ -109,8 +143,10 @@ const isActive = ref(false);
                 >
                   04.
                 </div>
-                <NuxtLink @click="isActive = !isActive" to="/education"
-                  >education</NuxtLink
+                <NuxtLink
+                  @click="isActive = !isActive"
+                  :to="localePath('education')"
+                  >{{ $t("Education") }}</NuxtLink
                 >
               </div>
               <div class="flex">
@@ -119,9 +155,26 @@ const isActive = ref(false);
                 >
                   05.
                 </div>
-                <NuxtLink @click="isActive = !isActive" to="/contact"
-                  >contact</NuxtLink
+                <NuxtLink
+                  @click="isActive = !isActive"
+                  :to="localePath('contact')"
+                  >{{ $t("Contact") }}</NuxtLink
                 >
+              </div>
+
+              <!-- LANGUAGE SWITCHER MOBILE -->
+              <div
+                class="flex gap-3 mt-6 font-helveticaNow text-[11px] tracking-[2px]"
+              >
+                <button
+                  v-for="loc in locales"
+                  :key="loc.code"
+                  @click="setLocale(loc.code)"
+                  :class="locale === loc.code ? 'opacity-100' : 'opacity-30'"
+                  class="uppercase transition-opacity"
+                >
+                  {{ loc.code }}
+                </button>
               </div>
             </div>
           </div>

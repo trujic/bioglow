@@ -1,5 +1,6 @@
 <script setup>
 import { useRouter } from "vue-router"; // Import useRouter for route info
+const localePath = useLocalePath();
 
 // Function to handle button click and scroll logic
 const handleButtonClick = () => {
@@ -38,12 +39,12 @@ const handleButtonClick = () => {
         <h2
           class="text-[28px] md:text-[64px] md:text-[86px] font-serifDisplay font-extralight max-w-[620px] tracking-[-1px] md:tracking-[-8px]"
         >
-          Experience your
+          {{ $t("Experience your") }}
         </h2>
         <h2
           class="font-serifDisplay font-extralight text-[28px] md:text-[86px] leading-[20px] md:leading-[60px] tracking-[-1px] md:tracking-[-8px]"
         >
-          <i>glow</i> here
+          <i>{{ $t("glow") }}</i> {{ $t("here") }}
         </h2>
       </div>
       <div class="flex gap-20 md:gap-32">
@@ -59,26 +60,28 @@ const handleButtonClick = () => {
         <div class="flex flex-col">
           <span
             class="uppercase font-bold mb-4 md:mb-8 text-[12px] md:text-base"
-            >get in touch</span
+            >{{ $t("get in touch") }}</span
           >
           <!-- <span class="text-[14px] md:text-base font-light">+381692111524</span> -->
           <a
             href="mailto:info@bioglow.com"
             class="text-[14px] md:text-base font-light"
-            >mail: info@bioglow.com</a
+            >email: info@bioglow.com</a
           >
           <a
             href="tel:+381641480123"
             class="text-[14px] md:text-base font-light mt-4"
-            >phone: +381641480123</a
+            >{{ $t("phone") }}: +381641480123</a
           >
           <span class="text-[14px] md:text-base font-light mt-4">
-            adress: Strahinjica Bana 2a, Niš
+            {{ $t("address") }}: Strahinjića Bana 2a, Niš
           </span>
         </div>
       </div>
-      <NuxtLink @click.prevent="handleButtonClick" to="/contact">
-        <button class="button"><span>book an appointment</span></button>
+      <NuxtLink @click.prevent="handleButtonClick" :to="localePath('contact')">
+        <button class="button">
+          <span>{{ $t("book an appointment") }}</span>
+        </button>
       </NuxtLink>
     </div>
   </div>

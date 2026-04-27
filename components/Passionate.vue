@@ -34,26 +34,28 @@ const content = [
       <h3
         class="text-center font-sloop text-[42px] md:text-[70px] font-extralight tracking-[-1px] md:tracking-[1px]"
       >
-        At Bioglow
+        {{ $t("At Bioglow") }}
       </h3>
       <h4
         class="font-helveticaDisplay uppercase text-center font-light tracking-[1px] text-[12px] md:text-base"
       >
-        ( we are passionate about )
+        {{ $t("( we are passionate about )") }}
       </h4>
       <div
         class="grid grid-cols-3 md:flex md:flex-row gap-4 md:gap-0 justify-between items-center mt-10 md:mt-14"
       >
         <div v-for="item in content" :key="item.index">
-          <div class="flex flex-col gap-2 md:gap-4 items-center">
+          <div
+            class="flex flex-col gap-2 md:gap-4 items-center w-[80px] md:w-[100px]"
+          >
             <img
               :src="item.icon"
               class="w-[30px] md:w-[60px]"
               :alt="'icon representing ' + item.text"
             />
             <span
-              class="font-helveticaDisplay uppercase text-[10px] md:text-[14px] tracking-[1px]"
-              >{{ item.text }}</span
+              class="font-helveticaDisplay uppercase text-[10px] md:text-[14px] tracking-[1px] text-center leading-tight"
+              >{{ $t(item.text) }}</span
             >
           </div>
         </div>

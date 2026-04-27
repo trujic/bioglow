@@ -19,14 +19,16 @@ import bgImage from "~/assets/images/services-bg.webp";
       <h3
         class="font-helveticaDisplay text-[14px] md:text-[16px] uppercase font-extralight max-w-fit tracking-[1px] leading-[1.2]"
       >
-        ( It's time to enter your glow era )
+        {{ $t(`( It's time to enter your glow era )`) }}
       </h3>
       <p
         class="mt-4 md:mt-4 max-w-[700px] text-xl md:text-3xl uppercase font-light font-serifDisplay px-4 md:px-0"
       >
-        This isn’t just about outer beauty, it’s about embracing a new state of
-        being. A time where radiance begins from within and shines effortlessly
-        on the outside.
+        {{
+          $t(
+            `This isn't just about outer beauty, it's about embracing a new state of being. A time where radiance begins from within and shines effortlessly on the outside.`
+          )
+        }}
       </p>
     </div>
   </section>
