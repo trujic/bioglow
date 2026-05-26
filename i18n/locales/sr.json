@@ -19,7 +19,7 @@
   "Our": "Naša",
   "story": "priča",
   "( Behind the brand )": "( Iza brenda )",
-  "aboutText": "Bioglow je rođen iz prijateljstva, a oblikovan godinama iskustva u luksuznim spa i wellness centrima širom sveta. Ono što je počelo između tretmana, uz miris mora i trenutke mira uz kafu, pretvorilo se u zajedničku viziju: stvaranje prostora u kojem se žene osećaju potpuno podržano – gde nisu samo klijentkinje, već neko ko je zaista primećen. Spajamo preciznost nauke sa toplinom nege. Svaki tretman je s namerom kreiran da radi u harmoniji sa prirodnim ritmom vašeg tela, koristeći dokazane tehnike i preparate vrhunskog kvaliteta. Ipak, pored svih sastojaka i metoda, ono što nas izdvaja je atmosfera – mirna, posvećena isključivo Vama, u radu „jedan na jedan“. Ovo je više od salona. Ovo je povratak sebi. Ako osećate da je ovo mesto za vas, sa radošću vas iščekujemo u našem prostoru u srcu Niša. Radimo isključivo putem zakazivanja, te vas ljubazno molimo da svoj termin rezervišete najmanje nedelju dana unapred.",
+  "aboutText": "Bioglow je rođen iz prijateljstva, a oblikovan godinama iskustva u luksuznim spa i wellness centrima širom sveta. Ono što je počelo između tretmana, uz miris mora i trenutke mira uz kafu, pretvorilo se u zajedničku viziju: stvaranje prostora u kojem se žene osećaju potpuno podržano – gde nisu samo klijentkinje, već neko ko je zaista primećen. Spajamo preciznost nauke sa toplinom nege. Svaki tretman je s namerom kreiran da radi u harmoniji sa prirodnim ritmom vašeg tela, koristeći dokazane tehnike i preparate vrhunskog kvaliteta. Ipak, pored svih sastojaka i metoda, ono što nas izdvaja je atmosfera – mirna, posvećena isključivo Vama, u radu „jedan na jedan. Ovo je više od salona. Ovo je povratak sebi. Ako osećate da je ovo mesto za vas, sa radošću vas iščekujemo u našem prostoru u srcu Niša. Radimo isključivo putem zakazivanja, te vas ljubazno molimo da svoj termin rezervišete najmanje nedelju dana unapred.",
   "Nourish your skin,": "Neguj svoju kožu",
   "feed your soul": "hrani svoju dušu",
   "Experience your": "Doživite svoj",
@@ -28,7 +28,7 @@
   "get in touch": "kontakt",
   "phone": "telefon",
   "address": "adresa",
-  "book an appointment": "zakažite termin", 
+  "book an appointment": "zakažite termin",
   "About Bioglow": "O Bioglow-u",
   "( serendipitous encounter that": "( slučajni susret koji nam je",
   "changed our lives )": "promenio živote )",
@@ -36,8 +36,8 @@
   "heroServices": {
     "subtext": "Istražite naše usluge"
   },
-  "Woman - Only Slow Beauty Studio in the Heart of Niš": "Ženski „Slow Beauty” studio u srcu Niša",
-  "At Bioglow, beauty is not rushed. It is cultivated. Every ritual is designed as a one-on-one experience — without noise, without pressure. We combine international spa expertise, professional systems, and a deeply personal approach to create care that is structured, intentional, and restorative.": "U Bioglow-u, lepota se ne požuruje. Ona se neguje. Svaki ritual je osmišljen kao iskustvo „jedan na jedan” – bez buke, bez pritiska. Spajamo internacionalno spa iskustvo, profesionalne sisteme i duboko lični pristup kako bismo kreirali negu koja je strukturisana, namerna i obnavljajuća.",
+  "Woman - Only Slow Beauty Studio in the Heart of Niš": "Ženski Slow Beauty studio u srcu Niša",
+  "At Bioglow, beauty is not rushed. It is cultivated. Every ritual is designed as a one-on-one experience — without noise, without pressure. We combine international spa expertise, professional systems, and a deeply personal approach to create care that is structured, intentional, and restorative.": "U Bioglow-u, lepota se ne požuruje. Ona se neguje. Svaki ritual je osmišljen kao iskustvo 'jedan na jedan' – bez buke, bez pritiska. Spajamo internacionalno spa iskustvo, profesionalne sisteme i duboko lični pristup kako bismo kreirali negu koja je strukturisana, namerna i obnavljajuća.",
   "This": "Ovo",
   "is not": "nije",
   "a fast salon": "salon brze usluge",
@@ -58,7 +58,7 @@
       "bioglowExtended": {
         "title": "BIOGLOW Signature Skin Ritual Extended —\u00A0",
         "subtitle": "90 min / 10,000 RSD",
-        "text": "Sveobuhvatno iskustvo obnove koje spaja napredne protokole pilinga (uključujući i Triple Effect pristup) sa tehnikama manuelnog liftinga. Ovaj ritual je istovremeno korektivan i duboko opuštajući , osmišljen za potpunu transformaciju kože i „reset” nervnog sistema. Iskustvo upotpunjujemo osvežavajućom masažom Cryo kuglicama, koja umiruje i tonira kožu, dok masaža vrata i ramena toplim kamenjem pruža osećaj duboke relaksacije i oslobađa od napetosti. Uz produženo vreme za posvećenost svakom detalju, ovo je tretman koji vraća i sjaj i unutrašnji mir."
+        "text": "Sveobuhvatno iskustvo obnove koje spaja napredne protokole pilinga (uključujući i Triple Effect pristup) sa tehnikama manuelnog liftinga. Ovaj ritual je istovremeno korektivan i duboko opuštajući , osmišljen za potpunu transformaciju kože i 'reset' nervnog sistema. Iskustvo upotpunjujemo osvežavajućom masažom Cryo kuglicama, koja umiruje i tonira kožu, dok masaža vrata i ramena toplim kamenjem pruža osećaj duboke relaksacije i oslobađa od napetosti. Uz produženo vreme za posvećenost svakom detalju, ovo je tretman koji vraća i sjaj i unutrašnji mir."
       },
       "cleanseGo": {
         "title": "BIOGLOW Cleanse & Go —\u00A0",
@@ -119,25 +119,55 @@
       }
     },
     "bodyContour": {
-      "title": "Body contour rituals",
+      "title": "Tretmani tela & Skulpturisanje siluete",
+      "descr": "Bez paralelnih tretmana. Bez žurbe. Bez izlaganja.\n\nSvaki ritual se odvija u privatnom, isključivo ženskom prostoru, pružajući vam potpunu posvećenost, privatnost i mir.",
+      "sectionLabel": "Pojedinačne usluge",
       "bodySculpt": {
         "title": "BIOGLOW Body Sculpt Ritual —\u00A0",
         "subtitle": "90 min / 7,900 RSD",
-        "text": "Sveobuhvatan ritual za telo osmišljen da podstakne cirkulaciju, podrži tonus tkiva i prirodnu metaboličku aktivnost. Tretman se odvija kroz pažljivo strukturirane faze:",
+        "text": "Sveobuhvatan, sinergijski ritual za telo osmišljen kao intenzivan sistem podrške za smanjenje obima lokalizovanih masnih naslaga, podsticanje prirodne drenaže i poboljšanje tonusa kože. Ovaj napredni protokol spaja tehnologiju i napredne manuelne tehnike kroz pažljivo strukturirane faze:",
         "list": {
-          "0": "Suvo četkanje tela za aktivaciju mikrocirkulacije",
-          "1": "Limfna priprema kao podrška drenažnim putevima",
-          "2": "Ciljana stimulacija mišića uz pomoć Ultra Contour Touch tehnologije",
-          "3": "Skulpturisanje fascije gua sha tehnikama",
-          "4": "Drenaža primenom nežnih vakuum čašica",
-          "5": "Umirujuća masaža za integraciju i opuštanje"
+          "0": "Suvo četkanje tela za pokretanje površinske mikrocirkulacije.",
+          "1": "Limfna priprema kao podrška prirodnim drenažnim putevima.",
+          "2": "Ultrazvučna kavitacija za ciljano delovanje na potkožne masne naslage.",
+          "3": "Mišićna stimulacija i drenaža uz pomoć Ultra Contour Touch tehnologije.",
+          "4": "Gua Sha tehnika za oslobađanje napetosti u mišićima i fasciji.",
+          "5": "Drenaža primenom nežnih, kliznih vakuum čašica za zaglađivanje teksture kože.",
+          "6": "Umirujuća završna masaža za integraciju i prelazak nervnog sistema u režim dubokog opuštanja."
         },
-        "afterText": "Tehnologija objedinjuje mišićnu stimulaciju i aktivaciju drenaže radi podrške metabolizmu tkiva i čvrstini kože. Tehnologija podržava proces. Ritual ga vodi."
+        "afterText": "Tehnologija i naši protokoli su tu da fiziološki podrže, ubrzaju i olakšaju proces drenaže, tonizacije mišića i poboljšanja strukture kože."
       },
       "targetedContour": {
         "title": "Targeted Contour Session —\u00A0",
-        "subtitle": "30-40 min / 4,200 RSD",
-        "text": "Fokusiran tretman namenjen radu na specifičnoj regiji tela uz primenu tehnologije mišićne stimulacije. Pogodan za ciljane zone poput abdomena, butina, bokova ili ruku. Čest izbor kao tretman održavanja između celovitih rituala. Zasnovan na Ultra Contour Touch tehnologiji."
+        "subtitle": "30–40 min / 4,200 RSD",
+        "text": "Fokusiran, intenzivan tretman namenjen radu na specifičnoj regiji tela — idealan za zone poput abdomena, butina, bokova. Zasnovan je na Ultra Contour Touch tehnologiji koja kroz elektromišićnu stimulaciju (EMS) aktivira mišićni tonus, ubrzava lokalni metabolizam tkiva, podstiče oslobađanje od zadržane tečnosti i poboljšava čvrstinu kože. Savršen je izbor kao tretman održavanja između celovitih rituala."
+      },
+      "programs": {
+        "sectionLabel": "BIOGLOW Programi & Paketi",
+        "sectionSubtext": "Investicija u kontinuitet i podršku prirodnoj fiziologiji tkiva.",
+        "silhouette": {
+          "title": "BIOGLOW Silhouette Program —\u00A0",
+          "subtitle": "6 tretmana + Signature Renewal Ritual / 30,900 RSD",
+          "text": "Celovit jednomesečni program osmišljen kao dubinski sistem podrške telu u oslobađanju od zadržane tečnosti, ublažavanju vidljivosti celulita i vraćanju tonusa. Ovaj program strateški kombinuje lipolitičko delovanje kavitacije sa intenzivnom, fluidnom drenažom, prateći prirodan ritam i metabolički kapacitet organizma.",
+          "contentsLabel": "Sadržaj programa:",
+          "list": {
+            "0": "3× BIOGLOW Body Sculpt Ritual (90 min) — izvodi se jednom u 10 dana, kako bi se pružio optimalan prostor telu da na prirodan način integriše efekte tretmana.",
+            "1": "3× Targeted Contour Session (40 min) — fokusirana drenaža i aktivacija mišićnog tonusa između velikih rituala, za lagan i rasterećen osećaj u telu.",
+            "2": "GRATIS ZA KRAJ: Ekskluzivni BIOGLOW Signature Renewal Ritual (150 min) — dvoiposatni vrhunski ritual lica i tela koji obnavlja barijeru kože i pruža duboko neuro-muskularno opuštanje (u redovnoj prodaji: 12,500 RSD).",
+            "3": "VAŽAN SUPORT: Pojednostavljeni BIOGLOW vodič za ishranu i optimalnu hidrataciju koji, uz vaš aktivan životni stil, osigurava adekvatan transport oslobođenih masti i podržava prirodne procese."
+          },
+          "afterText": "Mogućnost plaćanja u dve jednake rate (na 1. i 3. tretmanu)."
+        },
+        "sculptLift": {
+          "title": "BIOGLOW Sculpt & Lift Express —\u00A0",
+          "subtitle": "6 tretmana / 22,000 RSD",
+          "text": "Intenzivan, fokusiran program namenjen klijentkinjama koje traže učestaliju aktivaciju mišićnog tonusa, učvršćivanje kože i brzo oslobađanje od osećaja težine u specifičnoj regiji (npr. samo stomak, gluteus ili butine).",
+          "contentsLabel": "Sadržaj programa:",
+          "list": {
+            "0": "6× Targeted Contour Session (30–40 min) — visokoefikasni aparaturni treninzi tkiva zasnovani na Ultra Contour Touch tehnologiji.",
+            "1": "Dinamika: Preporučeno 2 puta nedeljno radi kontinuiranog podsticanja mikrocirkulacije i buđenja mišićnih vlakana."
+          }
+        }
       }
     },
     "handRituals": {
@@ -166,7 +196,36 @@
         "title": "Depilacija u privatnom, isključivo ženskom prostoru",
         "text": "30 - 50 - 80 min /  1,500 - 2,500 - 4,000 RSD"
       }
-    }
+    },
+    "biologyTalk": {
+      "title": "Razgovor o biologiji vaše kože",
+      "talking": {
+        "title": "Virtuelne konsultacije i lični vodič kroz sastojke / 3,000 RSD",
+        "text": "Pravilna nega počinje u trenutku kada prestanemo da isprobavamo nasumične proizvode i počnemo da slušamo jedinstvene potrebe svoje kože. Kako bismo vam pomogli da razumete specifične reakcije svog lica i kreirate svesnu, visokoefikasnu rutinu, osmislili smo format virtuelnih konsultacija koji vodi Tijana, biolog našeg tima.",
+        "list": {
+          "0": "Intimni uvod: Pre našeg susreta, kroz pažljivo strukturiran upitnik deli sa nama detalje o vašem životnom stilu, trenutnim navikama i proizvodima koje birate.",
+          "1": "Sesija 1 na 1: Tokom privatnog virtuelnog razgovora, Tijana analizira ponašanje vaše kože kako bi otkrila stvarne uzroke stanja poput dehidratacije, preosetljivosti ili disbalansa u lučenju sebuma.",
+          "2": "Vaš pisani vodič: Nakon konsultacije, na vašu adresu stiže detaljan, lični izveštaj — profil vaše kože sa jasnim smernicama: koje sastojke treba da uvrstite, koje da izbegavate i kako da pravilno kombinujete korake nege za dugoročne rezultate."
+        },
+        "afterText": "Sinergija nauke i decenijskog iskustva \n\n Verujemo da prefinjena nega zahteva potpunu iskrenost i temeljnost. Tijana vašu kožu posmatra kroz prizmu čiste biologije i strukture sastojaka. Kako bismo naučnu teoriju savršeno povezali sa praksom, svaki upitnik i završni vodič zajednički analiziramo, integrišući stručno mišljenje našeg estetičara sa preko 10 godina iskustva u luksuznom spa segmentu i neposrednom radu sa kožom. \n\n Budući da duboko poštujemo granice naše struke, važno nam je da napomenemo da su naše konsultacije edukativnog karaktera i posvećene isključivo kozmetičkoj nezi. Ukoliko se suočavate sa medicinskim, dermatološkim stanjima ili bolestima kože, sa velikom pažnjom i odgovornošću ćemo vas uvek uputiti da se obratite svom lekaru-dermatologu."
+      }
+    },
+    "fallAnnouncement": {
+        "title": "Najava za jesen - Od septembra u BIOGLOW studiju.",
+        "descr": "Dugotrajna glatkoća: Nova era nežnosti prema koži",
+        "text": "Sa prvim jesenjim danima, naš prostor postaje bogatiji za sofisticiranu svetlosnu tehnologiju trajnog uklanjanja dlačica. Vođeni našom Slow Beauty filozofijom, odabrali smo sistem koji donosi vrhunsku efikasnost, ali bez kompromisa kada je reč o zdravlju i komforu vaše kože.",
+        "list": {
+          "0": "Apsolutna prijatnost: Tretman je osmišljen tako da bude potpuno bezbolan, bez iritacija i agresivnih senzacija, pružajući vam prijatan i opuštajući osećaj tokom rada.",
+          "1": "Bezbednost na prvom mestu: Tehnologija deluje postepeno i selektivno, štiteći okolno tkivo i čineći tretman bezbednim za sve tipove kože.",
+          "2": "Stručnost i mir: Svaki tretman vodi stručni terapeut, uz maksimalnu posvećenost i u ambijentu koji garantuje vašu privatnost."
+        },
+        "afterText": "Uvodne rezervacije: Kako bismo zadržali maksimalnu posvećenost svakom detalju, broj mesta za jesenje pakete po uvodnim cenama biće ograničen. Ukoliko želite da obezbedite svoje mesto na vreme, možete se prijaviti na našu listu interesovanja tokom sledeće posete Bioglowu ili putem kontakt forme.",
+        "notes": {
+        "0": "Profesionalna napomena: BIOGLOW Signature rituale (60, 90 i 150 min) ekskluzivno izvodi osnivač brenda i diplomirani estetičar-kozmetičar.",
+        "1": "Napomena o rezultatima: Tehnologija i naši protokoli su tu da fiziološki podrže, ubrzaju i olakšaju proces drenaže, tonizacije mišića i poboljšanja strukture kože. Za optimalne i dugoročne rezultate, tretmani se moraju kombinovati sa adekvatnim unosom vode, izbalansiranom ishranom i fizičkom aktivnošću.",
+        "2": "Zbog intenzivnog mehaničkog i tehnološkog delovanja kavitacije i elektro-stimulacije, programi za telo imaju određene kontraindikacije (trudnoća, dojenje, pejsmejker, metalni implanti u zoni rada, kompromitovana funkcija jetre ili bubrega). Pre početka svakog programa, obavićemo detaljne, besplatne konsultacije."
+        }
+      }
   },
   "heroEducation": {
     "subtext": "edukacije & konsultacije"
@@ -270,6 +329,11 @@
   },
   "professional": "profesionalni",
   "facial": "lica",
-  "skincare":"kože",
-  "screening": "analiza"
+  "skincare": "kože",
+  "screening": "analiza",
+  "Select a treatment": "Zakažite tretman",
+  "Select a date": "Izaberite datum",
+  "Full name is required": "Potrebno je puno ime i prezime",
+  "Phone number is required": "Broj telefona je obavezan",
+  "Email is required": "Email je obavezan"
 }

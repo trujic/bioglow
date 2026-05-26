@@ -10,14 +10,27 @@ const emailSent = ref(false);
 const message = ref("");
 // List of treatments
 const treatments = [
-  "BIOGLOW Dermafacial — 60 min / 6000RSD",
-  "BIOGLOW Dermafacial Plus — 90 min / 9000 RSD",
-  "BIOGLOW Cleanse & Go — 40 min / 4000 RSD",
-  "Swedish Massage",
-  "Leg Massage with Sculpting & Drainage",
-  "Neck & Scalp Massage",
-  "Foot Reflexology & Lower Leg Relief",
-  "BIOGLOW Ritual of Renewal",
+  "BIOGLOW Signature Skin Ritual — 60 min / 6500 RSD",
+  "BIOGLOW Signature Skin Ritual Extended — 90 min / 10,000 RSD",
+  "BIOGLOW Cleanse & Go — 40 min / 4,200 RSD",
+  "BIOGLOW Signature Renewal Ritual — 150 min / 12,500 RSD",
+  "Precision Skin Refinement — 1,500 RSD",
+  "Hand Glow Ritual — 1,800 RSD",
+  "Body Sculpt Add-On — 20 min / 2,500 RSD",
+  "Deep Release Body Ritual — 50 min / 4,500 RSD",
+  "Deep Release Body Ritual Extended — 80 min / 6,800 RSD",
+  "Leg Renewal Sculpt Ritual — 30 / 50 min - 3,000 / 4,800 RSD",
+  "Head & Neck Reset Ritual — 30 min / 3,000 RSD",
+  "Reflex Balance Foot Ritual — 50 min / 4,800 RSD",
+  "BIOGLOW Body Sculpt Ritual — 90 min / 7,900 RSD",
+  "Targeted Contour Session — 30-40 min / 4,200 RSD",
+  "Signature Gloss Manicure Ritual — 2,500 RSD",
+  "Signature Gloss Manicure Ritual – Spa Edition — 3,000 RSD",
+  "Natural Hand Care Ritual — 2,000 RSD",
+  "Smooth skin ritual (waxing) — 30 - 50 - 80 min / 1,500 - 2,500 - 4,000 RSD",
+  "BIOGLOW Silhouette Program — 6 tretmana + Signature Renewal Ritual / 30,900 RSD",
+  "BIOGLOW Sculpt & Lift Express — 6 tretmana / 22,000 RSD",
+  "Virtual consultations / 3,000 RSD",
 ];
 
 // Validation schema
@@ -189,16 +202,18 @@ onMounted(() => {
               <label
                 class="uppercase font-light font-helveticaDisplay text-xs md:text-base tracking-[1px]"
               >
-                Select a treatment
+                {{ $t("Select a treatment") }}
               </label>
               <Field
                 as="select"
                 name="treatment"
                 class="bg-[#ECE9E1] border-b border-black outline-none text-[14px] md:text-base hover:cursor-pointer"
               >
-                <option value="" disabled>Select a treatment</option>
-                <option v-for="t in treatments" :key="t" :value="t">
-                  {{ t }}
+                <option value="" disabled>
+                  {{ $t("Select a treatment") }}
+                </option>
+                <option v-for="item in treatments" :key="item" :value="item">
+                  {{ item }}
                 </option>
               </Field>
               <ErrorMessage name="treatment" class="text-red-600 text-sm" />
@@ -208,7 +223,7 @@ onMounted(() => {
               <label
                 class="uppercase font-light font-helveticaDisplay text-xs md:text-base tracking-[1px] w-full"
               >
-                Select a date
+                {{ $t("Select a date") }}
               </label>
               <Field
                 name="date"

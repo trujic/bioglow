@@ -119,25 +119,55 @@
       }
     },
     "bodyContour": {
-      "title": "Body contour rituals",
+      "title": "Body Treatments & Silhouette Sculpting",
+      "descr": "No parallel treatments. No rush. No exposure.\n\nEach ritual takes place in a private, female-only space, offering you absolute dedication, privacy, and peace.",
+      "sectionLabel": "Single Sessions",
       "bodySculpt": {
         "title": "BIOGLOW Body Sculpt Ritual —\u00A0",
         "subtitle": "90 min / 7,900 RSD",
-        "text": "A complete body ritual designed to stimulate circulation, support tissue tone, and encourage natural metabolic activity. The treatment unfolds through carefully structured phases:",
+        "text": "A comprehensive, synergistic body ritual designed as an intensive support system to reduce the volume of localized areas, promote natural drainage, and improve skin tone. This advanced protocol seamlessly combines technology and high-end manual techniques through carefully structured phases:",
         "list": {
-          "0": "dry body brushing to activate circulation",
-          "1": "lymphatic preparation to support drainage pathways",
-          "2": "targeted muscle stimulation using Ultra Contour Touch technology",
-          "3": "fascia sculpting with gua sha techniques",
-          "4": "gentle cupping drainage",
-          "5": "calming integration massage"
+          "0": "Dry body brushing to stimulate surface microcirculation and restore skin radiance.",
+          "1": "Manual preparation of drainage pathways to support the natural release of excess fluid.",
+          "2": "Ultrasonic cavitation for targeted action on stubborn, localized areas.",
+          "3": "Tone activation and drainage powered by Ultra Contour Touch technology.",
+          "4": "Gua Sha technique to release muscle and fascia tension while boosting deep circulation.",
+          "5": "Gliding vacuum cups for drainage and smoothing the skin’s texture.",
+          "6": "A soothing closing massage for a feeling of deep relaxation and lightness."
         },
         "afterText": "The technology combines muscle stimulation and drainage activation designed to support tissue metabolism, circulation, and skin firmness. Technology supports the process. The ritual leads it."
       },
       "targetedContour": {
         "title": "Targeted Contour Session —\u00A0",
-        "subtitle": "30-40 min / 4,200 RSD",
-        "text": "A focused treatment for clients who wish to work on a specific body area using muscle stimulation technology. Suitable for targeted areas such as abdomen, thighs, hips, or arms. Often chosen as a maintenance treatment between full rituals. Powered by Ultra Contour Touch technology."
+        "subtitle": "30–40 min / 4,200 RSD",
+        "text": "A focused, intensive treatment dedicated to a specific region of the body—ideal for areas such as the abdomen, thighs, or hips. It is based on Ultra Contour Touch technology, which uses electromuscle stimulation (EMS) to activate muscle tone, accelerate local tissue metabolism, encourage the release of retained fluid, and improve skin firmness. A perfect choice as a maintenance treatment between full rituals."
+      },
+      "programs": {
+        "sectionLabel": "BIOGLOW Programs & Packages",
+        "sectionSubtext": "An investment in consistency and support for the natural physiology of the tissue.",
+        "silhouette": {
+          "title": "BIOGLOW Silhouette Program —\u00A0",
+          "subtitle": "6 treatments + Premium Gratis / 30,900 RSD",
+          "text": "A comprehensive, month-long program designed as a deep support system for the body to release retained fluid, soften the appearance of cellulite, and restore firmness. This program strategically pairs the lipolytic action of cavitation with intensive, fluid drainage, respecting the body's natural rhythm and metabolic capacity.",
+          "contentsLabel": "Program Details:",
+          "list": {
+            "0": "3× BIOGLOW Body Sculpt Ritual (90 min) — performed once every 10 days, allowing optimal time for the body to naturally integrate the effects of the treatment.",
+            "1": "3× Targeted Contour Session (40 min) — focused drainage and muscle tone activation between major rituals, for a light and unburdened feeling.",
+            "2": "COMPLIMENTARY FINALE: The exclusive BIOGLOW Signature Renewal Ritual (150 min) — a premium two-and-a-half-hour face and body ritual that restores the skin barrier and provides profound relaxation (regular price: 12,500 RSD).",
+            "3": "ESSENTIAL SUPPORT: A simplified BIOGLOW nutrition and optimal hydration guide which, alongside your active lifestyle, ensures the proper transport of released fats and supports the body’s natural cleansing processes."
+          },
+          "afterText": "Payment option available in two equal installments (at the 1st and 3rd session)."
+        },
+        "sculptLift": {
+          "title": "BIOGLOW Sculpt & Lift Express —\u00A0",
+          "subtitle": "6 treatments / 22,000 RSD",
+          "text": "An intensive, focused program designed for clients seeking more frequent muscle tone activation, skin tightening, and rapid relief from heaviness and bloating in a specific region (e.g., abdomen, glutes, or thighs only).",
+          "contentsLabel": "Program Details:",
+          "list": {
+            "0": "6× Targeted Contour Session (30–40 min) — high-efficiency device-assisted tissue workouts based on Ultra Contour Touch technology.",
+            "1": "Frequency: Recommended 2 times per week to continuously stimulate muscle fibers and microcirculation."
+          }
+        }
       }
     },
     "handRituals": {
@@ -166,7 +196,36 @@
         "title": "Waxing performed in a private, woman-only space",
         "text": "30 - 50 - 80 min /  1,500 - 2,500 - 4,000 RSD"
       }
-    }
+    },
+    "biologyTalk": {
+      "title": "Conversations on Skin Biology",
+      "talking": {
+        "title": "Virtuelne konsultacije i lični vodič kroz sastojke / 3,000 RSD",
+        "text": "True skincare begins the moment we stop experimenting with random products and start listening to the unique needs of our skin. To help you understand your face's specific reactions and build a conscious, highly effective routine, we have designed a virtual consultation format led by Tijana, our resident biologist.",
+        "list": {
+          "0": "The Initial Insight: Prior to our session, a thoughtfully curated questionnaire allows you to share the details of your lifestyle, current habits, and the products you choose.",
+          "1": "1-on-1 Session: During your private virtual conversation, Tijana analyzes your skin’s behavior to identify the true underlying causes of concerns such as dehydration, sensitivity, or sebum imbalance.",
+          "2": "Your Written Guide: Following the consultation, you will receive a comprehensive, personalized report — your skin profile, complete with clear guidelines on which ingredients to introduce, which to avoid, and how to properly layer your care for long-term results."
+        },
+        "afterText": "The Synergy of Science and Decades of Expertise We believe that refined skincare demands absolute honesty and depth. Tijana views the skin through the lens of pure biology and ingredient formulation. To perfectly bridge scientific theory with practical application, every questionnaire and final guide undergoes a collaborative review, integrating the expert insight of our aesthetician, who brings over a decade of experience in luxury spa operations and direct skin cultivation. Out of deep respect for the boundaries of our profession, it is essential to note that our consultations are strictly educational and dedicated to cosmetic care. Should you be experiencing medical, dermatological conditions or skin diseases, we will always, with the utmost care and responsibility, advise you to seek the guidance of a medical dermatologist."
+      }
+    },
+    "fallAnnouncement": {
+        "title": "Autumn Announcement - Coming this September to BIOGLOW studio.",
+        "descr": "Long-lasting Smoothness: A New Era of Skin Gentleness",
+        "text": "With the first days of autumn, our space will be enhanced with sophisticated light technology for permanent hair removal. Guided by our Slow Beauty philosophy, we have chosen a system that delivers top-tier efficiency without compromising the health and comfort of your skin.",
+        "list": {
+          "0": "Absolute Comfort: The treatment is designed to be completely painless, free of irritation or harsh sensations, ensuring a pleasant and relaxing experience.",
+          "1": "Safety First: The technology works gradually and selectively, protecting the surrounding tissue and making the treatment safe for all skin types.",
+          "2": "Expertise and Peace: Each treatment is performed by a professional aesthetician, with utmost dedication in an environment that guarantees your total privacy."
+        },
+        "afterText": "Priority Bookings: To maintain our standard of uncompromised attention to every detail, spaces for our autumn packages at introductory rates will be limited. If you wish to secure your place in time, you may join our interest list during your next visit to Bioglow or via our contact form.",
+        "notes": {
+        "0": "*Professional Note: BIOGLOW Signature rituals (60, 90, and 150 min) are exclusively performed by the founder of the brand and a graduate aesthetician-cosmetician.",
+        "1": "*Results Note: Our technology and protocols are designed to physiologically support, accelerate, and ease the process of drainage, muscle toning, and skin structure improvement. For optimal and long-lasting results, treatments must be paired with adequate water intake, a balanced diet, and regular physical activity.",
+        "2": "*Due to the intensive mechanical and technological action of cavitation and electro-stimulation, body programs carry certain contraindications (pregnancy, breastfeeding, pacemakers, metal implants in the targeted area, compromised liver or kidney function). Prior to starting any program, we will conduct a detailed, complimentary consultation."
+      }
+      }
   },
   "heroEducation": {
     "subtext": "education and career consulting"
@@ -245,7 +304,7 @@
   },
   "Let's connect": "Let's connect",
   "Follow along": "Follow along",
-  "Call us": "Call us",
+  "call us": "call us",
   "Get in touch": "Get in touch",
   "Phone": "Phone",
   "Book an appointment": "Book an appointment",
@@ -274,5 +333,10 @@
   "professional": "professional",
   "facial": "facial",
   "skincare":"skincare",
-  "screening": "screening"
+  "screening": "screening",
+  "Select a treatment": "Select a treatment",
+  "Select a date": "Select a date",
+  "Full name is required": "Full name is required",
+  "Phone number is required": "Phone number is required",
+  "Email is required": "Email is required"
 }

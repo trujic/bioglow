@@ -26,7 +26,10 @@ const toggleItem = (localIndex) => {
         @click="toggleItem(index)"
       >
         <div class="flex flex-col md:flex-row text-[12px] md:text-base">
-          <span class="text-[14px]">{{ item.title }}</span>
+          <span
+            class="text-[12px] md:text-[14px] max-w-[95%] md:max-w-[100%]"
+            >{{ item.title }}</span
+          >
           <span v-if="item.subtitle" class="text-[14px]">{{
             item.subtitle
           }}</span>
@@ -42,13 +45,17 @@ const toggleItem = (localIndex) => {
       >
         <p class="py-6">{{ item.text }}</p>
 
-        <ul v-if="item.list" class="list-disc pl-5 space-y-1">
+        <p v-if="item.contentsLabel" class="font-semibold text-[13px]">
+          {{ item.contentsLabel }}
+        </p>
+
+        <ul v-if="item.list" class="list-disc pl-5 space-y-4">
           <li v-for="(point, i) in item.list" :key="i">
             {{ point }}
           </li>
         </ul>
 
-        <p v-if="item.afterText">
+        <p v-if="item.afterText" class="!mt-10">
           {{ item.afterText }}
         </p>
       </div>

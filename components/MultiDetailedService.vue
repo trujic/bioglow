@@ -86,6 +86,8 @@ const treatmentGroupDefs = [
   },
   {
     titleKey: "treatments.bodyContour.title",
+    descrKey: "treatments.bodyContour.descr",
+    sectionLabelKey: "treatments.bodyContour.sectionLabel",
     items: [
       {
         titleKey: "treatments.bodyContour.bodySculpt.title",
@@ -98,6 +100,7 @@ const treatmentGroupDefs = [
           "treatments.bodyContour.bodySculpt.list.3",
           "treatments.bodyContour.bodySculpt.list.4",
           "treatments.bodyContour.bodySculpt.list.5",
+          "treatments.bodyContour.bodySculpt.list.6",
         ],
         afterTextKey: "treatments.bodyContour.bodySculpt.afterText",
       },
@@ -105,6 +108,35 @@ const treatmentGroupDefs = [
         titleKey: "treatments.bodyContour.targetedContour.title",
         subtitleKey: "treatments.bodyContour.targetedContour.subtitle",
         textKey: "treatments.bodyContour.targetedContour.text",
+      },
+    ],
+    programsSectionLabelKey: "treatments.bodyContour.programs.sectionLabel",
+    programsSectionSubtextKey: "treatments.bodyContour.programs.sectionSubtext",
+    programs: [
+      {
+        titleKey: "treatments.bodyContour.programs.silhouette.title",
+        subtitleKey: "treatments.bodyContour.programs.silhouette.subtitle",
+        textKey: "treatments.bodyContour.programs.silhouette.text",
+        contentsLabelKey:
+          "treatments.bodyContour.programs.silhouette.contentsLabel",
+        listKeys: [
+          "treatments.bodyContour.programs.silhouette.list.0",
+          "treatments.bodyContour.programs.silhouette.list.1",
+          "treatments.bodyContour.programs.silhouette.list.2",
+          "treatments.bodyContour.programs.silhouette.list.3",
+        ],
+        afterTextKey: "treatments.bodyContour.programs.silhouette.afterText",
+      },
+      {
+        titleKey: "treatments.bodyContour.programs.sculptLift.title",
+        subtitleKey: "treatments.bodyContour.programs.sculptLift.subtitle",
+        textKey: "treatments.bodyContour.programs.sculptLift.text",
+        contentsLabelKey:
+          "treatments.bodyContour.programs.sculptLift.contentsLabel",
+        listKeys: [
+          "treatments.bodyContour.programs.sculptLift.list.0",
+          "treatments.bodyContour.programs.sculptLift.list.1",
+        ],
       },
     ],
   },
@@ -139,12 +171,48 @@ const treatmentGroupDefs = [
       },
     ],
   },
+  {
+    titleKey: "treatments.biologyTalk.title",
+    items: [
+      {
+        titleKey: "treatments.biologyTalk.talking.title",
+        textKey: "treatments.biologyTalk.talking.text",
+        listKeys: [
+          "treatments.biologyTalk.talking.list.0",
+          "treatments.biologyTalk.talking.list.1",
+          "treatments.biologyTalk.talking.list.2",
+        ],
+        afterTextKey: "treatments.biologyTalk.talking.afterText",
+      },
+    ],
+  },
+  {
+    titleKey: "treatments.fallAnnouncement.title",
+    items: [
+      {
+        titleKey: "treatments.fallAnnouncement.descr",
+        textKey: "treatments.fallAnnouncement.text",
+        listKeys: [
+          "treatments.fallAnnouncement.list.0",
+          "treatments.fallAnnouncement.list.1",
+          "treatments.fallAnnouncement.list.2",
+        ],
+        afterTextKey: "treatments.fallAnnouncement.afterText",
+      },
+    ],
+    noteKeys: [
+      "treatments.fallAnnouncement.notes.0",
+      "treatments.fallAnnouncement.notes.1",
+      "treatments.fallAnnouncement.notes.2",
+    ],
+  },
 ];
 
 const treatmentGroups = computed(() =>
   treatmentGroupDefs.map((group) => ({
     title: t(group.titleKey),
     descr: group.descrKey ? t(group.descrKey) : undefined,
+    sectionLabel: group.sectionLabelKey ? t(group.sectionLabelKey) : undefined,
     items: group.items.map((item) => ({
       title: t(item.titleKey),
       subtitle: item.subtitleKey ? t(item.subtitleKey) : undefined,
@@ -152,8 +220,37 @@ const treatmentGroups = computed(() =>
       list: item.listKeys ? item.listKeys.map((k) => t(k)) : undefined,
       afterText: item.afterTextKey ? t(item.afterTextKey) : undefined,
     })),
+    programsSectionLabel: group.programsSectionLabelKey
+      ? t(group.programsSectionLabelKey)
+      : undefined,
+    programsSectionSubtext: group.programsSectionSubtextKey
+      ? t(group.programsSectionSubtextKey)
+      : undefined,
+    programs: group.programs
+      ? group.programs.map((p) => ({
+          title: t(p.titleKey),
+          subtitle: p.subtitleKey ? t(p.subtitleKey) : undefined,
+          text: p.textKey ? t(p.textKey) : undefined,
+          contentsLabel: p.contentsLabelKey ? t(p.contentsLabelKey) : undefined,
+          list: p.listKeys ? p.listKeys.map((k) => t(k)) : undefined,
+          afterText: p.afterTextKey ? t(p.afterTextKey) : undefined,
+        }))
+      : undefined,
+    notes: group.noteKeys ? group.noteKeys.map((k) => t(k)) : undefined,
   }))
 );
+
+const groupOffsets = computed(() => {
+  const offsets = [];
+  let counter = 0;
+  for (const group of treatmentGroups.value) {
+    const itemsCount = group.items?.length ?? 0;
+    const programsCount = group.programs?.length ?? 0;
+    offsets.push({ items: counter, programs: counter + itemsCount });
+    counter += itemsCount + programsCount;
+  }
+  return offsets;
+});
 
 const toggleAccordion = (index) => {
   openIndex.value = openIndex.value === index ? null : index;
@@ -174,11 +271,12 @@ const toggleAccordion = (index) => {
           <div
             v-for="(group, groupIndex) in treatmentGroups"
             :key="groupIndex"
-            class="mb-10 text-start"
+            class="mb-20 text-start"
           >
             <span class="font-semibold text-lg mb-4 inline-block mt-10">{{
               group.title
             }}</span>
+
             <div v-if="group.descr">
               <p
                 class="text-[12px] md:text-[14px] mt-2 mb-8 md:mb-14 w-full md:w-[90%]"
@@ -186,17 +284,55 @@ const toggleAccordion = (index) => {
                 {{ group.descr }}
               </p>
             </div>
+
+            <!-- Individual treatments label (bodyContour only) -->
+            <p
+              v-if="group.sectionLabel"
+              class="text-[11px] md:text-[12px] uppercase tracking-widest text-gray-500 mb-4"
+            >
+              {{ group.sectionLabel }}
+            </p>
+
             <AccordionList
               v-if="group.items && group.items.length"
               :items="group.items"
-              :baseIndex="
-                treatmentGroups
-                  .slice(0, groupIndex)
-                  .reduce((sum, g) => sum + (g.items ? g.items.length : 0), 0)
-              "
+              :baseIndex="groupOffsets[groupIndex].items"
               :openIndex="openIndex"
               @toggle="toggleAccordion"
             />
+
+            <template v-if="group.programs">
+              <div class="mt-14 mb-2">
+                <p class="font-semibold text-lg inline-block">
+                  {{ group.programsSectionLabel }}
+                </p>
+                <p
+                  v-if="group.programsSectionSubtext"
+                  class="text-[12px] md:text-[13px] mt-1 mb-6 italic text-gray-600"
+                >
+                  {{ group.programsSectionSubtext }}
+                </p>
+              </div>
+              <AccordionList
+                :items="group.programs"
+                :baseIndex="groupOffsets[groupIndex].programs"
+                :openIndex="openIndex"
+                @toggle="toggleAccordion"
+              />
+            </template>
+
+            <!-- Disclaimer notes -->
+            <template v-if="group.notes">
+              <ul class="mt-10 space-y-3">
+                <li
+                  v-for="(note, ni) in group.notes"
+                  :key="ni"
+                  class="text-[11px] md:text-[12px] text-gray-500 italic leading-relaxed"
+                >
+                  *{{ note }}
+                </li>
+              </ul>
+            </template>
           </div>
         </div>
 
