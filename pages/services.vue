@@ -24,9 +24,9 @@ useSeoMeta({
         <FadeWrapper>
           <SingleDetailedService />
         </FadeWrapper>
-        <FadeWrapper>
-          <MultiDetailedService />
-        </FadeWrapper>
+
+        <MultiDetailedService />
+
         <FadeWrapper>
           <WhereWeAre />
         </FadeWrapper>
